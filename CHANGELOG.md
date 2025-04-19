@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.10.0...v1.11.0) (2025-04-19)
+
+### Features
+
+-   **tscomfig:** add file in project ([da86684](https://github.com/DKMFzF/frontend-portfolio/commit/da866840f6a458defa878aec8a6c9b901378fca5))
+
 ## [1.10.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.9.0...v1.10.0) (2025-04-19)
 
 ### Features
