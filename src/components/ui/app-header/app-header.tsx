@@ -4,19 +4,24 @@ import { TAppHeaderUIProps } from './type';
 import { ProfileIcon } from '@zlden/react-developer-burger-ui-components';
 import { Link, useLocation } from 'react-router-dom';
 import logoImage from '../../../image/logo_line.svg';
-import React from 'react';
+import { Icon } from '../icon/index';
 
-/**
- * Упрощенный компонент шапки приложения
- * Содержит только две ссылки по краям:
- * - Слева: Оформление заказа
- * - Справа: Личный кабинет
- */
-export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ userName }) => {
-	const location = useLocation();
+export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
+	<header className={styles.header}>
+		<nav className={`${styles.menu} p-4`}>
+			<div className={styles.menu_part_left}>
+				<a href='#' className={styles.header__main_logo}>
+					Обо мне
+				</a>
+			</div>
 
-	const isActiveLink = (path: string, exact = false) =>
-		exact ? location.pathname === path : location.pathname.startsWith(path);
+			<div>
+				<a href='#'>Стек</a>
+			</div>
 
-	return <header />;
-};
+			<div className={styles.menu_part_right}>
+				<Icon links={links} />
+			</div>
+		</nav>
+	</header>
+);

@@ -1,3 +1,5 @@
+import { TLinks } from '../icon/type';
+
 export type TAppHeaderUIProps = {
-	userName: string | undefined;
+	links: TLinks;
 };

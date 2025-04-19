@@ -75,9 +75,35 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
 		alias: {
-			fonts: path.resolve(__dirname, '..', './src/fonts'),
 			src: path.resolve(__dirname, '..', './src'),
-			components: path.resolve(__dirname, '..', './src/components')
+			fonts: path.resolve(__dirname, '..', './src/fonts'),
+			components: path.resolve(__dirname, '..', './src/components'),
+			'@pages': path.resolve(__dirname, '..', './src/pages'),
+			'@components': path.resolve(__dirname, '..', './src/components'),
+			'@ui': path.resolve(__dirname, '..', './src/components/ui'),
+			'@ui-pages': path.resolve(
+				__dirname,
+				'..',
+				'./src/components/ui/pages'
+			),
+			'@utils-types': path.resolve(__dirname, '..', './src/utils/types'),
+			'@utils-constants': path.resolve(
+				__dirname,
+				'..',
+				'./src/utils/constants'
+			),
+			'@api': path.resolve(
+				__dirname,
+				'..',
+				'./src/utils/flv-test-api.ts'
+			),
+			'@slices': path.resolve(__dirname, '..', './src/services/slices'),
+			'@selectors': path.resolve(
+				__dirname,
+				'..',
+				'./src/services/selectors'
+			),
+			'@images': path.resolve(__dirname, '..', './src/image')
 		}
 	},
 	plugins: [
