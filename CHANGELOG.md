@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.15.0...v1.16.0) (2025-04-19)
+
+### Features
+
+-   **icons:** refactor svg-code add min size ([5efd51b](https://github.com/DKMFzF/frontend-portfolio/commit/5efd51b57e3280d826c0d056b4838818ca463fbc))
+
 ## [1.15.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.14.0...v1.15.0) (2025-04-19)
 
 ### Features
