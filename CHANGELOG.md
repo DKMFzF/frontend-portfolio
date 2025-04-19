@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.14.0...v1.15.0) (2025-04-19)
+
+### Features
+
+-   **font:** add new font Iter ([a355d17](https://github.com/DKMFzF/frontend-portfolio/commit/a355d176ccc66862a297e2953b829c5cfdba0932))
+
 ## [1.14.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.13.0...v1.14.0) (2025-04-19)
 
 ### Features
