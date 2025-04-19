@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.20.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.19.0...v1.20.0) (2025-04-19)
+
+### Features
+
+-   **icon:** add wrapper ([4cdddc2](https://github.com/DKMFzF/frontend-portfolio/commit/4cdddc200f9d1ca4cc9d4eea9fbe2c956d15768b))
+
 ## [1.19.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.17.0...v1.19.0) (2025-04-19)
 
 ### Features
