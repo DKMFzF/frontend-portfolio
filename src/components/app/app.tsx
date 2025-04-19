@@ -4,4 +4,4 @@ import { Modal } from '../modal';
 import { FormInput } from '../ui/form-input-prompt';
 import React from 'react';
 
-export const App = () => <main />;
+export const App = () => <main>Привет мир!</main>;
