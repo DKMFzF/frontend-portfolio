@@ -1,9 +1,12 @@
+@use '~styles/variables' as *;
+@use '~styles/mixins' as *;
+
 .containerMain {
 	display: flex;
 	flex-direction: column;
-	max-width: 1240px;
+	max-width: $max-page-width;
 	margin: 0 auto;
-	overflow: hidden;
+	padding-block-start: 150px;
 }
 
 .main {

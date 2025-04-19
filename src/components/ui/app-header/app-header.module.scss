@@ -1,12 +1,12 @@
 @use '~styles/variables' as *;
 @use '~styles/mixins' as *;
 
-$inset-top: 10px;
+$inset-top: 45px;
 $container-width: 500px;
 
 .header {
 	position: fixed;
-	inset: $inset-top 0 0;
+	inset-block-start: $inset-top;
 	z-index: 1;
 	inline-size: 100%;
 	font-family: $primary-font;

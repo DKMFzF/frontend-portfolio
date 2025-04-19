@@ -2,4 +2,3 @@ export * from './app-header';
 export * from './modal';
 export * from './link';
 export * from './icon';
-export * from './section-container';
