@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.16.0...v1.17.0) (2025-04-19)
+
+### Features
+
+-   **link:** add component link ([75aa14f](https://github.com/DKMFzF/frontend-portfolio/commit/75aa14f6e4d047cbe5a825590a39c6868e9aa199))
+
 ## [1.16.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.15.0...v1.16.0) (2025-04-19)
 
 ### Features
