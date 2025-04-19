@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.17.0...v1.19.0) (2025-04-19)
+
+### Features
+
+-   **header:** update link-icon ([52b0705](https://github.com/DKMFzF/frontend-portfolio/commit/52b07058e36236a6ae869574f4e7e03357fdd513))
+-   **test:** asd ([e2fcc12](https://github.com/DKMFzF/frontend-portfolio/commit/e2fcc12eb40ae2559ec500598a554bf42fa214cc))
+
 ## [1.18.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.17.0...v1.18.0) (2025-04-19)
 
 ### Features
