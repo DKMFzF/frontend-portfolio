@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.11.0...v1.12.0) (2025-04-19)
+
+### Features
+
+-   **icon:** add component icon ([10f043d](https://github.com/DKMFzF/frontend-portfolio/commit/10f043d431977a4b19042c2558560de57b8844ca))
+
 ## [1.11.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.10.0...v1.11.0) (2025-04-19)
 
 ### Features
