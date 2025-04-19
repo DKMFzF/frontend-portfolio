@@ -1,7 +1,5 @@
 import { AppHeader } from '../app-header';
-import { Modal } from '../modal';
-import { FormInput } from '../ui/form-input-prompt';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import style from './app.module.scss';
 
 export const App = () => {

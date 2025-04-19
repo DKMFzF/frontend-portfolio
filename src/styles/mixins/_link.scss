@@ -3,10 +3,11 @@
 @mixin link($size, $color: white, $underline: none) {
 	color: $color;
 	font-size: $size;
-	transition: opacity $time-transition;
+	opacity: $opacity;
 	underline: $underline;
+	transition: opacity $time-transition;
 
 	&:hover {
-		opacity: 0.5;
+		opacity: 1;
 	}
 }

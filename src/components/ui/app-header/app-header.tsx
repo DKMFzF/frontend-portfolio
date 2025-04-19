@@ -6,10 +6,10 @@ import { LinkUI } from '../link';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
 	<header className={styles.header}>
-		<nav className={`${styles.header__menu}`}>
+		<nav className={styles.header__menu}>
 			<LinkUI text='Обо мне' link='#' />
 			<LinkUI text='Стек' link='#' />
-			<LinkUI text='Портфолио' link='' />
+			<LinkUI text='Портфолио' link='#' />
 			<div className={styles.menu_part_right}>
 				<IconUI links={links} />
 			</div>
