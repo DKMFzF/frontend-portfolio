@@ -65,7 +65,12 @@ module.exports = {
 					{
 						loader: 'sass-loader',
 						options: {
-							sourceMap: true
+							sourceMap: true,
+							sassOptions: {
+								includePaths: [
+									path.resolve(__dirname, '..', 'src/styles')
+								]
+							}
 						}
 					}
 				]
@@ -76,6 +81,7 @@ module.exports = {
 		extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
 		alias: {
 			src: path.resolve(__dirname, '..', './src'),
+			styles: path.resolve(__dirname, '..', 'src/styles'),
 			fonts: path.resolve(__dirname, '..', './src/fonts'),
 			components: path.resolve(__dirname, '..', './src/components'),
 			'@pages': path.resolve(__dirname, '..', './src/pages'),
@@ -119,5 +125,13 @@ module.exports = {
 		new webpack.EnvironmentPlugin({
 			NODE_ENV: 'development'
 		})
-	]
+	],
+	optimization: production
+		? {
+				splitChunks: {
+					chunks: 'all'
+				},
+				runtimeChunk: 'single'
+		  }
+		: undefined
 };

@@ -1,1 +1,15 @@
-// нет
+@use '~styles/variables' as *;
+
+.header {
+	position: fixed;
+	inset: 10px 0 0;
+	z-index: 1;
+	inline-size: 100%;
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: $error;
+	}
+}

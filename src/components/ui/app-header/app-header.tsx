@@ -8,7 +8,7 @@ import { Icon } from '../icon/index';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
 	<header className={styles.header}>
-		<nav className={`${styles.menu} p-4`}>
+		<nav className={`${styles.header__menu}`}>
 			<div className={styles.menu_part_left}>
 				<a href='#' className={styles.header__main_logo}>
 					Обо мне
