@@ -1,0 +1,30 @@
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+	border-radius: 1rem;
+	backdrop-filter: blur(10px);
+}
+
+.formInput {
+	width: 100%;
+	min-width: 600px;
+	padding: 0.75rem 1.25rem;
+	color: white;
+	font-size: 1rem;
+	background-color: rgb(255 255 255 / 15%);
+	border: none;
+	border-radius: 999px;
+	outline: none;
+	transition: 0.3s ease;
+
+	&::placeholder {
+		color: rgb(255 255 255 / 60%);
+	}
+
+	&:focus {
+		background-color: rgb(255 255 255 / 25%);
+		box-shadow: 0 0 10px rgb(255 255 255 / 20%);
+	}
+}
