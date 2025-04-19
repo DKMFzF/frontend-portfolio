@@ -1,5 +1,5 @@
-import { TLinks } from '../icon/type';
+import { TIconDataLinks } from '../icon/type';
 
 export type TAppHeaderUIProps = {
-	links: TLinks;
+	links: TIconDataLinks;
 };

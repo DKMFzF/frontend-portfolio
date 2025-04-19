@@ -1,9 +1,9 @@
-export type TLinks = {
+export type TIconDataLinks = {
 	email?: string;
 	github?: string;
 	telegram?: string;
 };
 
-export type TIconProps = {
-	links: TLinks;
+export type TIconUIProps = {
+	links: TIconDataLinks;
 };

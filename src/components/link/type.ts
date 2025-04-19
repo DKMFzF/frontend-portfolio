@@ -1,4 +1,4 @@
-export type TLinkUIProps = {
+export type TLinkProps = {
 	link: string;
 	text: string;
 };

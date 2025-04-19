@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import { TIconProps } from './type';
+import { TIconUIProps } from './type';
 import { ReactComponent as EmailIcon } from '@images/email.svg';
 import { ReactComponent as GitHubIcon } from '@images/githab.svg';
 import { ReactComponent as TelegramIcon } from '@images/telegram.svg';
 import style from './icon.module.scss';
 
-export const IconUI: FC<TIconProps> = ({ links }) => {
+export const IconUI: FC<TIconUIProps> = ({ links }) => {
 	const icons = [
 		links.email && {
 			key: 'email',

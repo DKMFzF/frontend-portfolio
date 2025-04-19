@@ -1,3 +1,1 @@
-export type ConstructorPageUIProps = {
-	isIngredientsLoading: boolean;
-};
+export type TMainpageProps = {};

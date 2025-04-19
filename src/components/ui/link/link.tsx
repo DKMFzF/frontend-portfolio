@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import { TLinkProps } from './type';
+import { TLinkUIProps } from './type';
 import styles from './link.module.scss';
 
-export const LinkUI: FC<TLinkProps> = ({ link, text }) => (
+export const LinkUI: FC<TLinkUIProps> = ({ link, text }) => (
 	<a href={link} className={styles.link}>
 		{text}
 	</a>

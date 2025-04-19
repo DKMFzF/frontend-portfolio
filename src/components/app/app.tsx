@@ -1,15 +1,19 @@
-import { AppHeader } from '../app-header';
-import { useState } from 'react';
+import { AppHeader } from '@components';
 import style from './app.module.scss';
+import { MainPage } from '../../pages/main';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { NotFound404 } from '../../pages';
 
 export const App = () => {
-	const [modal, setModal] = useState<boolean>(false);
-
-	console.log(modal, setModal);
+	const location = useLocation();
 
 	return (
 		<div className={style.app}>
 			<AppHeader />
+			<Routes location={location}>
+				<Route path='/' element={<MainPage />} />
+				<Route path='*' element={<NotFound404 />} />
+			</Routes>
 		</div>
 	);
 };
