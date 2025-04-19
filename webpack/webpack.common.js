@@ -82,6 +82,7 @@ module.exports = {
 		alias: {
 			src: path.resolve(__dirname, '..', './src'),
 			styles: path.resolve(__dirname, '..', 'src/styles'),
+			// path.resolve(__dirname, '..', 'src/styles/'),
 			fonts: path.resolve(__dirname, '..', './src/fonts'),
 			components: path.resolve(__dirname, '..', './src/components'),
 			'@pages': path.resolve(__dirname, '..', './src/pages'),

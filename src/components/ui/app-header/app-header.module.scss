@@ -1,15 +1,27 @@
 @use '~styles/variables' as *;
+@use '~styles/mixins' as *;
+
+$inset-top: 10px;
+$container-width: 400px;
 
 .header {
 	position: fixed;
-	inset: 10px 0 0;
+	inset: $inset-top 0 0;
 	z-index: 1;
 	inline-size: 100%;
+	font-family: $primary-font;
 
 	&__menu {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		font-family: $font;
+		align-items: center;
+		max-inline-size: $container-width;
+		margin: 0 auto;
+	}
+
+	&__link {
+		@include link($font-size-min);
+		text-decoration: none;
 	}
 }

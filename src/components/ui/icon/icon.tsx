@@ -3,8 +3,9 @@ import { TIconProps } from './type';
 import { ReactComponent as EmailIcon } from '@images/email.svg';
 import { ReactComponent as GitHubIcon } from '@images/githab.svg';
 import { ReactComponent as TelegramIcon } from '@images/telegram.svg';
+import style from './icon.module.scss';
 
-export const Icon: FC<TIconProps> = ({ links }) => {
+export const IconUI: FC<TIconProps> = ({ links }) => {
 	const icons = [
 		links.email && {
 			key: 'email',
@@ -31,6 +32,7 @@ export const Icon: FC<TIconProps> = ({ links }) => {
 					href={href}
 					target='_blank'
 					rel='noopener noreferrer'
+					className={style.icon}
 				>
 					<Component />
 				</a>
