@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.12.0...v1.13.0) (2025-04-19)
+
+### Features
+
+-   **webpack:** add import var setting in config ([1019927](https://github.com/DKMFzF/frontend-portfolio/commit/10199276daaeedb90fa57a18f8f86d596ce142b4))
+
 ## [1.12.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.11.0...v1.12.0) (2025-04-19)
 
 ### Features
