@@ -2,7 +2,7 @@
 @use '~styles/mixins' as *;
 
 $inset-top: 10px;
-$container-width: 400px;
+$container-width: 500px;
 
 .header {
 	position: fixed;
@@ -18,10 +18,9 @@ $container-width: 400px;
 		align-items: center;
 		max-inline-size: $container-width;
 		margin: 0 auto;
-	}
-
-	&__link {
-		@include link($font-size-min);
-		text-decoration: none;
+		background-color: $bg-primary-color;
+		border-radius: 40px;
+		padding-block: 15px;
+		padding-inline: 30px;
 	}
 }
