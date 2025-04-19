@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.13.0...v1.14.0) (2025-04-19)
+
+### Features
+
+-   **font:** add new font Playfair ([c236e11](https://github.com/DKMFzF/frontend-portfolio/commit/c236e11bb5cd2ad88f26d3368c48159c7d3b785c))
+
 ## [1.13.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.12.0...v1.13.0) (2025-04-19)
 
 ### Features
