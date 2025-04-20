@@ -1,170 +1,26 @@
-$breakpoint-mobile: 480px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+@use '~styles/variables' as *;
+@use '~styles/mixins' as *;
+
+$inset-top: 45px;
+$container-width: 500px;
 
 .header {
 	position: fixed;
-	top: 10px;
-	left: 0;
-	z-index: 1000;
-	width: 100%;
+	inset-block-start: $inset-top;
+	z-index: 1;
+	inline-size: 100%;
+	font-family: $primary-font;
 
-	@media (max-width: $breakpoint-mobile) {
-		padding: 0 10px;
-	}
-}
-
-.img_line_logo {
-	height: 40px;
-}
-
-.header__main_logo {
-	padding-inline-start: 10px;
-	color: #007aff;
-	font-size: 53px;
-}
-
-.menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1240px;
-	height: 56px;
-	margin: 0 auto;
-	padding: 0 20px;
-
-	@media (max-width: $breakpoint-tablet) {
-		height: 48px;
-		padding: 0 15px;
-	}
-
-	@media (max-width: $breakpoint-mobile) {
-		height: 44px;
-		padding: 0 10px;
-	}
-}
-
-.menu_part_left,
-.menu_part_right {
-	display: flex;
-	flex: 1;
-	align-items: center;
-
-	@media (max-width: $breakpoint-tablet) {
-		flex: none;
-		width: auto;
-	}
-}
-
-.menu_part_right {
-	justify-content: flex-end;
-}
-
-.link {
-	display: flex;
-	align-items: center;
-	padding: 8px 16px;
-	color: var(--text-inactive-color);
-	white-space: nowrap;
-	text-decoration: none;
-	border-radius: 40px;
-	transition: all 0.3s ease;
-
-	&:hover {
-		color: var(--text-primary-color);
-		background-color: rgb(255 255 255 / 5%);
-	}
-
-	@media (max-width: $breakpoint-tablet) {
-		padding: 8px 12px;
-		font-size: 14px;
-	}
-
-	@media (max-width: $breakpoint-mobile) {
-		padding: 6px 10px;
-		font-size: 13px;
-	}
-}
-
-.link_active {
-	color: var(--text-primary-color);
-	font-weight: 500;
-
-	&:hover {
-		background-color: transparent;
-	}
-}
-
-.icon-wrapper {
-	margin-right: 8px;
-
-	@media (max-width: $breakpoint-mobile) {
-		margin-right: 6px;
-	}
-}
-
-.text {
-	@media (max-width: $breakpoint-tablet) {
-		font-size: 14px !important;
-	}
-
-	@media (max-width: $breakpoint-mobile) {
-		font-size: 12px !important;
-	}
-}
-
-// Добавьте эти стили в ваш SCSS-файл
-
-.profile_section {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	padding: 8px 16px;
-	color: var(--text-inactive-color);
-	text-decoration: none;
-	border-radius: 40px;
-	transition: all 0.3s ease;
-
-	&:hover {
-		color: var(--text-primary-color);
-		background-color: rgb(255 255 255 / 5%);
-	}
-
-	&__icon {
-		width: 24px;
-		height: 24px;
-		fill: currentcolor;
-
-		@media (max-width: $breakpoint-mobile) {
-			width: 20px;
-			height: 20px;
-		}
-	}
-
-	&__label {
-		color: #007aff;
-		font-size: 24px;
-		font-family: 'Bebas Neue', sans-serif;
-		letter-spacing: 1px;
-		white-space: nowrap;
-
-		@media (max-width: $breakpoint-tablet) {
-			font-size: 20px;
-		}
-
-		@media (max-width: $breakpoint-mobile) {
-			font-size: 18px;
-		}
-	}
-
-	// Активное состояние
-
-	&.active {
-		color: var(--text-primary-color);
-		font-weight: 500;
-
-		.profile-section__label {
-			color: #0055cc;
-		}
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		max-inline-size: $container-width;
+		margin: 0 auto;
+		background-color: $bg-primary-color;
+		border-radius: 40px;
+		padding-block: 15px;
+		padding-inline: 30px;
 	}
 }

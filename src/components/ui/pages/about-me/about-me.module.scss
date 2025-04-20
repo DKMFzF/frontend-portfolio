@@ -1,0 +1,56 @@
+@use '~styles/variables' as *;
+@use '~styles/mixins' as *;
+
+$grid-rows: auto auto;
+$grid-columns: 1fr 1fr auto;
+$grid-gap: 2rem;
+$img-side-size: 280px;
+$img-border-radius: 50%;
+
+.aboutMe {
+	position: relative;
+	display: grid;
+	grid-template-rows: $grid-rows;
+	grid-template-columns: $grid-columns;
+	gap: $grid-gap;
+
+	&__textContainer {
+		display: flex;
+		grid-row: 1;
+		grid-column: 1 / 3;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: $section-title-size;
+		font-family: $font;
+	}
+
+	&__description {
+		margin-bottom: 0;
+		font-size: $font-size-min;
+		line-height: $section-description-line-height;
+		opacity: $opacity;
+	}
+
+	&__imageContainer {
+		display: flex;
+		grid-row: 1 / 3;
+		grid-column: 3;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__image {
+		width: $img-side-size;
+		height: $img-side-size;
+		object-fit: cover;
+		border-radius: $img-border-radius;
+	}
+
+	&__button {
+		@include button;
+	}
+}

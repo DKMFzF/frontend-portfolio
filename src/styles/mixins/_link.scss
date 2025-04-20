@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+@mixin link($size, $color: white, $underline: none) {
+	color: $color;
+	font-size: $size;
+	opacity: $opacity;
+	underline: $underline;
+	transition: opacity $time-transition;
+
+	&:hover {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,1 @@
+export { LinkCUS } from './link';

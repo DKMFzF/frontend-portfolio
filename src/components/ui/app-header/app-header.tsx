@@ -1,22 +1,24 @@
 import { FC } from 'react';
 import styles from './app-header.module.scss';
 import { TAppHeaderUIProps } from './type';
-import { ProfileIcon } from '@zlden/react-developer-burger-ui-components';
-import { Link, useLocation } from 'react-router-dom';
-import logoImage from '../../../image/logo_line.svg';
-import React from 'react';
+import { LinkCUS, Icon } from '@components';
+import { Link } from 'react-router-dom';
 
-/**
- * Упрощенный компонент шапки приложения
- * Содержит только две ссылки по краям:
- * - Слева: Оформление заказа
- * - Справа: Личный кабинет
- */
-export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ userName }) => {
-	const location = useLocation();
-
-	const isActiveLink = (path: string, exact = false) =>
-		exact ? location.pathname === path : location.pathname.startsWith(path);
-
-	return <header />;
-};
+export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
+	<header className={styles.header}>
+		<nav className={styles.header__menu}>
+			<Link to='/'>
+				<LinkCUS text='Обо мне' link='#' />
+			</Link>
+			<Link to='/stack'>
+				<LinkCUS text='Стек' link='#' />
+			</Link>
+			<Link to='/portfolio'>
+				<LinkCUS text='Портфолио' link='#' />
+			</Link>
+			<div className={styles.menu_part_right}>
+				<Icon links={links} />
+			</div>
+		</nav>
+	</header>
+);

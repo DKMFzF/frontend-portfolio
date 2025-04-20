@@ -1,6 +1,6 @@
 {
-	"name": "blog-customizer",
-	"version": "1.10.0",
+	"name": "dkmfzf-frontend-portfolio",
+	"version": "1.26.1",
 	"main": "index.js",
 	"license": "MIT",
 	"devDependencies": {
@@ -86,6 +86,7 @@
 		"core-js": "^3.41.0",
 		"express": "^4.21.2",
 		"framer-motion": "^12.7.4",
+		"gsap": "^3.12.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-redux": "^9.2.0",

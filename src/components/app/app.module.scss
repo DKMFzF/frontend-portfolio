@@ -1,29 +1,13 @@
+$app-size: 100vh;
+$bg-gradient: radial-gradient(#414141 5%, transparent 6%);
+$bg-size: 30px 30px;
+$bg-color: #000000;
+
 .app {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	overflow: hidden;
-	color: black;
-	background-color: white;
-}
-
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-::-webkit-scrollbar-track {
-	background: #2f2f37;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #8585ad;
-	border: 3px solid #8585ad;
-}
-
-.detailPageWrap {
-	margin: 120px auto;
-}
-
-.detailHeader {
-	text-align: center;
+	block-size: $app-size;
+	background-color: $bg-color;
+	background-image: $bg-gradient;
+	background-size: $bg-size;
 }

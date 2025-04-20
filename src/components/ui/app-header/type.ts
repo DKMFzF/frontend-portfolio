@@ -1,3 +1,5 @@
+import { TIconDataLinks } from '../common/icon/type';
+
 export type TAppHeaderUIProps = {
-	userName: string | undefined;
+	links: TIconDataLinks;
 };

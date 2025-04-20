@@ -6,7 +6,6 @@ import { App } from './components/app/app';
 import store from './services/store';
 import 'core-js/stable';
 import './styles/index.scss';
-import React from 'react';
 
 const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);

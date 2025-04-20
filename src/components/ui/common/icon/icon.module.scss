@@ -1,0 +1,15 @@
+@use '~styles/variables' as *;
+@use '~styles/mixins' as *;
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: $opacity;
+	transition: opacity $time-transition, transform $time-transition;
+
+	&:hover {
+		transform: $scale;
+		opacity: 1;
+	}
+}
