@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.26.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.25.0...v1.26.0) (2025-04-20)
+
+### Features
+
+-   **section-stack:** add new page ([0faf69a](https://github.com/DKMFzF/frontend-portfolio/commit/0faf69a7c02fb064d032f25118cb9e64628f87da))
+
 ## [1.25.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.24.0...v1.25.0) (2025-04-20)
 
 ### Features
