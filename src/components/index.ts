@@ -3,3 +3,4 @@ export * from './modal';
 export * from './link';
 export * from './icon';
 export * from './section-about-me';
+export * from './section-portfolio';

@@ -11,12 +11,7 @@ export const App = () => {
 		<div className={style.app}>
 			<AppHeader />
 			<Routes location={location}>
-				<Route path='/' element={<MainPage />} />
-
-				{/* <Route path='/' element={<Stack />} /> */}
-
-				{/* <Route path='/' element={<Portfolio />} /> */}
-
+				<Route path='/*' element={<MainPage />} />
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 		</div>
