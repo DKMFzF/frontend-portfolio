@@ -1,1 +1,2 @@
-export * from './main';
+export * from './about-me';
+export * from './common';

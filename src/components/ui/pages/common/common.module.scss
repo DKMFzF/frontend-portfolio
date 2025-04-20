@@ -1,6 +1,17 @@
 @use '~styles/variables' as *;
 
-.section {
+.container {
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: $max-page-width;
+	block-size: 100%;
+	margin: 0 auto;
+}
+
+.sectionBg {
 	max-width: $max-page-width;
 	margin: $margin-section;
 	padding: $section-inside-padding;

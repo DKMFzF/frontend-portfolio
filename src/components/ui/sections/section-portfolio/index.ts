@@ -1,1 +1,0 @@
-export { SectionPortfolioUI } from './portfolio';

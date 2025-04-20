@@ -1,8 +1,10 @@
 import { AppHeader } from '@components';
 import style from './app.module.scss';
-import { MainPage } from '../../pages/main';
+import { AboutMePage } from '@pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { NotFound404 } from '../../pages';
+
+// TODO: изменить ссылки
 
 export const App = () => {
 	const location = useLocation();
@@ -11,7 +13,12 @@ export const App = () => {
 		<div className={style.app}>
 			<AppHeader />
 			<Routes location={location}>
-				<Route path='/*' element={<MainPage />} />
+				<Route path='/' element={<AboutMePage />} />
+
+				{/* <Route path='/' element={<SectionAboutMe />} />
+				<Route path='/stack' element={<SectionStack />} />
+				<Route path='/portfolio' element={<SectionPortfolio />} /> */}
+
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 		</div>
