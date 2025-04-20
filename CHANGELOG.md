@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.23.0...v1.24.0) (2025-04-20)
+
+### Features
+
+-   **app:** update route ([3c6ddd7](https://github.com/DKMFzF/frontend-portfolio/commit/3c6ddd787ed6cefea8374ca62da1f3a5867a9e68))
+
 ## [1.23.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.22.0...v1.23.0) (2025-04-20)
 
 ### Features
