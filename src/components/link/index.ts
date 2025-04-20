@@ -1,1 +1,1 @@
-export { Link } from './link';
+export { LinkCUS } from './link';

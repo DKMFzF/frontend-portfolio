@@ -12,6 +12,11 @@ export const App = () => {
 			<AppHeader />
 			<Routes location={location}>
 				<Route path='/' element={<MainPage />} />
+
+				{/* <Route path='/' element={<Stack />} /> */}
+
+				{/* <Route path='/' element={<Portfolio />} /> */}
+
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 		</div>
