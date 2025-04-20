@@ -1,0 +1,12 @@
+@use '~styles/variables' as *;
+
+.section {
+	max-width: $max-page-width;
+	margin: $margin-section;
+	padding: $section-inside-padding;
+	color: white;
+	font-family: $primary-font;
+	background-color: $bg-primary-color;
+	border-radius: $section-border-radius;
+	margin-inline: $section-outsice-margin;
+}

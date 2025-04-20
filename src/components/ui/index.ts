@@ -5,4 +5,4 @@ export * from './app-header';
 export * from './modal';
 export * from './icon';
 export * from './link';
-export * from './section-about-me';
+export * from './sections';

@@ -2,11 +2,13 @@
 @use '~styles/mixins' as *;
 
 .containerMain {
+	position: relative;
+	z-index: 0;
 	display: flex;
 	flex-direction: column;
 	max-width: $max-page-width;
 	margin: 0 auto;
-	padding-block-start: 150px;
+	padding-block: 150px;
 }
 
 .main {
