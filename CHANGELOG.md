@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.29.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.28.1...v1.29.0) (2025-04-21)
+
+### Features
+
+-   **knowledge-sidebar.module:** final version card ([7170d6d](https://github.com/DKMFzF/frontend-portfolio/commit/7170d6d749f75e82fc617c3c0e3d363a3b16483d))
+
 ### [1.28.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.28.0...v1.28.1) (2025-04-21)
 
 ## [1.28.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.27.0...v1.28.0) (2025-04-21)
