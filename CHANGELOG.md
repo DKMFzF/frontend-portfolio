@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.30.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.29.0...v1.30.0) (2025-04-21)
+
+### Features
+
+-   **about-me-article:** added new props atr borderPrimaryColorFlag ([a0efaed](https://github.com/DKMFzF/frontend-portfolio/commit/a0efaed1a8fd54bb8b8e9a91fbcf019a589805ed))
+
 ## [1.29.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.28.1...v1.29.0) (2025-04-21)
 
 ### Features
