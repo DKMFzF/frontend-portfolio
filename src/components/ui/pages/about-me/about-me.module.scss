@@ -1,14 +1,29 @@
 @use '~styles/variables' as *;
 @use '~styles/mixins' as *;
 
-// cec2e6
+// control-section-var
+$img-side-size: 280px;
+$img-border-radius: 50%;
+$padding-card-block: 40px;
+$border-block: 1px solid $bg-primary-color;
+$card-min-w: 360px;
+$font-size-sub-title: 13px;
+$font-size-title-page: 150px;
+$font-weight-title: 900;
+$premary-card-color: #cec2e6;
 
 // grid-settings
 $grid-gap: 20px;
 $grid-rows: auto auto auto;
 $grid-columns: repeat(4, 1fr);
-$img-side-size: 280px;
-$img-border-radius: 50%;
+$title-block-row: 1;
+$title-block-col: 1 / span 4;
+$stack-block-row: 2 / span 2;
+$stack-block-col: 1;
+$timeline-block-row: 2 / span 2;
+$timeline-block-col: 2;
+$title-block-row: 1;
+$title-block-col: 1 / span 4;
 
 .aboutMe {
 	&__content {
@@ -20,60 +35,42 @@ $img-border-radius: 50%;
 	}
 
 	&__block {
-		padding-inline: 40px;
-		padding-block: 40px;
 		align-content: center;
-		border: 1px solid $bg-primary-color;
+		padding: $padding-card-block;
+		border: $border-block;
 		border-radius: $section-border-radius;
 	}
 
 	&__cards {
-		min-width: 360px;
+		min-width: $card-min-w;
 	}
 
 	&__titleBlock {
-		grid-row: 1;
-		grid-column: 1 / span 4;
+		grid-row: $title-block-row;
+		grid-column: $title-block-col;
 	}
 
 	&__stack {
 		position: relative;
-		grid-row: 2 / span 2;
-		grid-column: 1;
+		grid-row: $stack-block-row;
+		grid-column: $stack-block-col;
 		align-content: normal;
 		color: white;
 		background-color: $bg-primary-color;
 	}
 
-	&__stackWrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		block-size: 100%;
-	}
-
-	&__stackTag {
-		display: inline-block;
-		padding: 10px;
-		color: $bg-primary-color;
-		text-transform: uppercase;
-		background-color: $bg-color;
-		border-radius: $section-border-radius;
-		opacity: $opacity;
-	}
-
 	&__subTitle {
 		width: fit-content;
-		font-size: 13px;
+		font-size: $font-size-sub-title;
 		text-transform: uppercase;
 		opacity: $opacity;
 	}
 
 	&__timeline {
-		grid-row: 2 / span 2;
-		grid-column: 2;
-		background-color: #cec2e6;
-		border: 1px solid #cec2e6;
+		grid-row: $timeline-block-row;
+		grid-column: $timeline-block-col;
+		background-color: $premary-card-color;
+		border: 1px solid $premary-card-color;
 	}
 
 	&__info3 {
@@ -95,9 +92,8 @@ $img-border-radius: 50%;
 	}
 
 	&__title {
-		margin: 0;
-		font-weight: 900;
-		font-size: 150px;
+		font-weight: $font-weight-title;
+		font-size: $font-size-title-page;
 		font-family: $font-title;
 		text-transform: uppercase;
 	}
@@ -114,11 +110,5 @@ $img-border-radius: 50%;
 		height: $img-side-size;
 		object-fit: cover;
 		border-radius: $img-border-radius;
-	}
-
-	&__button {
-		@include button;
-		grid-row: 4;
-		grid-column: 1;
 	}
 }
