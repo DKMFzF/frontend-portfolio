@@ -1,0 +1,20 @@
+@use '~styles/variables' as *;
+
+$padding-card-block: 40px;
+$border-block: 1px solid $bg-primary-color;
+
+.aboutMe {
+	&__block {
+		align-content: center;
+		padding: $padding-card-block;
+		border: $border-block;
+		border-radius: $section-border-radius;
+	}
+
+	&__subTitle {
+		width: fit-content;
+		font-size: 13px;
+		text-transform: uppercase;
+		opacity: $opacity;
+	}
+}

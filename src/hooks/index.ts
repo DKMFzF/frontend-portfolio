@@ -1,0 +1,1 @@
+export { useCardSlider } from './useCardSlider';

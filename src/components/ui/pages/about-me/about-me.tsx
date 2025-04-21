@@ -3,18 +3,21 @@ import myImage from '@images/my-photo.jpg';
 
 import styles from './about-me.module.scss';
 import { CommonPage } from '@pages';
-import { KnowledgeSidebar } from '@components';
+import { AboutMeArticle, KnowledgeSidebar } from '@components';
 
 export const AboutMePageUI: FC = () => (
 	<CommonPage pageStyles={styles.aboutMe}>
 		<div className={styles.aboutMe__content}>
-			<article
-				className={`${styles.aboutMe__titleBlock} ${styles.aboutMe__block}`}
-			>
+			<AboutMeArticle className={styles.aboutMe__titleContainer}>
 				<h1 className={styles.aboutMe__title}>About Me</h1>
-			</article>
+			</AboutMeArticle>
 
-			<KnowledgeSidebar />
+			<AboutMeArticle
+				subtitle='my tech skills'
+				className={`${styles.aboutMe__stack} ${styles.aboutMe__cards}`}
+			>
+				<KnowledgeSidebar />
+			</AboutMeArticle>
 
 			<article
 				className={`${styles.aboutMe__timeline} ${styles.aboutMe__block} ${styles.aboutMe__cards}`}

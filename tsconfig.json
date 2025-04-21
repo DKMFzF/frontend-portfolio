@@ -36,7 +36,8 @@
 			"@api": ["src/utils/flv-test-api.ts"],
 			"@slices": ["src/services/slices"],
 			"@selectors": ["src/services/selectors"],
-			"@images": ["src/image"]
+			"@images": ["src/image"],
+			"@hooks": ["src/hooks"]
 		}
 	},
 	"outDir": "./dist/",

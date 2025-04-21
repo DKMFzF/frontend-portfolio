@@ -26,6 +26,8 @@ $title-block-row: 1;
 $title-block-col: 1 / span 4;
 
 .aboutMe {
+	// global-setting-card
+
 	&__content {
 		display: grid;
 		grid-template-rows: $grid-rows;
@@ -34,37 +36,36 @@ $title-block-col: 1 / span 4;
 		block-size: 100%;
 	}
 
-	&__block {
-		align-content: center;
-		padding: $padding-card-block;
-		border: $border-block;
-		border-radius: $section-border-radius;
-	}
-
 	&__cards {
 		min-width: $card-min-w;
 	}
 
-	&__titleBlock {
+	// title-card
+
+	&__titleContainer {
 		grid-row: $title-block-row;
 		grid-column: $title-block-col;
 	}
 
+	&__title {
+		font-weight: $font-weight-title;
+		font-size: $font-size-title-page;
+		font-family: $font-title;
+		text-transform: uppercase;
+	}
+
+	// stack-card
+
 	&__stack {
 		position: relative;
-		grid-row: $stack-block-row;
-		grid-column: $stack-block-col;
+		grid-row: 2 / span 2;
+		grid-column: 1;
 		align-content: normal;
 		color: white;
 		background-color: $bg-primary-color;
 	}
 
-	&__subTitle {
-		width: fit-content;
-		font-size: $font-size-sub-title;
-		text-transform: uppercase;
-		opacity: $opacity;
-	}
+	// timeline-card
 
 	&__timeline {
 		grid-row: $timeline-block-row;
@@ -72,6 +73,8 @@ $title-block-col: 1 / span 4;
 		background-color: $premary-card-color;
 		border: 1px solid $premary-card-color;
 	}
+
+	// other-card
 
 	&__info3 {
 		grid-row: 2;
@@ -89,13 +92,6 @@ $title-block-col: 1 / span 4;
 		grid-column: 4;
 		justify-content: center;
 		align-items: center;
-	}
-
-	&__title {
-		font-weight: $font-weight-title;
-		font-size: $font-size-title-page;
-		font-family: $font-title;
-		text-transform: uppercase;
 	}
 
 	&__description {

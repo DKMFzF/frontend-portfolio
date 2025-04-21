@@ -110,7 +110,8 @@ module.exports = {
 				'..',
 				'./src/services/selectors'
 			),
-			'@images': path.resolve(__dirname, '..', './src/image')
+			'@images': path.resolve(__dirname, '..', './src/image'),
+			'@hooks': path.resolve(__dirname, '..', './src/hooks')
 		}
 	},
 	plugins: [
