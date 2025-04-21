@@ -70,8 +70,8 @@ $title-block-col: 1 / span 4;
 	&__timeline {
 		grid-row: $timeline-block-row;
 		grid-column: $timeline-block-col;
+		color: $bg-primary-color;
 		background-color: $premary-card-color;
-		border: 1px solid $premary-card-color;
 	}
 
 	// other-card

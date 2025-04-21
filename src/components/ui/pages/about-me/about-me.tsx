@@ -3,7 +3,7 @@ import myImage from '@images/my-photo.jpg';
 
 import styles from './about-me.module.scss';
 import { CommonPage } from '@pages';
-import { AboutMeArticle, KnowledgeSidebar } from '@components';
+import { AboutMeArticle, ExperienceCard, KnowledgeSidebar } from '@components';
 
 export const AboutMePageUI: FC = () => (
 	<CommonPage pageStyles={styles.aboutMe}>
@@ -24,7 +24,7 @@ export const AboutMePageUI: FC = () => (
 				className={`${styles.aboutMe__cards} ${styles.aboutMe__timeline}`}
 				borderPrimaryColorFlag
 			>
-				<h3>My Timeline</h3>
+				<ExperienceCard />
 			</AboutMeArticle>
 
 			<article

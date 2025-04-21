@@ -1,0 +1,64 @@
+@use '~styles/variables' as *;
+
+$experience-element-gap: 20px;
+$number-yars-font-size: 304px;
+$years-label-font-size: 48px;
+$font-size-footer-card: 15px;
+$line-height-footer-card: 1.4;
+$footer-container-min-size: 111px;
+$arrow-padding: 3px 6px;
+
+.experienceCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: $experience-element-gap;
+	block-size: 100%;
+	margin: 0 auto;
+	text-align: center;
+
+	&__experienceContainer {
+		display: flex;
+		flex-direction: column;
+		margin: auto 0;
+	}
+
+	&__number {
+		color: white;
+		font-weight: 900;
+		font-size: $number-yars-font-size;
+		line-height: 1;
+	}
+
+	&__yearsLabel {
+		color: $bg-primary-color;
+		font-weight: 900;
+		font-size: $years-label-font-size;
+	}
+
+	&__containerFooter {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: auto;
+		min-height: $footer-container-min-size;
+		font-size: $font-size-footer-card;
+		line-height: $line-height-footer-card;
+		text-transform: uppercase;
+	}
+
+	&__description {
+		color: $bg-primary-color;
+		line-height: $line-height-footer-card;
+		text-align: left;
+	}
+
+	&__timelineArrow {
+		inline-size: fit-content;
+		padding: $arrow-padding;
+		color: $bg-primary-color;
+		background-color: white;
+		border-radius: $section-border-radius;
+	}
+}
