@@ -8,6 +8,10 @@ $line-height-footer-card: 1.4;
 $footer-container-min-size: 111px;
 $arrow-padding: 3px 6px;
 
+// font-size
+$number-font-size: clamp(10rem, -1.25rem + 36vw, 19rem);
+$yars-font-size: clamp(1.56rem, -0.23rem + 5.75vw, 3rem);
+
 .experienceCard {
 	display: flex;
 	flex-direction: column;
@@ -27,14 +31,14 @@ $arrow-padding: 3px 6px;
 	&__number {
 		color: white;
 		font-weight: 900;
-		font-size: $number-yars-font-size;
+		font-size: $number-font-size;
 		line-height: 1;
 	}
 
 	&__yearsLabel {
 		color: $bg-primary-color;
 		font-weight: 900;
-		font-size: $years-label-font-size;
+		font-size: $yars-font-size;
 	}
 
 	&__containerFooter {

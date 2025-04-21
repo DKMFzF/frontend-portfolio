@@ -7,8 +7,7 @@ $border-premary-card-color: 1px solid #cec2e6;
 .aboutMe {
 	&__block {
 		align-content: center;
-		padding: $padding-card-block;
-		border-radius: $section-border-radius;
+		border: $border-block;
 	}
 
 	&__subTitle {
@@ -18,11 +17,15 @@ $border-premary-card-color: 1px solid #cec2e6;
 		opacity: $opacity;
 	}
 
-	&__borderDefault {
-		border: $border-block;
+	&__paddingDefault {
+		padding: $padding-card-block;
 	}
 
 	&__borderPrimaty {
 		border: $border-premary-card-color;
+	}
+
+	&__borderRadiusDefault {
+		border-radius: $section-border-radius;
 	}
 }

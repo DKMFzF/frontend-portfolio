@@ -8,13 +8,17 @@ import { AboutMeArticle, ExperienceCard, KnowledgeSidebar } from '@components';
 export const AboutMePageUI: FC = () => (
 	<CommonPage pageStyles={styles.aboutMe}>
 		<div className={styles.aboutMe__content}>
-			<AboutMeArticle className={styles.aboutMe__titleContainer}>
+			<AboutMeArticle
+				className={styles.aboutMe__titleContainer}
+				borderRadiusFlag
+			>
 				<h1 className={styles.aboutMe__title}>About Me</h1>
 			</AboutMeArticle>
 
 			<AboutMeArticle
 				subtitle='my tech skills'
 				className={`${styles.aboutMe__stack} ${styles.aboutMe__cards}`}
+				borderRadiusFlag
 			>
 				<KnowledgeSidebar />
 			</AboutMeArticle>
@@ -23,26 +27,25 @@ export const AboutMePageUI: FC = () => (
 				subtitle='my timeline'
 				className={`${styles.aboutMe__cards} ${styles.aboutMe__timeline}`}
 				borderPrimaryColorFlag
+				borderRadiusFlag
 			>
 				<ExperienceCard />
 			</AboutMeArticle>
 
-			<article
-				className={`${styles.aboutMe__info3} ${styles.aboutMe__block}`}
-			>
-				<p className={styles.aboutMe__description}>
-					Направление: Интеллектуальные системы управления.
-				</p>
-			</article>
+			<AboutMeArticle className={styles.aboutMe__imageUser} paddingFlag>
+				<img
+					src={myImage}
+					alt='human user'
+					className={styles.aboutMe__image}
+				/>
+			</AboutMeArticle>
 
-			<article
-				className={`${styles.aboutMe__info4} ${styles.aboutMe__block}`}
-			>
+			<AboutMeArticle className={styles.aboutMe__info4} borderRadiusFlag>
 				<p className={styles.aboutMe__description}>
-					Влюблён в сложные алгоритмические задачи по программированию
-					и Хакатоны!
+					I am in love with complex algorithmic programming tasks and
+					Hackathons!
 				</p>
-			</article>
+			</AboutMeArticle>
 		</div>
 	</CommonPage>
 );

@@ -6,15 +6,15 @@ export const AboutMeArticleUI: FC<AboutMeArticleUIProps> = ({
 	children,
 	subtitle,
 	className = '',
-	borderPrimaryColorFlag = false
+	borderPrimaryColorFlag = false,
+	paddingFlag = false,
+	borderRadiusFlag = false
 }) => (
 	<article
 		className={`${styles.aboutMe__block} ${className} 
-		${
-			borderPrimaryColorFlag
-				? styles.aboutMe__borderPrimaty
-				: styles.aboutMe__borderDefault
-		}`}
+		${borderPrimaryColorFlag ? styles.aboutMe__borderPrimaty : ''}
+		${!paddingFlag ? styles.aboutMe__paddingDefault : ''}
+		${borderRadiusFlag ? styles.aboutMe__borderRadiusDefault : ''}`}
 	>
 		{subtitle && (
 			<header className={styles.aboutMe__subTitle}>

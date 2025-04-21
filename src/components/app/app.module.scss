@@ -1,15 +1,15 @@
 @use '~styles/variables' as *;
 @use '~styles/mixins' as *;
 
-$app-size: 100vh;
 $bg-gradient: radial-gradient(#414141 5%, transparent 6%);
 $bg-size: 30px 30px;
 
-// $bg-color: #f5f6f1;
-
 .app {
 	display: flex;
-	flex-direction: column;
-	block-size: $app-size;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	min-height: 100vh;
 	background-color: $bg-color;
 }

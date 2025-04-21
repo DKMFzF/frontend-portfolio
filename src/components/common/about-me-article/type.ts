@@ -5,4 +5,6 @@ export interface AboutMeArticleProps {
 	subtitle?: string;
 	className?: string;
 	borderPrimaryColorFlag?: boolean;
+	paddingFlag?: boolean;
+	borderRadiusFlag?: boolean;
 }

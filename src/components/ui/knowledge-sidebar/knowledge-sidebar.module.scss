@@ -1,6 +1,8 @@
 @use '~styles/variables' as *;
 @use '~styles/mixins' as *;
 
+$font-size-footer-card: clamp(0.5rem, -0.05rem + 1.75vw, 0.94rem);
+
 .knowledgeSidebar {
 	position: relative;
 	display: flex;
