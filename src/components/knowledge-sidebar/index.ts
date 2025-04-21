@@ -1,0 +1,1 @@
+export { KnowledgeSidebar } from './КnowledgeCards';

@@ -1,7 +1,9 @@
 import { FC } from 'react';
 import myImage from '@images/my-photo.jpg';
+
 import styles from './about-me.module.scss';
 import { CommonPage } from '@pages';
+import { KnowledgeSidebar } from '@components';
 
 export const AboutMePageUI: FC = () => (
 	<CommonPage pageStyles={styles.aboutMe}>
@@ -12,20 +14,12 @@ export const AboutMePageUI: FC = () => (
 				<h1 className={styles.aboutMe__title}>About Me</h1>
 			</article>
 
-			<article
-				className={`${styles.aboutMe__info1} ${styles.aboutMe__block}`}
-			>
-				<p className={styles.aboutMe__description}>
-					Привет! Меня зовут Кирилл, я из Красноярска.
-				</p>
-			</article>
+			<KnowledgeSidebar />
 
 			<article
-				className={`${styles.aboutMe__info2} ${styles.aboutMe__block}`}
+				className={`${styles.aboutMe__timeline} ${styles.aboutMe__block} ${styles.aboutMe__cards}`}
 			>
-				<p className={styles.aboutMe__description}>
-					Учусь на кафедре Программной инженерии СФУ.
-				</p>
+				<h3>My Timeline</h3>
 			</article>
 
 			<article
@@ -44,18 +38,6 @@ export const AboutMePageUI: FC = () => (
 					и Хакатоны!
 				</p>
 			</article>
-
-			{/* <div className={styles.aboutMe__imageContainer}>
-        <img
-          src={myImage}
-          alt='human resume'
-          className={styles.aboutMe__image}
-        />
-      </div> */}
-
-			{/* <div className={styles.aboutMe__buttonContainer}>
-        <button className={styles.aboutMe__button}>Скачать резюме</button>
-      </div> */}
 		</div>
 	</CommonPage>
 );
