@@ -5,9 +5,17 @@ import { AboutMeArticleUIProps } from './type';
 export const AboutMeArticleUI: FC<AboutMeArticleUIProps> = ({
 	children,
 	subtitle,
-	className = ''
+	className = '',
+	borderPrimaryColorFlag = false
 }) => (
-	<article className={`${styles.aboutMe__block} ${className}`}>
+	<article
+		className={`${styles.aboutMe__block} ${className} 
+		${
+			borderPrimaryColorFlag
+				? styles.aboutMe__borderPrimaty
+				: styles.aboutMe__borderDefault
+		}`}
+	>
 		{subtitle && (
 			<header className={styles.aboutMe__subTitle}>
 				<h3>{subtitle}</h3>

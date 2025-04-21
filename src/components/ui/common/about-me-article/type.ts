@@ -4,4 +4,5 @@ export interface AboutMeArticleUIProps {
 	children: ReactNode;
 	subtitle?: string;
 	className?: string;
+	borderPrimaryColorFlag?: boolean;
 }

@@ -5,9 +5,14 @@ import { AboutMeArticleProps } from './type';
 export const AboutMeArticle: FC<AboutMeArticleProps> = ({
 	children,
 	subtitle = '',
-	className = ''
+	className = '',
+	borderPrimaryColorFlag = false
 }) => (
-	<AboutMeArticleUI subtitle={subtitle} className={className}>
+	<AboutMeArticleUI
+		subtitle={subtitle}
+		className={className}
+		borderPrimaryColorFlag={borderPrimaryColorFlag}
+	>
 		{children}
 	</AboutMeArticleUI>
 );

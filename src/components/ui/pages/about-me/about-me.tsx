@@ -19,11 +19,13 @@ export const AboutMePageUI: FC = () => (
 				<KnowledgeSidebar />
 			</AboutMeArticle>
 
-			<article
-				className={`${styles.aboutMe__timeline} ${styles.aboutMe__block} ${styles.aboutMe__cards}`}
+			<AboutMeArticle
+				subtitle='my timeline'
+				className={`${styles.aboutMe__cards} ${styles.aboutMe__timeline}`}
+				borderPrimaryColorFlag
 			>
 				<h3>My Timeline</h3>
-			</article>
+			</AboutMeArticle>
 
 			<article
 				className={`${styles.aboutMe__info3} ${styles.aboutMe__block}`}
