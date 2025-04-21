@@ -6,9 +6,11 @@ export const CommonPageUI: FC<TCommonPageUIProps> = ({
 	pageStyles = '',
 	children
 }) => (
-	<main className={styles.container}>
-		<section className={`${styles.sectionBg} ${pageStyles}`}>
+	<main className={styles.main}>
+		{/* <div className={styles.main__wrapperSection}> */}
+		<section className={`${styles.main__sectionBg} ${pageStyles}`}>
 			{children}
 		</section>
+		{/* </div> */}
 	</main>
 );
