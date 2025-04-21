@@ -1,24 +1,42 @@
 import { FC } from 'react';
 import styles from './app-header.module.scss';
 import { TAppHeaderUIProps } from './type';
-import { LinkCUS, Icon } from '@components';
+import { Icon } from '@components';
 import { Link } from 'react-router-dom';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
 	<header className={styles.header}>
-		<nav className={styles.header__menu}>
-			<Link to='/'>
-				<LinkCUS text='Обо мне' link='#' />
-			</Link>
-			<Link to='/stack'>
-				<LinkCUS text='Стек' link='#' />
-			</Link>
-			<Link to='/portfolio'>
-				<LinkCUS text='Портфолио' link='#' />
-			</Link>
-			<div className={styles.menu_part_right}>
-				<Icon links={links} />
+		<div className={styles.header__container}>
+			<div className={styles.header__insideWrapper}>
+				<div className={styles.header__brand}>
+					<Link to='/' className={styles.header__logo}>
+						portfolio
+					</Link>
+				</div>
+
+				<nav className={styles.header__nav}>
+					<ul className={styles.header__menu}>
+						<li className={styles.header__menuItem}>
+							<Link to='/' className={styles.header__link}>
+								About Me
+							</Link>
+						</li>
+						<li className={styles.header__menuItem}>
+							<Link
+								to='/portfolio'
+								className={styles.header__link}
+							>
+								portfolio
+							</Link>
+						</li>
+						<li className={styles.header__menuItem}>
+							<div className={styles.header__icons}>
+								<Icon links={links} />
+							</div>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</nav>
+		</div>
 	</header>
 );

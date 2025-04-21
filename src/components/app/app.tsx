@@ -4,8 +4,6 @@ import { AboutMePage } from '@pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { NotFound404 } from '../../pages';
 
-// TODO: изменить ссылки
-
 export const App = () => {
 	const location = useLocation();
 
