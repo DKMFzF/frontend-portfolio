@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.31.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.30.0...v1.31.0) (2025-04-21)
+
+### Features
+
+-   **experience-card:** added new card ([d97a71c](https://github.com/DKMFzF/frontend-portfolio/commit/d97a71caf17653de569f1994c5d2f53195547ffe))
+
 ## [1.30.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.29.0...v1.30.0) (2025-04-21)
 
 ### Features
