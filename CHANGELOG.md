@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.38.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.37.0...v1.38.0) (2025-04-22)
+
+### Features
+
+-   **public:** added favicon ([199332c](https://github.com/DKMFzF/frontend-portfolio/commit/199332cb6c42917fee14da3d24d76b69ec1e2ab8))
+
 ## [1.37.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.36.0...v1.37.0) (2025-04-22)
 
 ### Features
