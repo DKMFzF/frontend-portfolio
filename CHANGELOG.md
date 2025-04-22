@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.38.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.38.0...v1.38.1) (2025-04-22)
+
+### Bug Fixes
+
+-   **public:** delete react-path in favicon ([3429aff](https://github.com/DKMFzF/frontend-portfolio/commit/3429affcbf9acff4af9b2184531b2c6131262c9f))
+
 ## [1.38.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.37.0...v1.38.0) (2025-04-22)
 
 ### Features
