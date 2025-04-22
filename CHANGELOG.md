@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.33.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.32.0...v1.33.0) (2025-04-22)
+
+### Features
+
+-   **app-header.tsx:** added link dowload resume ([d33ec4d](https://github.com/DKMFzF/frontend-portfolio/commit/d33ec4d288a98e05ff0d58bfb8bd8e7b3a85a97d))
+-   **footer:** added footer ([8eef5b3](https://github.com/DKMFzF/frontend-portfolio/commit/8eef5b3d9744f3be54d7f4a35ed469b7e95e0950))
+
 ## [1.32.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.31.0...v1.32.0) (2025-04-21)
 
 ### Features
