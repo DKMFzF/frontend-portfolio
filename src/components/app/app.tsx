@@ -1,6 +1,6 @@
 import { AppHeader, AppFooter } from '@components';
 import style from './app.module.scss';
-import { AboutMePage } from '@pages';
+import { AboutMePage, PortfolioPage } from '@pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { NotFound404 } from '../../pages';
 
@@ -14,9 +14,9 @@ export const App = () => {
 			<Routes location={location}>
 				<Route path='/' element={<AboutMePage />} />
 
-				{/* <Route path='/' element={<SectionAboutMe />} />
-				<Route path='/stack' element={<SectionStack />} />
-				<Route path='/portfolio' element={<SectionPortfolio />} /> */}
+				{/* <Route path='/' element={<SectionAboutMe />} /> */}
+				{/* <Route path='/stack' element={<SectionStack />} /> */}
+				<Route path='/portfolio' element={<PortfolioPage />} />
 
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>

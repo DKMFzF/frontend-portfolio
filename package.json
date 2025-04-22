@@ -89,6 +89,7 @@
 		"gsap": "^3.12.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-draggable": "^4.4.6",
 		"react-redux": "^9.2.0",
 		"react-router-dom": "^7.5.0",
 		"redux": "^5.0.1"
