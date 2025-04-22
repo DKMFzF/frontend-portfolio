@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState, useEffect } from 'react';
+import React, { FC, useRef, useState, useEffect, useCallback } from 'react';
 
 interface Card {
 	id: number;
@@ -16,6 +16,7 @@ export const PortfolioPageUI: FC = () => {
 	const [isDragging, setIsDragging] = useState(false);
 	const [position, setPosition] = useState({ x: 0, y: 0 });
 	const [startPos, setStartPos] = useState({ x: 0, y: 0 });
+	const [scale, setScale] = useState(1);
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	// Размеры карточки
@@ -35,11 +36,11 @@ export const PortfolioPageUI: FC = () => {
 		card1.y + card1.height > card2.y;
 
 	// Генерация позиций без пересечений
-	const generateNonOverlappingCards = () => {
+	const generateNonOverlappingCards = useCallback(() => {
 		const viewportWidth = window.innerWidth;
 		const viewportHeight = window.innerHeight;
 		const newCards: Card[] = [];
-		const maxAttempts = 100; // Максимальное количество попыток для каждой карточки
+		const maxAttempts = 100;
 
 		const baseCards = [
 			{
@@ -108,7 +109,6 @@ export const PortfolioPageUI: FC = () => {
 					height: CARD_HEIGHT
 				};
 
-				// Проверяем пересечение с уже размещенными карточками
 				for (const placedCard of newCards) {
 					if (checkCollision(card, placedCard)) {
 						hasCollision = true;
@@ -118,7 +118,6 @@ export const PortfolioPageUI: FC = () => {
 
 				attempts++;
 				if (attempts >= maxAttempts) {
-					// Если не удалось найти позицию без пересечений, размещаем как есть
 					hasCollision = false;
 				}
 			} while (hasCollision);
@@ -127,7 +126,7 @@ export const PortfolioPageUI: FC = () => {
 		}
 
 		return newCards;
-	};
+	}, [CARD_WIDTH, CARD_HEIGHT]);
 
 	// Инициализация карточек без пересечений
 	const [cards, setCards] = useState<Card[]>(() =>
@@ -160,6 +159,29 @@ export const PortfolioPageUI: FC = () => {
 		setIsDragging(false);
 	};
 
+	const handleWheel = (e: WheelEvent) => {
+		e.preventDefault();
+
+		// Определяем направление прокрутки
+		const delta = e.deltaY > 0 ? -0.1 : 0.1;
+		const newScale = Math.min(Math.max(0.5, scale + delta), 2); // Ограничиваем масштаб от 0.5 до 2
+
+		// Вычисляем позицию курсора относительно контейнера
+		const rect = containerRef.current?.getBoundingClientRect();
+		if (rect) {
+			const mouseX = e.clientX - rect.left;
+			const mouseY = e.clientY - rect.top;
+
+			// Корректируем позицию для сохранения точки под курсором
+			setPosition((prev) => ({
+				x: mouseX - (mouseX - prev.x) * (newScale / scale),
+				y: mouseY - (mouseY - prev.y) * (newScale / scale)
+			}));
+		}
+
+		setScale(newScale);
+	};
+
 	useEffect(() => {
 		if (isDragging) {
 			window.addEventListener('mousemove', handleMouseMove);
@@ -169,11 +191,21 @@ export const PortfolioPageUI: FC = () => {
 			window.removeEventListener('mouseup', handleMouseUp);
 		}
 
+		const container = containerRef.current;
+		if (container) {
+			container.addEventListener('wheel', handleWheel, {
+				passive: false
+			});
+		}
+
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMove);
 			window.removeEventListener('mouseup', handleMouseUp);
+			if (container) {
+				container.removeEventListener('wheel', handleWheel);
+			}
 		};
-	}, [isDragging, startPos]);
+	}, [isDragging, startPos, scale]);
 
 	// Стили для карточек
 	const cardStyle: React.CSSProperties = {
@@ -194,6 +226,7 @@ export const PortfolioPageUI: FC = () => {
 
 	return (
 		<div
+			ref={containerRef}
 			style={{
 				width: '100vw',
 				height: '85vh',
@@ -204,13 +237,14 @@ export const PortfolioPageUI: FC = () => {
 			}}
 			onMouseDown={handleMouseDown}
 		>
+			<h1>Мои проекты</h1>
 			<div
-				ref={containerRef}
 				style={{
 					position: 'absolute',
 					userSelect: 'none',
-					transform: `translate(${position.x}px, ${position.y}px)`,
-					willChange: 'transform'
+					transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
+					willChange: 'transform',
+					transformOrigin: '0 0'
 				}}
 			>
 				{cards.map((card) => (
