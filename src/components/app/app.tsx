@@ -13,11 +13,7 @@ export const App = () => {
 
 			<Routes location={location}>
 				<Route path='/' element={<AboutMePage />} />
-
-				{/* <Route path='/' element={<SectionAboutMe />} /> */}
-				{/* <Route path='/stack' element={<SectionStack />} /> */}
 				<Route path='/portfolio' element={<PortfolioPage />} />
-
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
 
