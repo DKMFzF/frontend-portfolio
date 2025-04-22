@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.35.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.34.0...v1.35.0) (2025-04-22)
+
+### Features
+
+-   **portfolio-card:** add hooks and component ([60c10e0](https://github.com/DKMFzF/frontend-portfolio/commit/60c10e025f65f5c080f772b86af38bc8ef966f92))
+-   **portfolio.tsx:** added zooms ([29fe5d9](https://github.com/DKMFzF/frontend-portfolio/commit/29fe5d9eb263e050fd576044ca34205d73a6e3f7))
+
 ## [1.34.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.33.0...v1.34.0) (2025-04-22)
 
 ### Features
