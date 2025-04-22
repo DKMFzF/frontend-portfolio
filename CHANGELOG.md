@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.36.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.35.0...v1.36.0) (2025-04-22)
+
+### Features
+
+-   **cards-project:** added styles in components ([4d8a72c](https://github.com/DKMFzF/frontend-portfolio/commit/4d8a72cdb933e012bd6475862b35cbf1750be73c))
+
 ## [1.35.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.34.0...v1.35.0) (2025-04-22)
 
 ### Features
