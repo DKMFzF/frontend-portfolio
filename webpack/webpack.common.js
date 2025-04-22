@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const webpack = require('webpack');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const production = process.env.NODE_ENV === 'production';
 
@@ -123,7 +124,25 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugins({
-			template: path.resolve(__dirname, '..', './public/index.html')
+			template: path.resolve(__dirname, '..', './public/index.html'),
+			faviconIco: path.resolve(__dirname, '..', './public/favicon.ico'),
+			faviconPng: path.resolve(
+				__dirname,
+				'..',
+				'./public/apple-touch-icon.png'
+			),
+			faviconSvg: path.resolve(__dirname, '..', './public/favicon.svg')
+		}),
+		new CopyPlugin({
+			patterns: [
+				{
+					from: path.resolve(__dirname, '..', 'public'),
+					to: '.',
+					globOptions: {
+						ignore: ['**/index.html']
+					}
+				}
+			]
 		}),
 		new CleanWebpackPlugin(),
 		new MiniCssExtractPlugin({
