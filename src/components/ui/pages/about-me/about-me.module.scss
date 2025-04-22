@@ -179,7 +179,8 @@ $timeline-block-col: 2;
 		overflow-y: auto;
 		font-size: $font-size-min;
 		line-height: $section-description-line-height;
-		text-transform: uppercase;
+
+		// text-transform: uppercase;
 		opacity: $opacity;
 	}
 

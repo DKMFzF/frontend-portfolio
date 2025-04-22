@@ -30,6 +30,14 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
 							</Link>
 						</li>
 						<li className={styles.header__menuItem}>
+							<Link
+								to='/portfolio'
+								className={styles.header__link}
+							>
+								download resume
+							</Link>
+						</li>
+						<li className={styles.header__menuItem}>
 							<div className={styles.header__icons}>
 								<Icon links={links} />
 							</div>

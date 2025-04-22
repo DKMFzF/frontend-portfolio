@@ -6,3 +6,4 @@ export * from './modal';
 export * from './common';
 export * from './knowledge-sidebar';
 export * from './experience-card';
+export * from './app-footer';

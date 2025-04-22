@@ -1,4 +1,4 @@
-import { AppHeader } from '@components';
+import { AppHeader, AppFooter } from '@components';
 import style from './app.module.scss';
 import { AboutMePage } from '@pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -10,6 +10,7 @@ export const App = () => {
 	return (
 		<div className={style.app}>
 			<AppHeader />
+
 			<Routes location={location}>
 				<Route path='/' element={<AboutMePage />} />
 
@@ -19,6 +20,8 @@ export const App = () => {
 
 				<Route path='*' element={<NotFound404 />} />
 			</Routes>
+
+			<AppFooter />
 		</div>
 	);
 };
