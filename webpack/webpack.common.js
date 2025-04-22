@@ -18,6 +18,13 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.(pdf)$/,
+				type: 'asset/resource',
+				generator: {
+					filename: 'static/documents/[hash][ext][query]'
+				}
+			},
+			{
 				test: /\.[tj]sx?$/,
 				use: [
 					{

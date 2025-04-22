@@ -12,3 +12,8 @@ declare module '*.png';
 declare module '*.jpg';
 
 declare module '*.json';
+
+declare module '*.pdf' {
+	const value: string;
+	export default value;
+}

@@ -3,6 +3,7 @@ import styles from './app-header.module.scss';
 import { TAppHeaderUIProps } from './type';
 import { Icon } from '@components';
 import { Link } from 'react-router-dom';
+import resumeFile from '../../../../public/kirill-doroshev-resume.pdf';
 
 export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
 	<header className={styles.header}>
@@ -30,12 +31,13 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => (
 							</Link>
 						</li>
 						<li className={styles.header__menuItem}>
-							<Link
-								to='/portfolio'
+							<a
+								href={resumeFile}
+								download='kirill-doroshev-resume.pdf'
 								className={styles.header__link}
 							>
 								download resume
-							</Link>
+							</a>
 						</li>
 						<li className={styles.header__menuItem}>
 							<div className={styles.header__icons}>
