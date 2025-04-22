@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.34.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.33.0...v1.34.0) (2025-04-22)
+
+### Features
+
+-   **portfolio-page:** adedde test funcion ([c0a5ed4](https://github.com/DKMFzF/frontend-portfolio/commit/c0a5ed409106911dfa43748471b9565dd17523be))
+
 ## [1.33.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.32.0...v1.33.0) (2025-04-22)
 
 ### Features
