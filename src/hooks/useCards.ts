@@ -12,8 +12,8 @@ export interface Card {
 	height: number;
 }
 
-const CARD_WIDTH = 250;
-const CARD_HEIGHT = 180;
+const CARD_WIDTH = 300;
+const CARD_HEIGHT = 320;
 
 const getRandom = (min: number, max: number) =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
