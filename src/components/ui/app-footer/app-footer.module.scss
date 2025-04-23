@@ -1,5 +1,7 @@
 @use '~styles/variables' as *;
 
+// TODO: отрефакторить файл
+
 .footer {
 	width: 100%;
 	max-width: $max-page-width;
@@ -7,6 +9,21 @@
 	color: $bg-primary-color;
 	font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
 	background-color: transparent;
+
+	&__bottom {
+		display: flex;
+		justify-content: end;
+		gap: 20px;
+		width: 100%;
+		text-align: end;
+		border-top: 1px solid rgb(255 255 255 / 10%);
+	}
+
+	&__text {
+		margin: 0;
+		color: $bg-primary-color;
+		font-size: 0.9rem;
+	}
 }
 
 .content {
@@ -54,18 +71,6 @@
 
 	&:hover {
 		opacity: 1;
-	}
-}
-
-.bottom {
-	width: 100%;
-	text-align: end;
-	border-top: 1px solid rgb(255 255 255 / 10%);
-
-	p {
-		margin: 0;
-		color: $bg-primary-color;
-		font-size: 0.9rem;
 	}
 }
 

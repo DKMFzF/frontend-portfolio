@@ -43,7 +43,8 @@ export const AppFooterUI: FC = () => {
 						Tg
 					</a>
 				</div>
-				<div className={styles.bottom}>
+				<div className={styles.footer__bottom}>
+					<span className={styles.footer__text}>VERSION 1.0.0</span>
 					<p>&copy; {currentYear} DKMFZF PORTFOLIO</p>
 				</div>
 			</div>
