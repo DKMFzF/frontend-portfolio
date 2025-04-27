@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.40.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.39.2...v1.40.0) (2025-04-27)
+
+### Features
+
+-   added adaptive in project ([c5b92a5](https://github.com/DKMFzF/frontend-portfolio/commit/c5b92a5b81cf7b8928acb9e860a55e6a23c87644))
+
 ### [1.39.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.39.1...v1.39.2) (2025-04-27)
 
 ### Bug Fixes
