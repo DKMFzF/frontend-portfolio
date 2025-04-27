@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useMobileMenu } from '@hooks';
 import resumeFile from '../../../../public/kirill-doroshev-resume.pdf';
 import styles from './app-header.module.scss';
+
 export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 	const {
 		isMobileMenuOpen,
