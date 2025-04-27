@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.42.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.41.0...v1.42.0) (2025-04-27)
+
+### Features
+
+-   **portfolio-page:** added mobile message for 1440px ([6134241](https://github.com/DKMFzF/frontend-portfolio/commit/6134241837b31bcf0e3775ba1f5a554fe1d31111))
+
 ## [1.41.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.40.0...v1.41.0) (2025-04-27)
 
 ### Features
