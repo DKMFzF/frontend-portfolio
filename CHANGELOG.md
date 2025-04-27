@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.39.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.39.1...v1.39.2) (2025-04-27)
+
+### Bug Fixes
+
+-   **about-page:** fix main grid-layout ([67f89c3](https://github.com/DKMFzF/frontend-portfolio/commit/67f89c30e13b2d12400df5cc0ad9eb52af9554e9))
+
 ### [1.39.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.39.0...v1.39.1) (2025-04-23)
 
 ## [1.39.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.38.1...v1.39.0) (2025-04-23)
