@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.43.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.42.1...v1.43.0) (2025-04-27)
+
+### Features
+
+-   added infrastructure configs yarn and env ([1cf0e7b](https://github.com/DKMFzF/frontend-portfolio/commit/1cf0e7b3d6cc04c1c104eca9aabbb881840c0f5d))
+
 ### [1.42.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.42.0...v1.42.1) (2025-04-27)
 
 ## [1.42.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.41.0...v1.42.0) (2025-04-27)
