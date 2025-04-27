@@ -7,8 +7,6 @@ $border-premary-card-color: 1px solid #cec2e6;
 .aboutMe {
 	&__block {
 		align-content: center;
-
-		// border: $border-block;
 	}
 
 	&__subTitle {
@@ -18,8 +16,18 @@ $border-premary-card-color: 1px solid #cec2e6;
 		opacity: $opacity;
 	}
 
+	&__flexFlag {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
 	&__paddingDefault {
 		padding: $padding-card-block;
+
+		@media (width <= 900px) {
+			padding: 20px;
+		}
 	}
 
 	&__borderFlag {
@@ -32,5 +40,15 @@ $border-premary-card-color: 1px solid #cec2e6;
 
 	&__borderRadiusDefault {
 		border-radius: $section-border-radius;
+
+		@media (width <= 900px) {
+			border-radius: 25px;
+		}
+	}
+
+	@media (width <= 1000px) {
+		&__block {
+			height: -webkit-fill-available;
+		}
 	}
 }

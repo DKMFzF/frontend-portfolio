@@ -1,6 +1,6 @@
 @use '~styles/variables' as *;
 
-$experience-element-gap: 20px;
+$experience-element-gap: 25px;
 $number-yars-font-size: 304px;
 $years-label-font-size: 48px;
 $font-size-footer-card: 15px;
@@ -56,6 +56,10 @@ $yars-font-size: clamp(1.56rem, -0.23rem + 5.75vw, 3rem);
 		color: $bg-primary-color;
 		line-height: $line-height-footer-card;
 		text-align: left;
+
+		@media (width <= 1000px) {
+			font-size: 13.5px;
+		}
 	}
 
 	&__timelineArrow {

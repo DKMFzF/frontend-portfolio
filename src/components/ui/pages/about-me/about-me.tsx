@@ -21,6 +21,7 @@ export const AboutMePageUI: FC = () => (
 				className={`${styles.aboutMe__stack} ${styles.aboutMe__cards}`}
 				borderFlag
 				borderRadiusFlag
+				flexFlag
 			>
 				<KnowledgeSidebar />
 			</AboutMeArticle>
@@ -31,11 +32,12 @@ export const AboutMePageUI: FC = () => (
 				borderFlag
 				borderPrimaryColorFlag
 				borderRadiusFlag
+				flexFlag
 			>
 				<ExperienceCard />
 			</AboutMeArticle>
 
-			<AboutMeArticle className={styles.aboutMe__imageUser} paddingFlag>
+			<AboutMeArticle className={styles.aboutMe__imageDkmfzf} paddingFlag>
 				<div className={styles.aboutMe__imageWrapper}>
 					<img
 						src={myImage}

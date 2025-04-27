@@ -6,13 +6,10 @@ $bg-size: 30px 30px;
 
 .app {
 	display: flex;
+	flex-flow: column nowrap;
 	flex-direction: column;
-	width: 100%;
-	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
 	background-color: $bg-color;
-
-	&__content {
-		flex: 1;
-		overflow: hidden;
-	}
 }

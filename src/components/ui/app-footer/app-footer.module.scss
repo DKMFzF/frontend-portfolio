@@ -8,12 +8,47 @@
 	font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
 	background-color: transparent;
 
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		padding: 40px 20px;
+		font-family: $font-title;
+		text-transform: uppercase;
+		opacity: $opacity;
+	}
+
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__socialLink {
+		color: $bg-primary-color;
+		font-size: 1rem;
+		white-space: nowrap;
+		text-decoration: none;
+		opacity: $opacity;
+		transition: opacity $time-transition;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
 	&__bottom {
 		display: flex;
-		justify-content: end;
-		gap: 20px;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
 		width: 100%;
-		text-align: end;
+		padding-top: 20px;
+		text-align: center;
 		border-top: 1px solid rgb(255 255 255 / 10%);
 	}
 
@@ -24,65 +59,25 @@
 	}
 }
 
-.content {
-	display: flex;
-	align-items: center;
-	margin: 0 auto;
-	padding: 40px;
-	font-family: $font-title;
-	text-transform: uppercase;
-	opacity: $opacity;
-	margin-inline: 25px;
-}
+@media (width >= 900px) {
+	.footer {
+		&__content {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 40px;
+		}
 
-.links {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 15px;
-	margin-bottom: 1.5rem;
-}
+		&__social {
+			justify-content: flex-start;
+			width: auto;
+			margin-bottom: 0;
+		}
 
-.link {
-	color: $bg-primary-color;
-	font-size: 1rem;
-	text-decoration: none;
-	transition: color 0.3s ease;
-
-	&:hover {
-		color: #3498db;
-	}
-}
-
-.social {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-}
-
-.socialLink {
-	color: $bg-primary-color;
-	font-size: 1rem;
-	text-decoration: none;
-	opacity: $opacity;
-	transition: opacity $time-transition;
-
-	&:hover {
-		opacity: 1;
-	}
-}
-
-/* Адаптивность */
-
-@media (width <= 768px) {
-	.links {
-		flex-direction: column;
-		align-items: center;
-		gap: 5px;
-	}
-
-	.social {
-		flex-wrap: wrap;
-		margin-bottom: 1rem;
+		&__bottom {
+			flex-direction: row;
+			justify-content: flex-end;
+			width: auto;
+			text-align: end;
+		}
 	}
 }

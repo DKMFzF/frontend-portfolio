@@ -8,4 +8,5 @@ export interface AboutMeArticleProps {
 	paddingFlag?: boolean;
 	borderRadiusFlag?: boolean;
 	borderFlag?: boolean;
+	flexFlag?: boolean;
 }
