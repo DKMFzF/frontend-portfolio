@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDragZoom } from '@hooks';
 import styles from './portfolio.module.scss';
 import { CardsProject } from '@components';
@@ -6,10 +6,19 @@ import { portfolioCard } from '@utils-constants';
 import { useCards } from '@hooks';
 
 export const PortfolioPageUI: React.FC = () => {
+	const [isMobileView, setIsMobileView] = useState(false);
 	const { isDragging, position, scale, handleMouseDown, containerRef } =
 		useDragZoom();
-
 	const { cards: positionedCards } = useCards();
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobileView(window.innerWidth < 1440);
+		};
+		handleResize();
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	}, []);
 
 	const cardsWithPosition = portfolioCard.map((originalCard, index) => {
 		const positionData =
@@ -25,6 +34,14 @@ export const PortfolioPageUI: React.FC = () => {
 			height: positionData.height
 		};
 	});
+
+	if (isMobileView) {
+		return (
+			<div className={styles.mobileMessage}>
+				Please open this page from your PC
+			</div>
+		);
+	}
 
 	return (
 		<main

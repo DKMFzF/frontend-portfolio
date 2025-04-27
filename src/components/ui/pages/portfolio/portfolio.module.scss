@@ -1,9 +1,26 @@
+@use '~styles/variables' as *;
+
 .container {
 	position: relative;
 	width: 100vw;
 	height: 85vh;
 	overflow: hidden;
 	background-color: #f5f5f5;
+}
+
+.mobileMessage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	color: $bg-primary-color;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: $primary-font;
+	text-align: center;
+	opacity: $opacity;
 }
 
 .heading {
