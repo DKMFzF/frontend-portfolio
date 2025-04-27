@@ -8,7 +8,8 @@ export const AboutMeArticle: FC<AboutMeArticleProps> = ({
 	className = '',
 	borderPrimaryColorFlag = false,
 	paddingFlag = false,
-	borderRadiusFlag = false
+	borderRadiusFlag = false,
+	borderFlag = false
 }) => (
 	<AboutMeArticleUI
 		subtitle={subtitle}
@@ -16,6 +17,7 @@ export const AboutMeArticle: FC<AboutMeArticleProps> = ({
 		borderPrimaryColorFlag={borderPrimaryColorFlag}
 		paddingFlag={paddingFlag}
 		borderRadiusFlag={borderRadiusFlag}
+		borderFlag={borderFlag}
 	>
 		{children}
 	</AboutMeArticleUI>

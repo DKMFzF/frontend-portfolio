@@ -7,10 +7,8 @@ export const CommonPageUI: FC<TCommonPageUIProps> = ({
 	children
 }) => (
 	<main className={styles.main}>
-		{/* <div className={styles.main__wrapperSection}> */}
 		<section className={`${styles.main__sectionBg} ${pageStyles}`}>
 			{children}
 		</section>
-		{/* </div> */}
 	</main>
 );

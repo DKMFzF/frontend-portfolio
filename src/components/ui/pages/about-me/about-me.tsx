@@ -10,6 +10,7 @@ export const AboutMePageUI: FC = () => (
 		<div className={styles.aboutMe__content}>
 			<AboutMeArticle
 				className={styles.aboutMe__titleContainer}
+				borderFlag
 				borderRadiusFlag
 			>
 				<h1 className={styles.aboutMe__title}>About Me</h1>
@@ -18,6 +19,7 @@ export const AboutMePageUI: FC = () => (
 			<AboutMeArticle
 				subtitle='my tech skills'
 				className={`${styles.aboutMe__stack} ${styles.aboutMe__cards}`}
+				borderFlag
 				borderRadiusFlag
 			>
 				<KnowledgeSidebar />
@@ -26,6 +28,7 @@ export const AboutMePageUI: FC = () => (
 			<AboutMeArticle
 				subtitle='my timeline'
 				className={`${styles.aboutMe__cards} ${styles.aboutMe__timeline}`}
+				borderFlag
 				borderPrimaryColorFlag
 				borderRadiusFlag
 			>
@@ -33,14 +36,20 @@ export const AboutMePageUI: FC = () => (
 			</AboutMeArticle>
 
 			<AboutMeArticle className={styles.aboutMe__imageUser} paddingFlag>
-				<img
-					src={myImage}
-					alt='human user'
-					className={styles.aboutMe__image}
-				/>
+				<div className={styles.aboutMe__imageWrapper}>
+					<img
+						src={myImage}
+						alt='human user'
+						className={styles.aboutMe__image}
+					/>
+				</div>
 			</AboutMeArticle>
 
-			<AboutMeArticle className={styles.aboutMe__info4} borderRadiusFlag>
+			<AboutMeArticle
+				className={styles.aboutMe__discriptrionDkmfzf}
+				borderFlag
+				borderRadiusFlag
+			>
 				<p className={styles.aboutMe__description}>
 					I am in love with complex algorithmic programming tasks and
 					Hackathons!

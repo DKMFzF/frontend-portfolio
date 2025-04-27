@@ -7,7 +7,8 @@ $border-premary-card-color: 1px solid #cec2e6;
 .aboutMe {
 	&__block {
 		align-content: center;
-		border: $border-block;
+
+		// border: $border-block;
 	}
 
 	&__subTitle {
@@ -19,6 +20,10 @@ $border-premary-card-color: 1px solid #cec2e6;
 
 	&__paddingDefault {
 		padding: $padding-card-block;
+	}
+
+	&__borderFlag {
+		border: $border-block;
 	}
 
 	&__borderPrimaty {

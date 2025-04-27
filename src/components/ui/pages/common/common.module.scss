@@ -9,19 +9,16 @@ $main-border: 1px solid $bg-primary-color;
 	z-index: 0;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 	max-width: $max-page-width;
-	block-size: 100%;
-	margin: auto;
+	height: 100%;
+	min-block-size: 745px;
+	margin: 0 auto;
 	padding-block: $main-padding-start $main-padding-end;
 
 	&__sectionBg {
-		max-width: $max-page-width;
-		margin: $margin-section;
-		color: white;
 		color: $bg-primary-color;
 		font-family: $primary-font;
-		border: none;
-		border-radius: $section-border-radius;
 		margin-inline: $section-outsice-margin;
 	}
 }

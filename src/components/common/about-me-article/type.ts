@@ -7,4 +7,5 @@ export interface AboutMeArticleProps {
 	borderPrimaryColorFlag?: boolean;
 	paddingFlag?: boolean;
 	borderRadiusFlag?: boolean;
+	borderFlag?: boolean;
 }

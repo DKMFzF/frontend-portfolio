@@ -1,8 +1,6 @@
 import { FC } from 'react';
 import styles from './eperience-card.module.scss';
 
-// TODO: вынести общии стили в компонент about-me-article
-
 export const ExperienceCardUI: FC = () => (
 	<div className={styles.experienceCard}>
 		<div className={styles.experienceCard__experienceContainer}>
