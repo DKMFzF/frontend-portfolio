@@ -111,5 +111,11 @@ export const portfolioCard: CardInfo[] = [
 		title: 'Mesto',
 		content: 'A website for publishing any places in Russia',
 		link: 'https://github.com/DKMFzF/mesto-project-ff'
+	},
+	{
+		title: 'Puzzle Animal Game',
+		content:
+			'This puzzle game is made using TS and on a clean architecture.',
+		link: 'https://github.com/DKMFzF/puzzle-animal-game-clean-architecture'
 	}
 ];
