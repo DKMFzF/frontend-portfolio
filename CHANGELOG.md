@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.45.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.44.1...v1.45.0) (2025-04-29)
+
+### Features
+
+-   **config-jest:** added test-jest in project ([897e078](https://github.com/DKMFzF/frontend-portfolio/commit/897e0783f1492714b519438897c1182502d75dcf))
+
 ### [1.44.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.44.0...v1.44.1) (2025-04-29)
 
 ## [1.44.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.43.1...v1.44.0) (2025-04-28)
