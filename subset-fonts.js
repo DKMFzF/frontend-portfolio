@@ -4,10 +4,12 @@ const slash = require('slash');
 const weblog = require('webpack-log');
 const childProcess = require('child_process');
 
+// generation min-size-fonts ttf -> woff2
+
 const logger = weblog({ name: 'fonts-subsets' });
 
 const FONTS_SRC = './src/fonts/Iter/sources';
-const FONTS_DIST = './src/fonts/Iter/size-mini';
+const FONTS_DIST = './src/fonts/Iter/size-mini-generation';
 const SUBSETS_FILE = 'fonts-subsets.txt';
 
 glob(`${FONTS_SRC}/**/*.{ttf,otf}`, { ignore: [] }, (error, files) => {
