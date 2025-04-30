@@ -21,10 +21,7 @@ export const App = () => {
 
 				<Routes location={location}>
 					<Route path='/' element={<AboutMePage />} />
-					<Route
-						path='/frontend-portfolio'
-						element={<PortfolioPage />}
-					/>
+					<Route path='/portfolio' element={<PortfolioPage />} />
 					<Route path='*' element={<NotFound404 />} />
 				</Routes>
 

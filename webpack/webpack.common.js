@@ -152,7 +152,7 @@ module.exports = {
 				: 'static/styles/[name].css'
 		}),
 		new webpack.EnvironmentPlugin({
-			PUBLIC_PATH: '',
+			PUBLIC_PATH: null,
 			NODE_ENV: 'development'
 		})
 	],

@@ -40,7 +40,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 							</li>
 							<li className={styles['header__menu-item']}>
 								<Link
-									to='/frontend-portfolio'
+									to='/portfolio'
 									className={styles.header__link}
 								>
 									portfolio
@@ -95,7 +95,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 										About Me
 									</Link>
 									<Link
-										to='/frontend-portfolio'
+										to='/portfolio'
 										className={styles.header__link}
 										onClick={closeMenu}
 									>

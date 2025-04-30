@@ -15,7 +15,7 @@ root.render(
 	<StrictMode>
 		<Provider store={store}>
 			<HelmetProvider>
-				<BrowserRouter>
+				<BrowserRouter basename='/frontend-portfolio'>
 					<App />
 				</BrowserRouter>
 			</HelmetProvider>
