@@ -13,12 +13,12 @@ const root = createRoot(domNode);
 
 root.render(
 	<StrictMode>
-		<HelmetProvider>
-			<Provider store={store}>
+		<Provider store={store}>
+			<HelmetProvider>
 				<BrowserRouter>
 					<App />
 				</BrowserRouter>
-			</Provider>
-		</HelmetProvider>
+			</HelmetProvider>
+		</Provider>
 	</StrictMode>
 );

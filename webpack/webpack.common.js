@@ -15,6 +15,7 @@ module.exports = {
 			? 'static/scripts/[name].[contenthash].js'
 			: 'static/scripts/[name].js',
 		publicPath: '/'
+		// chunkFilename: 'static/scripts/[name].[contenthash].bundle.js', // имя подключаемых чанков (при bandle-spliting)
 	},
 	module: {
 		rules: [
