@@ -44,7 +44,7 @@
 		"gitpush:dev": "git push origin dev",
 		"subset-fonts": "node subset-fonts.js",
 		"clean": "rimraf dist",
-		"deploy": "gh-pages -d dis"
+		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {
 		"@jest/globals": "^29.7.0",
