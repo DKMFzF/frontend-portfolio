@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.56.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.55.0...v1.56.0) (2025-04-30)
+
+### Features
+
+-   added PUBLIC_PATH in workflow deploy ([22e7735](https://github.com/DKMFzF/frontend-portfolio/commit/22e773590c740b41ce9148bed9989c9bb3c0da65))
+
 ## [1.55.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.54.0...v1.55.0) (2025-04-30)
 
 ### Features
