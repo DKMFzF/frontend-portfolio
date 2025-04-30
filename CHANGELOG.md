@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.49.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.48.0...v1.49.0) (2025-04-30)
+
+### Features
+
+-   **postcss.config.js:** added postcss-focus-within and postcss-focus-visible ([f892fef](https://github.com/DKMFzF/frontend-portfolio/commit/f892fef331223d88cbc17ef02f9a5d5e64131c45))
+
 ## [1.48.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.47.0...v1.48.0) (2025-04-30)
 
 ### Features
