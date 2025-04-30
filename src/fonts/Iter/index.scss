@@ -1,0 +1,9 @@
+@use '~styles/mixins' as *;
+
+@include font-face(
+	'Inter',
+	'~fonts/Iter/size-mini/Inter-Regular',
+	400,
+	normal,
+	woff2
+);

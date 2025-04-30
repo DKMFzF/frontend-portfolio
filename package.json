@@ -41,6 +41,7 @@
 		"commit": "npm run test:update && git add -A && cz && npx standard-version",
 		"gitpush:main": "git push origin main",
 		"gitpush:dev": "git push origin dev",
+		"subset-fonts": "node subset-fonts.js",
 		"clean": "rimraf dist"
 	},
 	"devDependencies": {
@@ -79,6 +80,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"glob": "7",
 		"html-webpack-plugin": "^5.5.1",
 		"husky": "^8.0.3",
 		"identity-obj-proxy": "^3.0.0",
@@ -99,6 +101,7 @@
 		"resolve-url-loader": "^5.0.0",
 		"sass": "^1.85.1",
 		"sass-loader": "^16.0.5",
+		"slash": "3",
 		"standard-version": "^9.5.0",
 		"storybook": "^8.0.5",
 		"style-loader": "^3.3.3",
@@ -113,7 +116,8 @@
 		"url-loader": "^4.1.1",
 		"webpack": "^5.81.0",
 		"webpack-cli": "^5.0.2",
-		"webpack-dev-server": "^4.15.0"
+		"webpack-dev-server": "^4.15.0",
+		"webpack-log": "^3.0.2"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.7.0",
