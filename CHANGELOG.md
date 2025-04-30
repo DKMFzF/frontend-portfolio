@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.48.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.47.0...v1.48.0) (2025-04-30)
+
+### Features
+
+-   added mixin fonts ([b9cf860](https://github.com/DKMFzF/frontend-portfolio/commit/b9cf860db13f66a382037b876c24d8819b53abe9))
+
 ## [1.47.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.46.1...v1.47.0) (2025-04-30)
 
 ### Features
