@@ -38,7 +38,7 @@
 		"prebuild": "npm run lint && npm run test",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
-		"commit": "git add -A && cz && npx standard-version",
+		"commit": "npm run test:update && git add -A && cz && npx standard-version",
 		"gitpush:main": "git push origin main",
 		"gitpush:dev": "git push origin dev",
 		"clean": "rimraf dist"

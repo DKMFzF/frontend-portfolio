@@ -5,6 +5,9 @@
 @use 'sass:list';
 
 @function str-replace($string, $search, $replace: '') {
+	@if $string == '' or $search == '' {
+		@return $string;
+	}
 	$index: string.index($string, $search);
 
 	@if $index {
@@ -19,8 +22,22 @@
 	@return $string;
 }
 
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff) {
-	$src: null;
+@function maybe-quote($string) {
+	@if string.index($string, ' ') {
+		@return string.quote($string);
+	}
+	@return $string;
+}
+
+@mixin font-face(
+	$name,
+	$path,
+	$weight: null,
+	$style: null,
+	$exts: woff2 woff,
+	$display: swap
+) {
+	$src: ();
 	$extmods: (
 		eot: '?',
 		svg: '#' + str-replace($name, ' ', '_')
@@ -39,15 +56,14 @@
 		$format: if(map.has-key($formats, $ext), map.get($formats, $ext), $ext);
 		$src: list.append(
 			$src,
-			url(string.quote($path + '.' + $extmod))
-				format(string.quote($format)),
+			url($path + '.' + $extmod) format(string.quote($format)),
 			comma
 		);
 	}
 
 	@font-face {
-		font-display: swap;
-		font-family: string.quote($name);
+		font-display: $display;
+		font-family: maybe-quote($name);
 		font-style: $style;
 		font-weight: $weight;
 		src: $src;
