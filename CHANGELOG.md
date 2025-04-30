@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.57.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.56.0...v1.57.0) (2025-04-30)
+
+### Features
+
+-   refactor CI deploy added new build comand ([46773b6](https://github.com/DKMFzF/frontend-portfolio/commit/46773b6963aeba7d3646d9662a29391f00a415dd))
+
 ## [1.56.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.55.0...v1.56.0) (2025-04-30)
 
 ### Features
