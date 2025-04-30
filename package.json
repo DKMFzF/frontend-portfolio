@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/DKMFzF/frontend-portfolio/issues"
 	},
-	"homepage": "https://github.com/DKMFzF/frontend-portfolio#readme",
+	"homepage": "https://DKMFzF.github.io/frontend-portfolio",
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
@@ -43,7 +43,8 @@
 		"gitpush:main": "git push origin main",
 		"gitpush:dev": "git push origin dev",
 		"subset-fonts": "node subset-fonts.js",
-		"clean": "rimraf dist"
+		"clean": "rimraf dist",
+		"deploy": "gh-pages -d dis"
 	},
 	"devDependencies": {
 		"@jest/globals": "^29.7.0",
@@ -82,6 +83,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
+		"gh-pages": "^6.3.0",
 		"glob": "7",
 		"html-webpack-plugin": "^5.5.1",
 		"husky": "^8.0.3",
