@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.46.0 (2025-04-30)
+
+### Features
+
+-   **about-me-article:** added new props atr borderPrimaryColorFlag ([a0efaed](https://github.com/DKMFzF/frontend-portfolio/commit/a0efaed1a8fd54bb8b8e9a91fbcf019a589805ed))
+-   added adaptive in project ([c5b92a5](https://github.com/DKMFzF/frontend-portfolio/commit/c5b92a5b81cf7b8928acb9e860a55e6a23c87644))
+-   added infrastructure configs yarn and env ([1cf0e7b](https://github.com/DKMFzF/frontend-portfolio/commit/1cf0e7b3d6cc04c1c104eca9aabbb881840c0f5d))
+-   added new resume ([75a7295](https://github.com/DKMFzF/frontend-portfolio/commit/75a7295565a161422fcf5ec2fe248a2cc3930a48))
+-   **app-header.tsx:** added link dowload resume ([d33ec4d](https://github.com/DKMFzF/frontend-portfolio/commit/d33ec4d288a98e05ff0d58bfb8bd8e7b3a85a97d))
+-   **app:** update route ([3c6ddd7](https://github.com/DKMFzF/frontend-portfolio/commit/3c6ddd787ed6cefea8374ca62da1f3a5867a9e68))
+-   **cards-project:** added styles in components ([4d8a72c](https://github.com/DKMFzF/frontend-portfolio/commit/4d8a72cdb933e012bd6475862b35cbf1750be73c))
+-   **config-jest:** added test-jest in project ([897e078](https://github.com/DKMFzF/frontend-portfolio/commit/897e0783f1492714b519438897c1182502d75dcf))
+-   **experience-card:** added new card ([d97a71c](https://github.com/DKMFzF/frontend-portfolio/commit/d97a71caf17653de569f1994c5d2f53195547ffe))
+-   **final-about-me-page:** added final ([ff5d991](https://github.com/DKMFzF/frontend-portfolio/commit/ff5d9911f0e1f942475e596cff3a8532394860bd))
+-   **font:** add new font Iter ([a355d17](https://github.com/DKMFzF/frontend-portfolio/commit/a355d176ccc66862a297e2953b829c5cfdba0932))
+-   **font:** add new font Playfair ([c236e11](https://github.com/DKMFzF/frontend-portfolio/commit/c236e11bb5cd2ad88f26d3368c48159c7d3b785c))
+-   **footer:** added footer ([8eef5b3](https://github.com/DKMFzF/frontend-portfolio/commit/8eef5b3d9744f3be54d7f4a35ed469b7e95e0950))
+-   **footer:** added version info ([9d66675](https://github.com/DKMFzF/frontend-portfolio/commit/9d66675e04dff96f2e109be774b352bf9d9d6299))
+-   formating main file in eslint ([077072a](https://github.com/DKMFzF/frontend-portfolio/commit/077072a50f57cd753db1f87c9ac2092774e1be92))
+-   **header:** update link-icon ([52b0705](https://github.com/DKMFzF/frontend-portfolio/commit/52b07058e36236a6ae869574f4e7e03357fdd513))
+-   **icon:** add component icon ([10f043d](https://github.com/DKMFzF/frontend-portfolio/commit/10f043d431977a4b19042c2558560de57b8844ca))
+-   **icon:** add wrapper ([4cdddc2](https://github.com/DKMFzF/frontend-portfolio/commit/4cdddc200f9d1ca4cc9d4eea9fbe2c956d15768b))
+-   **icons:** refactor svg-code add min size ([5efd51b](https://github.com/DKMFzF/frontend-portfolio/commit/5efd51b57e3280d826c0d056b4838818ca463fbc))
+-   **knowledge-sidebar.module:** final version card ([7170d6d](https://github.com/DKMFzF/frontend-portfolio/commit/7170d6d749f75e82fc617c3c0e3d363a3b16483d))
+-   **knowledge-sidebar:** added full card ([3cfa23d](https://github.com/DKMFzF/frontend-portfolio/commit/3cfa23deec9e28f10ad93defe57113382dc7c90c))
+-   **link:** add component link ([75aa14f](https://github.com/DKMFzF/frontend-portfolio/commit/75aa14f6e4d047cbe5a825590a39c6868e9aa199))
+-   **package.json:** added meta-settings ([9ce5ab2](https://github.com/DKMFzF/frontend-portfolio/commit/9ce5ab289d227172a1c796a0757d5acee2e0f83c))
+-   **page-about-me:** add cards ([48e9b59](https://github.com/DKMFzF/frontend-portfolio/commit/48e9b5993fbe8bf95d0d53333505dd75000bf9e8))
+-   **portfolio-card:** add hooks and component ([60c10e0](https://github.com/DKMFzF/frontend-portfolio/commit/60c10e025f65f5c080f772b86af38bc8ef966f92))
+-   **portfolio-page:** added mobile message for 1440px ([6134241](https://github.com/DKMFzF/frontend-portfolio/commit/6134241837b31bcf0e3775ba1f5a554fe1d31111))
+-   **portfolio-page:** adedde test funcion ([c0a5ed4](https://github.com/DKMFzF/frontend-portfolio/commit/c0a5ed409106911dfa43748471b9565dd17523be))
+-   **portfolio.tsx:** added zooms ([29fe5d9](https://github.com/DKMFzF/frontend-portfolio/commit/29fe5d9eb263e050fd576044ca34205d73a6e3f7))
+-   **public:** added favicon ([199332c](https://github.com/DKMFzF/frontend-portfolio/commit/199332cb6c42917fee14da3d24d76b69ec1e2ab8))
+-   **readme:** added title in readme ([0c1bc77](https://github.com/DKMFzF/frontend-portfolio/commit/0c1bc7737185aa085a5584455edc159f374d7304))
+-   **section-about-me:** add first version section ([c7a8692](https://github.com/DKMFzF/frontend-portfolio/commit/c7a86929b3a211a91821cbc37453f73f092fd6d4))
+-   **section-about-me:** add main version ([cd240c1](https://github.com/DKMFzF/frontend-portfolio/commit/cd240c15660a275a7dac5789342fd5b0ab298686))
+-   **section-container:** add wrapper section ([c350c61](https://github.com/DKMFzF/frontend-portfolio/commit/c350c61a46113aadd7acd07fc7cecdfd80bfbc52))
+-   **section-stack:** add new page ([0faf69a](https://github.com/DKMFzF/frontend-portfolio/commit/0faf69a7c02fb064d032f25118cb9e64628f87da))
+-   **section=portfolio:** add new page ([63ac502](https://github.com/DKMFzF/frontend-portfolio/commit/63ac50247313b3db7c1fcdd754ceebee643f2530))
+-   **server:** add static server ([1e6765d](https://github.com/DKMFzF/frontend-portfolio/commit/1e6765df22a8b315c5e7e6a8fbef45dfabf622c8))
+-   **test:** asd ([e2fcc12](https://github.com/DKMFzF/frontend-portfolio/commit/e2fcc12eb40ae2559ec500598a554bf42fa214cc))
+-   **tscomfig:** add file in project ([da86684](https://github.com/DKMFzF/frontend-portfolio/commit/da866840f6a458defa878aec8a6c9b901378fca5))
+-   update version ([349543c](https://github.com/DKMFzF/frontend-portfolio/commit/349543c81463544bda2ad8f10dd4af596ea16871))
+-   **webpack:** add import var setting in config ([1019927](https://github.com/DKMFzF/frontend-portfolio/commit/10199276daaeedb90fa57a18f8f86d596ce142b4))
+
+### Bug Fixes
+
+-   **about-page:** fix main grid-layout ([67f89c3](https://github.com/DKMFzF/frontend-portfolio/commit/67f89c30e13b2d12400df5cc0ad9eb52af9554e9))
+-   **public:** delete react-path in favicon ([3429aff](https://github.com/DKMFzF/frontend-portfolio/commit/3429affcbf9acff4af9b2184531b2c6131262c9f))
+
 ## [1.45.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.44.1...v1.45.0) (2025-04-29)
 
 ### Features
