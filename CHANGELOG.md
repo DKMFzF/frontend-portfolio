@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.54.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.53.0...v1.54.0) (2025-04-30)
+
+### Features
+
+-   **docs:** added folder docs ([7b93f17](https://github.com/DKMFzF/frontend-portfolio/commit/7b93f171a8521b6d35b32c3612c77c0aeb3028ac))
+
 ## [1.53.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.52.0...v1.53.0) (2025-04-30)
 
 ### Features
