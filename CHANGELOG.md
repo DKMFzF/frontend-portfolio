@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.47.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.46.1...v1.47.0) (2025-04-30)
+
+### Features
+
+-   added scss refact ([0d0ec0b](https://github.com/DKMFzF/frontend-portfolio/commit/0d0ec0b3f697b34c3e3cc8e08429fcfb50876304))
+
 ### [1.46.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.46.0...v1.46.1) (2025-04-30)
 
 ## 1.46.0 (2025-04-30)
