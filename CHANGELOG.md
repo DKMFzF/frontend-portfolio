@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.58.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.57.2...v1.58.0) (2025-04-30)
+
+### Features
+
+-   added webpack env dir '' ([95ef842](https://github.com/DKMFzF/frontend-portfolio/commit/95ef8428ed41ed910803bae3851b2c57e24e81f5))
+
 ### [1.57.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.57.2...v1.57.1) (2025-04-30)
 
 ### [1.57.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.57.1...v1.57.2) (2025-04-30)
