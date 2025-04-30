@@ -1,3 +1,18 @@
+export const SeoData = {
+	title: {
+		default: '{ dkmfzf }',
+		aboutMe: '{ dkmfzf/AboutMe }',
+		portfolio: {
+			portfolioWithApproval: '{ dkmfzf/Portfolio }',
+			portfolioWithNotApproval: '{ dkmfzf/Open on PC?? }'
+		},
+		notFound: '{ dkmfzf/notFound??? }'
+	},
+	description: 'Portfolio of the Siberian programmer',
+	name: 'DKMFZF Frontend portfolio',
+	type: 'website'
+};
+
 export const links = {
 	email: 'dorohev.kir@gmail.com',
 	github: 'https://github.com/DKMFZF',

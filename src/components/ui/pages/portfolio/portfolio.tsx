@@ -1,9 +1,11 @@
+import { Helmet } from 'react-helmet-async';
 import React, { useState, useEffect } from 'react';
+
 import { useDragZoom } from '@hooks';
-import styles from './portfolio.module.scss';
 import { CardsProject } from '@components';
-import { portfolioCard } from '@utils-constants';
+import { portfolioCard, SeoData } from '@utils-constants';
 import { useCards } from '@hooks';
+import styles from './portfolio.module.scss';
 
 export const PortfolioPageUI: React.FC = () => {
 	const [isMobileView, setIsMobileView] = useState(false);
@@ -37,23 +39,35 @@ export const PortfolioPageUI: React.FC = () => {
 
 	if (isMobileView) {
 		return (
-			<main className={styles['mobile-message']} data-cy='content'>
-				Please open this page from your PC
-			</main>
+			<>
+				<Helmet>
+					<title>
+						{SeoData.title.portfolio.portfolioWithNotApproval}
+					</title>
+				</Helmet>
+				<main className={styles['mobile-message']} data-cy='content'>
+					Please open this page from your PC
+				</main>
+			</>
 		);
 	}
 
 	return (
-		<main
-			ref={containerRef}
-			className={styles.container}
-			style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
-			onMouseDown={handleMouseDown}
-		>
-			<CardsProject
-				cards={cardsWithPosition}
-				transformStyle={`translate(${position.x}px, ${position.y}px) scale(${scale})`}
-			/>
-		</main>
+		<>
+			<Helmet>
+				<title>{SeoData.title.portfolio.portfolioWithApproval}</title>
+			</Helmet>
+			<main
+				ref={containerRef}
+				className={styles.container}
+				style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+				onMouseDown={handleMouseDown}
+			>
+				<CardsProject
+					cards={cardsWithPosition}
+					transformStyle={`translate(${position.x}px, ${position.y}px) scale(${scale})`}
+				/>
+			</main>
+		</>
 	);
 };
