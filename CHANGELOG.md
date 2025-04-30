@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.50.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.49.0...v1.50.0) (2025-04-30)
+
+### Features
+
+-   added subset-fonts ttf -> woff ([3ad87e9](https://github.com/DKMFzF/frontend-portfolio/commit/3ad87e976476c0ef0654c7bd8fd9548335efa546))
+
 ## [1.49.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.48.0...v1.49.0) (2025-04-30)
 
 ### Features
