@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: PUBLIC_PATH="/frontend-portfolio/" npm run build
+        run: PUBLIC_PATH="/portfolio" npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
