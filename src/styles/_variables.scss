@@ -2,9 +2,9 @@
 $max-page-width: 1440px;
 
 // font
-$font: 'Playfair', sans-serif;
-$font-title: 'Iter', sans-serif;
-$primary-font: 'Iter', sans-serif;
+$font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', roboto,
+	'Helvetica Neue', arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+	'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 $font-size-min: 20px;
 
 // transition

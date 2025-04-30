@@ -85,7 +85,7 @@ export const KnowledgeSidebarUI: FC = () => {
 					{knowledgeCards[currentIndex].content}
 				</span>
 				<div className={styles['knowledge-sidebar__stack-arrow']}>
-					-{'>'}
+					{'>'}
 				</div>
 			</footer>
 		</div>

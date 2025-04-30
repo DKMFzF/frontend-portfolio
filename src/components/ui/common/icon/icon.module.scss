@@ -2,14 +2,14 @@
 @use '~styles/mixins' as *;
 
 .icon {
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	opacity: $opacity;
 	transition: opacity $time-transition, transform $time-transition;
 
 	&:hover {
-		transform: $scale;
 		opacity: 1;
+		transform: $scale;
 	}
 }

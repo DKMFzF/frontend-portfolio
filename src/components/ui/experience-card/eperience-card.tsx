@@ -15,7 +15,7 @@ export const ExperienceCardUI: FC = () => (
 				take courses and study at the SFU Institute
 			</p>
 			<div className={styles['experience-card__timeline-arrow']}>
-				-{'>'}
+				{'>'}
 			</div>
 		</div>
 	</div>

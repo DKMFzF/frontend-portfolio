@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[AppFooterUI]: render footer and years test Renders footer correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer"
+  >
+    <div
+      class="footer__content"
+    >
+      <div
+        class="footer__social"
+      >
+        <a
+          aria-label="GitHub"
+          class="footer__social-link"
+          href="https://github.com/DKMFZF"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <a
+          aria-label="LinkedIn"
+          class="footer__social-link"
+          href="https://vk.com/dkmfzf"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          VK
+        </a>
+        <a
+          aria-label="Twitter"
+          class="footer__social-link"
+          href="https://habr.com/ru/users/DKMFzF/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Habr
+        </a>
+        <a
+          aria-label="Email"
+          class="footer__social-link"
+          href="https://t.me/DKMFZF"
+        >
+          Tg
+        </a>
+      </div>
+      <div
+        class="footer__bottom"
+      >
+        <span
+          class="footer__text"
+        >
+          VERSION 1.40.1
+        </span>
+        <p
+          data-testid="years"
+        >
+          © 2025 DKMFZF PORTFOLIO
+        </p>
+      </div>
+    </div>
+  </footer>
+</DocumentFragment>
+`;

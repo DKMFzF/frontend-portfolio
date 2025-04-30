@@ -61,7 +61,7 @@ export const CardsProjectUI: React.FC<CardsProjectProps> = ({
 						<p className={styles.card__discription}>
 							{card.content}
 						</p>
-						<span className={styles.card__btn}>-{'>'}</span>
+						<span className={styles.card__btn}>{'>'}</span>
 					</div>
 				</a>
 			))}

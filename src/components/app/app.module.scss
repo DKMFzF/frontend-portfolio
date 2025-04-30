@@ -5,11 +5,11 @@ $bg-gradient: radial-gradient(#414141 5%, transparent 6%);
 $bg-size: 30px 30px;
 
 .app {
+	align-items: center;
+	background-color: $bg-color;
 	display: flex;
 	flex-flow: column nowrap;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
 	min-height: 100vh;
-	background-color: $bg-color;
 }

@@ -1,5 +1,15 @@
-@font-face {
-	font-family: 'Iter';
-	src: url('~fonts/font-files/Iter/Inter-Medium.otf') format(opentype);
-	font-weight: 500;
-}
+@use '~styles/mixins' as *;
+
+@include font-face(
+	'Iter',
+	'~fonts/font-files/Iter/Inter-Regular',
+	400,
+	normal,
+	ttf
+);
+
+// @font-face {
+// 	font-family: 'Iter';
+// 	src: url('~fonts/font-files/Iter/Inter-Medium.otf') format(opentype);
+// 	font-weight: 500;
+// }

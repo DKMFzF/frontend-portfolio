@@ -72,7 +72,7 @@ $font-size-footer-card: clamp(0.5rem, -0.05rem + 1.75vw, 0.94rem);
 	}
 
 	&__skill {
-		font-family: $font-title;
+		font-family: $font-family;
 		font-size: 65px;
 
 		@media (width <= 1440px) {
@@ -100,7 +100,7 @@ $font-size-footer-card: clamp(0.5rem, -0.05rem + 1.75vw, 0.94rem);
 		border-radius: 50px;
 		color: $bg-primary-color;
 		inline-size: fit-content;
-		padding: 3px 6px;
+		padding: 3px 9px;
 	}
 }
 
