@@ -1,23 +1,23 @@
 @use '~styles/variables' as *;
 
 .container {
-	position: relative;
-	z-index: 0;
+	block-size: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: $max-page-width;
-	block-size: 100%;
 	margin: 0 auto;
+	max-width: $max-page-width;
+	position: relative;
+	z-index: 0;
 }
 
-.sectionBg {
-	max-width: $max-page-width;
-	margin: $margin-section;
-	padding: $section-inside-padding;
-	color: white;
-	font-family: $primary-font;
+.section-bg {
 	background-color: $bg-primary-color;
 	border-radius: $section-border-radius;
+	color: white;
+	font-family: $primary-font;
+	margin: $margin-section;
 	margin-inline: $section-outsice-margin;
+	max-width: $max-page-width;
+	padding: $section-inside-padding;
 }

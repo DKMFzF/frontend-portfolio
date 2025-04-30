@@ -8,11 +8,11 @@ export const KnowledgeSidebarUI: FC = () => {
 		useCardSlider(knowledgeCards.length);
 
 	return (
-		<div className={styles.knowledgeSidebar}>
-			<div className={styles.knowledgeSidebar__bodySlider}>
+		<div className={styles['knowledge-sidebar']}>
+			<div className={styles['knowledge-sidebar__body-slider']}>
 				<button
 					onClick={handlePrev}
-					className={styles.knowledgeSidebar__button}
+					className={styles['knowledge-sidebar__button']}
 					aria-label='Previous card'
 				>
 					<svg
@@ -34,15 +34,17 @@ export const KnowledgeSidebarUI: FC = () => {
 
 				<div
 					aria-live='polite'
-					className={styles.knowledgeSidebar__content}
+					className={styles['knowledge-sidebar__content']}
 				>
 					<div
-						className={`${styles.knowledgeSidebar__card} ${
-							transitioning ? styles.fadeOut : styles.fadeIn
+						className={`${styles['knowledge-sidebar__card']} ${
+							transitioning
+								? styles['fade-out']
+								: styles['fade-in']
 						}`}
 						key={knowledgeCards[currentIndex].id}
 					>
-						<span className={styles.knowledgeSidebar__skill}>
+						<span className={styles['knowledge-sidebar__skill']}>
 							{knowledgeCards[currentIndex].title}
 						</span>
 					</div>
@@ -50,7 +52,7 @@ export const KnowledgeSidebarUI: FC = () => {
 
 				<button
 					onClick={handleNext}
-					className={styles.knowledgeSidebar__button}
+					className={styles['knowledge-sidebar__button']}
 					aria-label='Next card'
 				>
 					<svg
@@ -73,14 +75,16 @@ export const KnowledgeSidebarUI: FC = () => {
 
 			<footer
 				aria-live='polite'
-				className={styles.knowledgeSidebar__stackDiscription}
+				className={styles['knowledge-sidebar__stack-discription']}
 			>
 				<span
-					className={transitioning ? styles.fadeOut : styles.fadeIn}
+					className={
+						transitioning ? styles['fade-out'] : styles['fade-in']
+					}
 				>
 					{knowledgeCards[currentIndex].content}
 				</span>
-				<div className={styles.knowledgeSidebar__stackArrow}>
+				<div className={styles['knowledge-sidebar__stack-arrow']}>
 					-{'>'}
 				</div>
 			</footer>

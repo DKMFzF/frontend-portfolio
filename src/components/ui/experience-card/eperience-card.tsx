@@ -2,17 +2,21 @@ import { FC } from 'react';
 import styles from './eperience-card.module.scss';
 
 export const ExperienceCardUI: FC = () => (
-	<div className={styles.experienceCard}>
-		<div className={styles.experienceCard__experienceContainer}>
-			<span className={styles.experienceCard__number}>2</span>
-			<span className={styles.experienceCard__yearsLabel}>years</span>
+	<div className={styles['experience-card']}>
+		<div className={styles['experience-card__experience-container']}>
+			<span className={styles['experience-card__number']}>2</span>
+			<span className={styles['experience-card__years-label']}>
+				years
+			</span>
 		</div>
-		<div className={styles.experienceCard__containerFooter}>
-			<p className={styles.experienceCard__description}>
+		<div className={styles['experience-card__container-footer']}>
+			<p className={styles['experience-card__description']}>
 				I am immersed in the IT community, participate in hackathons,
 				take courses and study at the SFU Institute
 			</p>
-			<div className={styles.experienceCard__timelineArrow}>-{'>'}</div>
+			<div className={styles['experience-card__timeline-arrow']}>
+				-{'>'}
+			</div>
 		</div>
 	</div>
 );

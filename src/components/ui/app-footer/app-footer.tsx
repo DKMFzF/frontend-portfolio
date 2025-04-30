@@ -13,7 +13,7 @@ export const AppFooterUI: FC = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 						aria-label='GitHub'
-						className={styles.footer__socialLink}
+						className={styles['footer__social-link']}
 					>
 						GitHub
 					</a>
@@ -22,7 +22,7 @@ export const AppFooterUI: FC = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 						aria-label='LinkedIn'
-						className={styles.footer__socialLink}
+						className={styles['footer__social-link']}
 					>
 						VK
 					</a>
@@ -31,14 +31,14 @@ export const AppFooterUI: FC = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 						aria-label='Twitter'
-						className={styles.footer__socialLink}
+						className={styles['footer__social-link']}
 					>
 						Habr
 					</a>
 					<a
 						href='https://t.me/DKMFZF'
 						aria-label='Email'
-						className={styles.footer__socialLink}
+						className={styles['footer__social-link']}
 					>
 						Tg
 					</a>

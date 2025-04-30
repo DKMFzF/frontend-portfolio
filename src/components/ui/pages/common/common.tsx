@@ -7,7 +7,7 @@ export const CommonPageUI: FC<TCommonPageUIProps> = ({
 	children
 }) => (
 	<main className={styles.main}>
-		<section className={`${styles.main__sectionBg} ${pageStyles}`}>
+		<section className={`${styles['main__section-bg']} ${pageStyles}`}>
 			{children}
 		</section>
 	</main>

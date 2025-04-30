@@ -1,40 +1,40 @@
 @use '~styles/variables' as *;
 
 .footer {
-	width: 100%;
-	max-width: $max-page-width;
-	margin: 0 auto;
-	color: $bg-primary-color;
-	font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
 	background-color: transparent;
+	color: $bg-primary-color;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0 auto;
+	max-width: $max-page-width;
+	width: 100%;
 
 	&__content {
+		align-items: center;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		margin: 0 auto;
-		padding: 40px 20px;
 		font-family: $font-title;
-		text-transform: uppercase;
+		margin: 0 auto;
 		opacity: $opacity;
+		padding: 40px 20px;
+		text-transform: uppercase;
 	}
 
 	&__social {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
 		gap: 15px;
-		width: 100%;
+		justify-content: center;
 		margin-bottom: 20px;
+		width: 100%;
 	}
 
-	&__socialLink {
+	&__social-link {
 		color: $bg-primary-color;
 		font-size: 1rem;
-		white-space: nowrap;
-		text-decoration: none;
 		opacity: $opacity;
+		text-decoration: none;
 		transition: opacity $time-transition;
+		white-space: nowrap;
 
 		&:hover {
 			opacity: 1;
@@ -42,20 +42,20 @@
 	}
 
 	&__bottom {
+		align-items: center;
+		border-top: 1px solid rgb(255 255 255 / 10%);
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		gap: 10px;
-		width: 100%;
 		padding-top: 20px;
 		text-align: center;
-		border-top: 1px solid rgb(255 255 255 / 10%);
+		width: 100%;
 	}
 
 	&__text {
-		margin: 0;
 		color: $bg-primary-color;
 		font-size: 0.9rem;
+		margin: 0;
 	}
 }
 
@@ -69,15 +69,15 @@
 
 		&__social {
 			justify-content: flex-start;
-			width: auto;
 			margin-bottom: 0;
+			width: auto;
 		}
 
 		&__bottom {
 			flex-direction: row;
 			justify-content: flex-end;
-			width: auto;
 			text-align: end;
+			width: auto;
 		}
 	}
 }

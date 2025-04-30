@@ -6,19 +6,19 @@ import { CommonPage } from '@pages';
 import { AboutMeArticle, ExperienceCard, KnowledgeSidebar } from '@components';
 
 export const AboutMePageUI: FC = () => (
-	<CommonPage pageStyles={styles.aboutMe}>
-		<div className={styles.aboutMe__content}>
+	<CommonPage pageStyles={styles['about-me']}>
+		<div className={styles['about-me__content']}>
 			<AboutMeArticle
-				className={styles.aboutMe__titleContainer}
+				className={styles['about-me__title-container']}
 				borderFlag
 				borderRadiusFlag
 			>
-				<h1 className={styles.aboutMe__title}>About Me</h1>
+				<h1 className={styles['about-me__title']}>About Me</h1>
 			</AboutMeArticle>
 
 			<AboutMeArticle
 				subtitle='my tech skills'
-				className={`${styles.aboutMe__stack} ${styles.aboutMe__cards}`}
+				className={`${styles['about-me__stack']} ${styles['about-me__cards']}`}
 				borderFlag
 				borderRadiusFlag
 				flexFlag
@@ -28,7 +28,7 @@ export const AboutMePageUI: FC = () => (
 
 			<AboutMeArticle
 				subtitle='my timeline'
-				className={`${styles.aboutMe__cards} ${styles.aboutMe__timeline}`}
+				className={`${styles['about-me__cards']} ${styles['about-me__timeline']}`}
 				borderFlag
 				borderPrimaryColorFlag
 				borderRadiusFlag
@@ -37,22 +37,25 @@ export const AboutMePageUI: FC = () => (
 				<ExperienceCard />
 			</AboutMeArticle>
 
-			<AboutMeArticle className={styles.aboutMe__imageDkmfzf} paddingFlag>
-				<div className={styles.aboutMe__imageWrapper}>
+			<AboutMeArticle
+				className={styles['about-me__image-dkmfzf']}
+				paddingFlag
+			>
+				<div className={styles['about-me__image-wrapper']}>
 					<img
 						src={myImage}
 						alt='human user'
-						className={styles.aboutMe__image}
+						className={styles['about-me__image']}
 					/>
 				</div>
 			</AboutMeArticle>
 
 			<AboutMeArticle
-				className={styles.aboutMe__discriptrionDkmfzf}
+				className={styles['about-me__discriptrion-dkmfzf']}
 				borderFlag
 				borderRadiusFlag
 			>
-				<p className={styles.aboutMe__description}>
+				<p className={styles['about-me__description']}>
 					I am in love with complex algorithmic programming tasks and
 					Hackathons!
 				</p>

@@ -37,7 +37,7 @@ export const PortfolioPageUI: React.FC = () => {
 
 	if (isMobileView) {
 		return (
-			<main className={styles.mobileMessage}>
+			<main className={styles['mobile-message']}>
 				Please open this page from your PC
 			</main>
 		);

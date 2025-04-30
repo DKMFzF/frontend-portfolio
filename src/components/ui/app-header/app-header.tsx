@@ -19,7 +19,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.header__container}>
-				<div className={styles.header__insideWrapper}>
+				<div className={styles['header__inside-wrapper']}>
 					<div className={styles.header__brand}>
 						<Link
 							to='/'
@@ -37,7 +37,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									About Me
 								</Link>
 							</li>
-							<li className={styles.header__menuItem}>
+							<li className={styles['header__menu-item']}>
 								<Link
 									to='/portfolio'
 									className={styles.header__link}
@@ -45,7 +45,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									portfolio
 								</Link>
 							</li>
-							<li className={styles.header__menuItem}>
+							<li className={styles['header__menu-item']}>
 								<a
 									href={resumeFile}
 									download='kirill-doroshev-resume.pdf'
@@ -54,7 +54,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									download resume
 								</a>
 							</li>
-							<li className={styles.header__menuItem}>
+							<li className={styles['header__menu-item']}>
 								<div className={styles.header__icons}>
 									<Icon links={links} />
 								</div>
@@ -62,9 +62,12 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 						</ul>
 					</nav>
 
-					<div className={styles.header__mobileMenu} ref={menuRef}>
+					<div
+						className={styles['header__mobile-menu']}
+						ref={menuRef}
+					>
 						<button
-							className={styles.header__burgerButton}
+							className={styles['header__burger-button']}
 							onClick={toggleMenu}
 						>
 							☰
@@ -78,7 +81,9 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									onClick={closeMenu}
 								/>
 								<nav
-									className={styles.header__mobileMenuContent}
+									className={
+										styles['header__mobile-menu-content']
+									}
 									ref={mobileMenuContentRef}
 								>
 									<Link

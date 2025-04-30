@@ -10,47 +10,48 @@ $header-gap-element: 32px;
 $header-gap-element-icon: 16px;
 
 .header {
+	color: $bg-primary-color;
 	position: fixed;
 	top: $header-inset-top;
-	z-index: $header-z-index;
 	width: 100%;
-	color: $bg-primary-color;
+	z-index: $header-z-index;
 
 	&__container {
-		max-width: $max-page-width;
 		margin: 0 auto;
+		max-width: $max-page-width;
 	}
 
-	&__insideWrapper {
-		display: flex;
-		justify-content: space-between;
+	&__inside-wrapper {
 		align-items: center;
-		padding-inline: $header-padding;
 		border: $header-border;
 		border-radius: $section-border-radius;
+		display: flex;
+		justify-content: space-between;
 		margin-inline: $section-outsice-margin;
+		padding-inline: $header-padding;
 
 		@media (width <= 900px) {
-			padding-inline: 0;
 			margin-inline: 15px;
+			padding-inline: 0;
 		}
 	}
 
 	&__brand {
-		font-size: $font-size-min;
 		font-family: $primary-font;
+		font-size: $font-size-min;
 		letter-spacing: $header-ls;
 		text-transform: uppercase;
 	}
 
 	&__logo {
 		@include link($font-size-min, $bg-primary-color);
+
 		transition: opacity $time-transition;
 	}
 
 	&__nav {
-		display: flex;
 		align-items: center;
+		display: flex;
 
 		@media (width <= 1000px) {
 			display: none;
@@ -58,24 +59,25 @@ $header-gap-element-icon: 16px;
 	}
 
 	&__menu {
-		display: flex;
 		align-items: center;
+		display: flex;
 		gap: $header-gap-element;
+		list-style: none;
 		margin: 0;
 		padding: 0;
-		list-style: none;
 	}
 
-	&__menuItem {
-		display: flex;
+	&__menu-item {
 		align-items: center;
+		display: flex;
 	}
 
 	&__link {
 		@include link($font-size-min, $bg-primary-color);
+
 		font-family: $primary-font;
-		white-space: nowrap;
 		text-transform: uppercase;
+		white-space: nowrap;
 
 		@media (width <= 1000px) {
 			color: $bg-primary-color;
@@ -87,53 +89,53 @@ $header-gap-element-icon: 16px;
 		gap: $header-gap-element-icon;
 	}
 
-	&__mobileMenu {
-		position: relative;
+	&__mobile-menu {
 		display: none;
+		position: relative;
 
 		@media (width <= 1000px) {
 			display: block;
 		}
 	}
 
-	&__burgerButton {
-		z-index: 1001;
-		color: $bg-primary-color;
-		font-size: 24px;
+	&__burger-button {
 		background: none;
 		border: none;
+		color: $bg-primary-color;
 		cursor: pointer;
+		font-size: 24px;
+		z-index: 1001;
 	}
 
 	&__overlay {
+		background-color: rgb(0 0 0 / 50%);
+		height: 100%;
+		left: 0;
 		position: fixed;
 		top: 0;
-		left: 0;
-		z-index: 999;
 		width: 100%;
-		height: 100%;
-		background-color: rgb(0 0 0 / 50%);
+		z-index: 999;
 	}
 
-	&__mobileMenuContent {
-		position: fixed;
-		top: 0;
-		right: 0;
-		z-index: 1000;
-		display: flex;
-		flex-direction: column;
-		gap: 24px;
-		width: 50%;
-
-		// height: 100vh;
-		padding: 24px;
+	&__mobile-menu-content {
 		background-color: rgb(255 255 255 / 90%);
 		border: 1px solid black;
 		border-bottom-left-radius: 50px;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		// height: 100vh;
+		padding: 24px;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 50%;
+		z-index: 1000;
 
 		a {
-			padding: 8px 0;
 			font-size: 18px;
+			padding: 8px 0;
 			text-decoration: none;
 		}
 	}

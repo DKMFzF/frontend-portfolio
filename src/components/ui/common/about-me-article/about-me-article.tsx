@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import styles from './about-me-article.module.scss';
 import { AboutMeArticleUIProps } from './type';
+import styles from './about-me-article.module.scss';
 
 export const AboutMeArticleUI: FC<AboutMeArticleUIProps> = ({
 	children,
@@ -13,15 +13,15 @@ export const AboutMeArticleUI: FC<AboutMeArticleUIProps> = ({
 	flexFlag = false
 }) => (
 	<article
-		className={`${styles.aboutMe__block} ${className} 
-		${borderPrimaryColorFlag ? styles.aboutMe__borderPrimaty : ''}
-		${!paddingFlag ? styles.aboutMe__paddingDefault : ''}
-		${borderRadiusFlag ? styles.aboutMe__borderRadiusDefault : ''}
-		${borderFlag ? styles.aboutMe__borderFlag : ''}
-		${flexFlag ? styles.aboutMe__flexFlag : ''}`}
+		className={`${styles['about-me__block']} ${className} 
+		${borderPrimaryColorFlag ? styles['about-me__border-primaty'] : ''}
+		${!paddingFlag ? styles['about-me__padding-default'] : ''}
+		${borderRadiusFlag ? styles['about-me__border-radius-default'] : ''}
+		${borderFlag ? styles['about-me__border-flag'] : ''}
+		${flexFlag ? styles['about-me__flex-flag'] : ''}`}
 	>
 		{subtitle && (
-			<header className={styles.aboutMe__subTitle}>
+			<header className={styles['about-me__sub-title']}>
 				<h3>{subtitle}</h3>
 			</header>
 		)}

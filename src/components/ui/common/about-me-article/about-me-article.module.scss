@@ -4,25 +4,25 @@ $padding-card-block: 40px;
 $border-block: 1px solid $bg-primary-color;
 $border-premary-card-color: 1px solid #cec2e6;
 
-.aboutMe {
+.about-me {
 	&__block {
 		align-content: center;
 	}
 
-	&__subTitle {
-		width: fit-content;
+	&__sub-title {
 		font-size: 13px;
-		text-transform: uppercase;
 		opacity: $opacity;
+		text-transform: uppercase;
+		width: fit-content;
 	}
 
-	&__flexFlag {
+	&__flex-flag {
 		display: flex;
 		flex-direction: column;
 		gap: 25px;
 	}
 
-	&__paddingDefault {
+	&__padding-default {
 		padding: $padding-card-block;
 
 		@media (width <= 900px) {
@@ -30,15 +30,15 @@ $border-premary-card-color: 1px solid #cec2e6;
 		}
 	}
 
-	&__borderFlag {
+	&__border-flag {
 		border: $border-block;
 	}
 
-	&__borderPrimaty {
+	&__border-primaty {
 		border: $border-premary-card-color;
 	}
 
-	&__borderRadiusDefault {
+	&__border-radius-default {
 		border-radius: $section-border-radius;
 
 		@media (width <= 900px) {

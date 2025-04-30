@@ -11,7 +11,7 @@ export const CardsProjectUI: React.FC<CardsProjectProps> = ({
 
 	return (
 		<div
-			className={styles.cardsWrapper}
+			className={styles['cards-wrapper']}
 			style={{ transform: transformStyle }}
 		>
 			{cards.map((card) => (
@@ -54,10 +54,10 @@ export const CardsProjectUI: React.FC<CardsProjectProps> = ({
 					}}
 					onMouseDown={(e) => e.stopPropagation()}
 				>
-					<div className={styles.card__titleContainer}>
+					<div className={styles['card__title-container']}>
 						<h3 className={styles.card__title}>{card.title}</h3>
 					</div>
-					<div className={styles.card__discriptionContainer}>
+					<div className={styles['card__discription-container']}>
 						<p className={styles.card__discription}>
 							{card.content}
 						</p>
