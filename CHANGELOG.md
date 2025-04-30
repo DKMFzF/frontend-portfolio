@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.52.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.51.0...v1.52.0) (2025-04-30)
+
+### Features
+
+-   **seo:** added seo component ([457a4d8](https://github.com/DKMFzF/frontend-portfolio/commit/457a4d8d6c0591228fa6ca543376ed64465f941b))
+
 ## [1.51.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.50.2...v1.51.0) (2025-04-30)
 
 ### Features
