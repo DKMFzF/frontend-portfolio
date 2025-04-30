@@ -8,6 +8,8 @@ import store from './services/store';
 import 'core-js/stable';
 import './styles/index.scss';
 
+const basename =
+	process.env.NODE_ENV === 'production' ? '/frontend-portfolio' : '/';
 const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
 
@@ -15,7 +17,7 @@ root.render(
 	<StrictMode>
 		<Provider store={store}>
 			<HelmetProvider>
-				<BrowserRouter basename='/frontend-portfolio'>
+				<BrowserRouter basename={basename}>
 					<App />
 				</BrowserRouter>
 			</HelmetProvider>
