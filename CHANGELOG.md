@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.55.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.54.0...v1.55.0) (2025-04-30)
+
+### Features
+
+-   added CI/CD test ([53377d6](https://github.com/DKMFzF/frontend-portfolio/commit/53377d6e437d3cb882b50121b7edc399d61e12a7))
+
 ## [1.54.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.53.0...v1.54.0) (2025-04-30)
 
 ### Features
