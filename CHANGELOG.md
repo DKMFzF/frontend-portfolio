@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.53.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.52.0...v1.53.0) (2025-04-30)
+
+### Features
+
+-   added chanck for modules lazy loading ([651b8fc](https://github.com/DKMFzF/frontend-portfolio/commit/651b8fc277d6edd74c19a6a317040fbf41a88520))
+
 ## [1.52.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.51.0...v1.52.0) (2025-04-30)
 
 ### Features
