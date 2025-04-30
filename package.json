@@ -1,6 +1,6 @@
 {
 	"name": "dkmfzf-frontend-portfolio",
-	"version": "1.57.2",
+	"version": "1.57.0",
 	"description": "Frontend portfolio project by DKMFzF",
 	"keywords": [
 		"frontend",
@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/DKMFzF/frontend-portfolio/issues"
 	},
-	"homepage": "https://dkmfzf.github.io/portfolio",
+	"homepage": "https://dkmfzf.github.io/frontend-portfolio",
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {

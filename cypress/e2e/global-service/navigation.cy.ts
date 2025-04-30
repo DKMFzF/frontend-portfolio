@@ -12,9 +12,11 @@ describe('AppHeaderUI navigation', () => {
 		});
 
 		it('should navigate to portfolio page', () => {
-			cy.get('a[href="/portfolio"]').should('be.visible').click();
+			cy.get('a[href="/frontend-portfolio"]')
+				.should('be.visible')
+				.click();
 
-			cy.location('pathname').should('eq', '/portfolio');
+			cy.location('pathname').should('eq', '/frontend-portfolio');
 		});
 
 		it('should download resume file', () => {
@@ -57,7 +59,7 @@ describe('AppHeaderUI navigation', () => {
 				.should('be.visible')
 				.click();
 
-			cy.location('pathname').should('eq', '/portfolio');
+			cy.location('pathname').should('eq', '/frontend-portfolio');
 		});
 
 		it('should close mobile menu on overlay click', () => {
