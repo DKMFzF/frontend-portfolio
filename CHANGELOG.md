@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.57.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.58.0...v1.57.0) (2025-04-30)
+
+### Features
+
+-   added baseUrl in index.ts ([6196f72](https://github.com/DKMFzF/frontend-portfolio/commit/6196f728646b088765c5604bee96ffee113114e6))
+
 ## [1.58.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.57.2...v1.58.0) (2025-04-30)
 
 ### Features
