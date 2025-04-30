@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.51.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.50.2...v1.51.0) (2025-04-30)
+
+### Features
+
+-   added cypress e2e test ([e77bb0a](https://github.com/DKMFzF/frontend-portfolio/commit/e77bb0a556f1ee1497224a1e267892869d5a78ab))
+
 ### [1.50.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.50.1...v1.50.2) (2025-04-30)
 
 ### [1.50.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.50.0...v1.50.1) (2025-04-30)
