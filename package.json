@@ -1,21 +1,45 @@
 {
 	"name": "dkmfzf-frontend-portfolio",
 	"version": "1.45.0",
+	"description": "Frontend portfolio project by DKMFzF",
+	"keywords": [
+		"frontend",
+		"portfolio",
+		"react",
+		"typescript",
+		"webpack",
+		"storybook"
+	],
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DKMFzF/frontend-portfolio.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DKMFzF/frontend-portfolio/issues"
+	},
+	"homepage": "https://github.com/DKMFzF/frontend-portfolio#readme",
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
 		"build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.js --env env=prod",
 		"start": "webpack serve --config webpack/webpack.config.js --env env=dev",
+		"preview": "serve dist",
 		"stylelint": "stylelint \"src/**/*.scss\"",
 		"stylelint:fix": "stylelint \"src/**/*.scss\" --fix",
 		"lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
 		"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
 		"test": "jest",
+		"test:watch": "jest --watchAll",
+		"test:coverage": "jest --coverage",
 		"prepare": "husky install",
+		"prebuild": "npm run lint && npm run test",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"commit": "git add -A && cz && npx standard-version",
-		"gitpush": "git push origin main"
+		"gitpush:main": "git push origin main",
+		"gitpush:dev": "git push origin dev",
+		"clean": "rimraf dist"
 	},
 	"devDependencies": {
 		"@jest/globals": "^29.7.0",
@@ -96,8 +120,23 @@
 	},
 	"eslintConfig": {
 		"extends": [
-			"plugin:storybook/recommended"
-		]
+			"plugin:react/recommended",
+			"plugin:storybook/recommended",
+			"plugin:@typescript-eslint/recommended",
+			"prettier"
+		],
+		"plugins": [
+			"react",
+			"react-hooks",
+			"@typescript-eslint"
+		],
+		"parser": "@typescript-eslint/parser",
+		"rules": {
+			"react/react-in-jsx-scope": "off",
+			"react-hooks/rules-of-hooks": "error",
+			"react-hooks/exhaustive-deps": "warn",
+			"@typescript-eslint/explicit-module-boundary-types": "off"
+		}
 	},
 	"lint-staged": {
 		"*.{css,scss}": "npm run stylelint:fix",
@@ -109,6 +148,21 @@
 			"path": "./node_modules/cz-conventional-changelog"
 		}
 	},
+	"stylelint": {
+		"extends": [
+			"stylelint-config-standard-scss"
+		],
+		"plugins": [
+			"stylelint-order"
+		],
+		"rules": {
+			"order/properties-alphabetical-order": true
+		}
+	},
+	"engines": {
+		"node": ">=18.0.0",
+		"npm": ">=9.0.0"
+	},
 	"browserslist": [
 		"Android >= 10",
 		"iOS >= 15",
@@ -118,6 +172,5 @@
 		"last 2 ChromeAndroid versions",
 		"last 2 Firefox versions",
 		"last 2 Opera versions"
-	],
-	"homepage": "./"
+	]
 }
