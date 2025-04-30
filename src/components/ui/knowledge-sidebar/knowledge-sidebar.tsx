@@ -14,6 +14,7 @@ export const KnowledgeSidebarUI: FC = () => {
 					onClick={handlePrev}
 					className={styles['knowledge-sidebar__button']}
 					aria-label='Previous card'
+					data-cy='card-btn-left'
 				>
 					<svg
 						width='24'
@@ -44,7 +45,10 @@ export const KnowledgeSidebarUI: FC = () => {
 						}`}
 						key={knowledgeCards[currentIndex].id}
 					>
-						<span className={styles['knowledge-sidebar__skill']}>
+						<span
+							className={styles['knowledge-sidebar__skill']}
+							data-cy='card-title'
+						>
 							{knowledgeCards[currentIndex].title}
 						</span>
 					</div>
@@ -54,6 +58,7 @@ export const KnowledgeSidebarUI: FC = () => {
 					onClick={handleNext}
 					className={styles['knowledge-sidebar__button']}
 					aria-label='Next card'
+					data-cy='card-btn-right'
 				>
 					<svg
 						width='24'

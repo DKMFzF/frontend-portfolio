@@ -25,6 +25,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 							to='/'
 							className={styles.header__logo}
 							data-text='portfolio'
+							data-cy='link-portfolio'
 						>
 							portfolio
 						</Link>
