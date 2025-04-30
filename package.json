@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/DKMFzF/frontend-portfolio/issues"
 	},
-	"homepage": "https://dkmfzf.github.io/frontend-portfolio",
+	"homepage": "https://dkmfzf.github.io/portfolio",
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
