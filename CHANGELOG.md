@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.62.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.61.0...v1.62.0) (2025-05-01)
+
+### Features
+
+-   **yarndex-metrika:** added main work hoock and conect in prod ([8ab3f72](https://github.com/DKMFzF/frontend-portfolio/commit/8ab3f72d323b158b0e5b3452f80350c4f4077567))
+
 ## [1.61.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.60.0...v1.61.0) (2025-05-01)
 
 ### Features
