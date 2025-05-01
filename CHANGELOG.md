@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.63.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.62.0...v1.63.0) (2025-05-01)
+
+### Features
+
+-   **google-tag:** added in page analysis ([73eee37](https://github.com/DKMFzF/frontend-portfolio/commit/73eee3796d578e865de8077b3eccccb74cd61377))
+
 ## [1.62.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.61.0...v1.62.0) (2025-05-01)
 
 ### Features

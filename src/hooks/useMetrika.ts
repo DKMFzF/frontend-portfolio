@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { Analytic } from '../context/analityc';
 
+// yandex-metrik and google-analytics connection hook
+
 export const useMetrika = () => {
 	const { yandexId } = useContext(Analytic);
 
