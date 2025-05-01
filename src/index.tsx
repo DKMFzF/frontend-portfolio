@@ -16,7 +16,9 @@ const root = createRoot(domNode);
 
 root.render(
 	<StrictMode>
-		<Analytic.Provider value={{ yandexId: 101530999 }}>
+		<Analytic.Provider
+			value={{ yandexId: 101530999, googleId: 'G-QC3J4L6VP4' }}
+		>
 			<Provider store={store}>
 				<HelmetProvider>
 					<BrowserRouter basename={basename}>

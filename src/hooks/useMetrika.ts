@@ -4,11 +4,22 @@ import { Analytic } from '../context/analityc';
 // yandex-metrik and google-analytics connection hook
 
 export const useMetrika = () => {
-	const { yandexId } = useContext(Analytic);
+	const { yandexId, googleId } = useContext(Analytic);
 
-	return (method: string, idTarget: string, options: any = {}) => {
+	const ym = (method: string, idTarget: string, options: any = {}) => {
 		if ((window as any).ym && yandexId) {
 			(window as any).ym(yandexId, method, idTarget, options);
 		}
 	};
+
+	const gtag = (method: string, eventName: string, options: any = {}) => {
+		if ((window as any).gtag && googleId) {
+			(window as any).gtag(method, eventName, {
+				send_to: googleId,
+				...options
+			});
+		}
+	};
+
+	return { ym, gtag };
 };
