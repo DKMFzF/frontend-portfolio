@@ -5,6 +5,7 @@ const weblog = require('webpack-log');
 const childProcess = require('child_process');
 
 // generation min-size-fonts ttf -> woff2
+// main idea: https://github.com/pavel-mazhuga/portfolio/blob/main/subset-fonts.js
 
 const logger = weblog({ name: 'fonts-subsets' });
 
