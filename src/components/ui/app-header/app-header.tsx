@@ -6,6 +6,9 @@ import { useMetrika, useMobileMenu } from '@hooks';
 import resumeFile from '../../../../public/kirill-doroshev-resume.pdf';
 import styles from './app-header.module.scss';
 
+// TODO: Распил компонента
+// TODO: Выделить данные с хуков в пропсы и кинуть на уровень выше
+
 export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 	const {
 		isMobileMenuOpen,
@@ -16,7 +19,7 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 		closeMenu
 	} = useMobileMenu();
 
-	const ym = useMetrika();
+	const { ym, gtag } = useMetrika();
 
 	return (
 		<header className={styles.header}>
@@ -53,10 +56,13 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									href={resumeFile}
 									download='kirill-doroshev-resume.pdf'
 									className={styles.header__link}
-									// Yandex.Metrika
-									onClick={() =>
-										ym('reachGoal', 'download-resume')
-									}
+									// SEO Analysis
+									onClick={() => {
+										ym('reachGoal', 'download-resume');
+										gtag('event', 'file_download', {
+											event_name: 'file_download'
+										});
+									}}
 								>
 									download resume
 								</a>
@@ -103,7 +109,14 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									<Link
 										to='/portfolio'
 										className={styles.header__link}
-										onClick={closeMenu}
+										// SEO Analysis
+										onClick={() => {
+											ym('reachGoal', 'download-resume');
+											gtag('event', 'file_download', {
+												event_name: 'file_download'
+											});
+											closeMenu();
+										}}
 									>
 										portfolio
 									</Link>
