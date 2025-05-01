@@ -4,6 +4,7 @@ import { StrictMode } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { App } from './components/app/app';
+import { Analytic } from './context/analityc';
 import store from './services/store';
 import 'core-js/stable';
 import './styles/index.scss';
@@ -15,12 +16,14 @@ const root = createRoot(domNode);
 
 root.render(
 	<StrictMode>
-		<Provider store={store}>
-			<HelmetProvider>
-				<BrowserRouter basename={basename}>
-					<App />
-				</BrowserRouter>
-			</HelmetProvider>
-		</Provider>
+		<Analytic.Provider value={{ yandexId: 101530999 }}>
+			<Provider store={store}>
+				<HelmetProvider>
+					<BrowserRouter basename={basename}>
+						<App />
+					</BrowserRouter>
+				</HelmetProvider>
+			</Provider>
+		</Analytic.Provider>
 	</StrictMode>
 );

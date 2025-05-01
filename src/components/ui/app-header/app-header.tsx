@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { TAppHeaderUIProps } from './type';
 import { Icon } from '@components';
 import { Link } from 'react-router-dom';
-import { useMobileMenu } from '@hooks';
+import { useMetrika, useMobileMenu } from '@hooks';
 import resumeFile from '../../../../public/kirill-doroshev-resume.pdf';
 import styles from './app-header.module.scss';
 
@@ -15,6 +15,8 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 		toggleMenu,
 		closeMenu
 	} = useMobileMenu();
+
+	const ym = useMetrika();
 
 	return (
 		<header className={styles.header}>
@@ -51,6 +53,10 @@ export const AppHeaderUI: FC<TAppHeaderUIProps> = ({ links }) => {
 									href={resumeFile}
 									download='kirill-doroshev-resume.pdf'
 									className={styles.header__link}
+									// Yandex.Metrika
+									onClick={() =>
+										ym('reachGoal', 'download-resume')
+									}
 								>
 									download resume
 								</a>

@@ -40,8 +40,7 @@
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"commit": "npm run test:update && git add -A && cz && npx standard-version",
-		"gitpush:main": "git push origin main",
-		"gitpush:dev": "git push origin dev",
+		"gitpush": "git push origin ",
 		"subset-fonts": "node subset-fonts.js",
 		"clean": "rimraf dist",
 		"deploy": "gh-pages -d dist"
