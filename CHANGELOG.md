@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.65.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.64.0...v1.65.0) (2025-05-02)
+
+### Features
+
+-   added config jest build ([f3ef3f6](https://github.com/DKMFzF/frontend-portfolio/commit/f3ef3f687393d2813a8c265711443393fc42174b))
+
 ## [1.64.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.63.1...v1.64.0) (2025-05-01)
 
 ### Features
