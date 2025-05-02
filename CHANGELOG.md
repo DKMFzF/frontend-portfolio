@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.68.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.5...v1.68.2) (2025-05-02)
+
+### Bug Fixes
+
+-   remove old url in cypress.config for web-server e2e ([8c1aa4f](https://github.com/DKMFzF/frontend-portfolio/commit/8c1aa4f4b709ada213ae2ee5ca1e03a0570bb6b6))
+
 ### [1.68.5](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.4...v1.68.5) (2025-05-02)
 
 ### Bug Fixes
