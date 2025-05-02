@@ -29,7 +29,7 @@ jobs:
         run: npm run start &
       
       - name: Run e2e tests
-        run: npm run test:e2e
+        run: npm run ci-test:e2e
         env:
           CYPRESS_BASE_URL: "http://localhost:3000"
 
