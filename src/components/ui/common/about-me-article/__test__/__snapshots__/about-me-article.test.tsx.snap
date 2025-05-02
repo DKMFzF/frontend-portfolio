@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[AboutMeArticleUI] [All props false]: Renders about-me-article correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="about-me__block  
+		
+		about-me__padding-default
+		
+		
+		"
+  >
+    <p>
+      Test element
+    </p>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`[AboutMeArticleUI] [All props true]: Renders about-me-article correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="about-me__block classname 
+		about-me__border-primaty
+		
+		about-me__border-radius-default
+		about-me__border-flag
+		about-me__flex-flag"
+  >
+    <header
+      class="about-me__sub-title"
+    >
+      <h3>
+        subtitle
+      </h3>
+    </header>
+    <p>
+      Test element
+    </p>
+  </article>
+</DocumentFragment>
+`;

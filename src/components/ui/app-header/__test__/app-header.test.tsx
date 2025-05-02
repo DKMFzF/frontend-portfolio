@@ -1,16 +1,15 @@
-import { expect, it, jest } from '@jest/globals';
-import { AppHeaderUI } from '../app-header';
-import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
+import { testRenderComponent } from '@utils-testing';
+import { AppHeaderUI } from '../app-header';
 
 jest.mock(
 	'../../../../../public/kirill-doroshev-resume.pdf',
 	() => 'test-resume.pdf'
 );
 
-describe('[AppHeaderUI]: test render', () => {
-	it('Renders header correctly and matches snapshot', () => {
-		const { asFragment } = render(
+describe('[AppHeaderUI]', () => {
+	it('Renders header correctly and matches snapshot', () =>
+		testRenderComponent(
 			<MemoryRouter>
 				<AppHeaderUI
 					links={{
@@ -20,8 +19,5 @@ describe('[AppHeaderUI]: test render', () => {
 					}}
 				/>
 			</MemoryRouter>
-		);
-
-		expect(asFragment()).toMatchSnapshot();
-	});
+		));
 });
