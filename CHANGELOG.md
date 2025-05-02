@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.68.5](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.4...v1.68.5) (2025-05-02)
+
+### Bug Fixes
+
+-   cypress config delete protected env if-else ([2a9caff](https://github.com/DKMFzF/frontend-portfolio/commit/2a9caffdf4ca06d48728944a6a2569c996a090ad))
+
 ### [1.68.4](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.3...v1.68.4) (2025-05-02)
 
 ### [1.68.3](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.2...v1.68.3) (2025-05-02)
