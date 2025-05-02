@@ -1,4 +1,4 @@
-name: Build, Test and Deploy
+name: Optimized CI/CD Pipeline
 
 on:
   push:
@@ -6,49 +6,65 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  NODE_VERSION: '20'
+
 jobs:
-  build-and-test:
+  unit-tests:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
       - name: Run unit tests
         run: npm test
 
-      - name: Start server for e2e tests
+  e2e-tests:
+    needs: unit-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Start server
         run: npm run start &
-      
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:8081
+
       - name: Run e2e tests
         run: npm run ci-test:e2e
         env:
           CYPRESS_BASE_URL: "http://localhost:8081"
 
-  deploy:
-    needs: build-and-test
+  build-deploy:
+    needs: e2e-tests
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm ci
 
       - name: Build project
         run: PUBLIC_PATH="/frontend-portfolio/" npm run build
