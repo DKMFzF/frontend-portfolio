@@ -1,70 +1,56 @@
-name: Optimized CI/CD Pipeline
+name: Build, Test and Deploy
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
-
-env:
-  NODE_VERSION: '20'
+    branches: 
+      - main
 
 jobs:
-  unit-tests:
+  build-and-test:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          node-version: '20'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Run unit tests
         run: npm test
 
-  e2e-tests:
-    needs: unit-tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Start server
+      - name: Start server for e2e tests
         run: npm run start &
-
-      - name: Wait for server
-        run: npx wait-on http://localhost:8081
-
+      
       - name: Run e2e tests
         run: npm run ci-test:e2e
         env:
           CYPRESS_BASE_URL: "http://localhost:8081"
 
-  build-deploy:
-    needs: e2e-tests
+  deploy:
+    needs: build-and-test
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          node-version: '20'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Build project
         run: PUBLIC_PATH="/frontend-portfolio/" npm run build
