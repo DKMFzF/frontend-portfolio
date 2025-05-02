@@ -22,6 +22,7 @@ const config: Config = {
 		'^@pages$': '<rootDir>/src/pages',
 		'^@pages/(.*)$': '<rootDir>/src/pages/$1',
 		'^@utils-constants$': '<rootDir>/src/utils/constants.ts',
+		'^@utils-testing$': '<rootDir>/src/utils/testing-helpers/$1',
 		'^@ui/(.*)$': '<rootDir>/src/components/ui/$1'
 	},
 	preset: 'ts-jest',

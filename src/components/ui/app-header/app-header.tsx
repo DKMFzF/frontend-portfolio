@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useMetrika, useMobileMenu } from '@hooks';
 import resumeFile from '../../../../public/kirill-doroshev-resume.pdf';
 import styles from './app-header.module.scss';
+import { link } from 'fs';
 
 // TODO: Распил компонента
 // TODO: Выделить данные с хуков в пропсы и кинуть на уровень выше

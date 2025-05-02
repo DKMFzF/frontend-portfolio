@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.67.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.66.2...v1.67.0) (2025-05-02)
+
+### Features
+
 ### [1.66.3](https://github.com/DKMFzF/frontend-portfolio/compare/v1.66.2...v1.66.3) (2025-05-02)
+
+-   added react component test ([4adc7aa](https://github.com/DKMFzF/frontend-portfolio/commit/4adc7aaab836773b883ca942a81870d16654ad46))
 
 ### [1.66.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.66.1...v1.66.2) (2025-05-02)
 

@@ -1,15 +1,8 @@
-import { render, getByTestId } from '@testing-library/react';
-import {
-	describe,
-	it,
-	expect,
-	beforeEach,
-	afterEach,
-	jest
-} from '@jest/globals';
+import { describe, it, beforeEach, afterEach, jest } from '@jest/globals';
+import { testRenderComponent, testCurrentText } from '@utils-testing';
 import { AppFooterUI } from '../app-footer';
 
-describe('[AppFooterUI]: render footer and years test', () => {
+describe('[AppFooterUI]', () => {
 	beforeEach(() => {
 		jest.spyOn(Date.prototype, 'getFullYear').mockReturnValue(2025);
 	});
@@ -18,15 +11,9 @@ describe('[AppFooterUI]: render footer and years test', () => {
 		jest.restoreAllMocks();
 	});
 
-	it('Renders footer correctly and matches snapshot', () => {
-		const { asFragment } = render(<AppFooterUI />);
-		expect(asFragment()).toMatchSnapshot();
-	});
+	it('Renders footer correctly and matches snapshot', () =>
+		testRenderComponent(<AppFooterUI />));
 
-	it('Displays current year correctly', () => {
-		const { container } = render(<AppFooterUI />);
-		const yearToDayText = getByTestId(container, 'years');
-
-		expect(yearToDayText.textContent).toBe('© 2025 DKMFZF PORTFOLIO');
-	});
+	it('Displays current year correctly', () =>
+		testCurrentText(<AppFooterUI />, 'years', '© 2025 DKMFZF PORTFOLIO'));
 });

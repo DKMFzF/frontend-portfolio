@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[AppHeaderUI]: test render Renders header correctly and matches snapshot 1`] = `
+exports[`[AppHeaderUI] Renders header correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <header
     class="header"

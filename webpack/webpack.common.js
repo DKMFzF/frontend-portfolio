@@ -108,6 +108,11 @@ module.exports = {
 				'..',
 				'./src/utils/constants'
 			),
+			'@utils-testing': path.resolve(
+				__dirname,
+				'..',
+				'src/utils/testing-helpers'
+			),
 			'@api': path.resolve(
 				__dirname,
 				'..',
