@@ -31,7 +31,7 @@ jobs:
       - name: Run e2e tests
         run: npm run ci-test:e2e
         env:
-          CYPRESS_BASE_URL: "http://localhost:3000"
+          CYPRESS_BASE_URL: "http://localhost:8081"
 
   deploy:
     needs: build-and-test
