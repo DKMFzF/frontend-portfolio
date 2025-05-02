@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.66.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.65.0...v1.66.0) (2025-05-02)
+
+### Features
+
+-   added mock-server stend ([cd9d32d](https://github.com/DKMFzF/frontend-portfolio/commit/cd9d32d2bef653679c631f19ab1b3b90473f2015))
+
 ## [1.65.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.64.0...v1.65.0) (2025-05-02)
 
 ### Features
