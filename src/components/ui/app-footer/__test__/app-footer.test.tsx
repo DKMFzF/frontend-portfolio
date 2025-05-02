@@ -1,7 +1,7 @@
 import { render, getByTestId } from '@testing-library/react';
 import {
 	describe,
-	test,
+	it,
 	expect,
 	beforeEach,
 	afterEach,
@@ -18,12 +18,12 @@ describe('[AppFooterUI]: render footer and years test', () => {
 		jest.restoreAllMocks();
 	});
 
-	test('Renders footer correctly and matches snapshot', () => {
+	it('Renders footer correctly and matches snapshot', () => {
 		const { asFragment } = render(<AppFooterUI />);
 		expect(asFragment()).toMatchSnapshot();
 	});
 
-	test('Displays current year correctly', () => {
+	it('Displays current year correctly', () => {
 		const { container } = render(<AppFooterUI />);
 		const yearToDayText = getByTestId(container, 'years');
 

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { knowledgeCards } from 'src/utils/constants';
+import { knowledgeCards } from '@utils-constants';
 import styles from './knowledge-sidebar.module.scss';
 import { useCardSlider } from '@hooks';
 

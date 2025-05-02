@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { AboutMeArticleUI } from 'src/components/ui';
+import { AboutMeArticleUI } from '@ui/index';
 import { AboutMeArticleProps } from './type';
 
 export const AboutMeArticle: FC<AboutMeArticleProps> = ({
