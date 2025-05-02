@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.68.4](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.5...v1.68.4) (2025-05-02)
+
+### Bug Fixes
+
+-   delete prebuildId ([6130655](https://github.com/DKMFzF/frontend-portfolio/commit/6130655b64e3d7a42a3936483c7f0e53791eb903))
+-   remove old url in cypress.config for web-server e2e ([8c1aa4f](https://github.com/DKMFzF/frontend-portfolio/commit/8c1aa4f4b709ada213ae2ee5ca1e03a0570bb6b6))
+
 ### [1.68.3](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.5...v1.68.3) (2025-05-02)
 
 ### Bug Fixes
