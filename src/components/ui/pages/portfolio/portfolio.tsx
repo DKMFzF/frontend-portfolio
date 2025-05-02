@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import React, { useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 
 import { useDragZoom } from '@hooks';
 import { CardsProject } from '@components';
@@ -7,7 +7,7 @@ import { portfolioCard, SeoData } from '@utils-constants';
 import { useCards } from '@hooks';
 import styles from './portfolio.module.scss';
 
-export const PortfolioPageUI: React.FC = () => {
+export const PortfolioPageUI: FC = () => {
 	const [isMobileView, setIsMobileView] = useState(false);
 	const { isDragging, position, scale, handleMouseDown, containerRef } =
 		useDragZoom();

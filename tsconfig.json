@@ -34,6 +34,7 @@
 			"@ui-pages": ["src/components/ui/pages"],
 			"@utils-types": ["src/utils/types"],
 			"@utils-constants": ["src/utils/constants"],
+			"@utils-testing": ["src/utils/testing-helpers"],
 			"@api": ["src/utils/flv-test-api.ts"],
 			"@slices": ["src/services/slices"],
 			"@selectors": ["src/services/selectors"],
