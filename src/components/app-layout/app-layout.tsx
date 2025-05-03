@@ -1,6 +1,7 @@
-import { AppHeader, AppFooter, SEO } from '@components';
+import { AppHeader, AppFooter, SEO, Preloader } from '@components';
 import { SeoData } from '@utils-constants';
 import { Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
 import style from './app.module.scss';
 
 export const AppLayout = () => (
@@ -13,7 +14,9 @@ export const AppLayout = () => (
 		/>
 		<div className={style.app}>
 			<AppHeader />
-			<Outlet />
+			<Suspense fallback={<Preloader />}>
+				<Outlet />
+			</Suspense>
 			<AppFooter />
 		</div>
 	</>

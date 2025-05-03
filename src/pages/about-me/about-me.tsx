@@ -1,3 +1,5 @@
 import { AboutMePageUI } from '@ui/index';
 
-export const AboutMePage = () => <AboutMePageUI />;
+const AboutMePage = () => <AboutMePageUI />;
+
+export default AboutMePage;

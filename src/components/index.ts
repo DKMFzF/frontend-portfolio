@@ -6,3 +6,4 @@ export * from './experience-card';
 export * from './cards-project';
 export * from './SEO';
 export * from './app-layout';
+export * from './preloader';

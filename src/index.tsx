@@ -1,6 +1,6 @@
 import { HelmetProvider } from 'react-helmet-async';
 import { createRoot } from 'react-dom/client';
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { RouterProvider } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { router } from './routes';
@@ -15,7 +15,10 @@ const root = createRoot(domNode);
 root.render(
 	<StrictMode>
 		<Analytic.Provider
-			value={{ yandexId: 101530999, googleId: 'G-QC3J4L6VP4' }}
+			value={{
+				yandexId: 101530999,
+				googleId: 'G-QC3J4L6VP4'
+			}}
 		>
 			<Provider store={store}>
 				<HelmetProvider>

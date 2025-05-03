@@ -14,8 +14,8 @@ module.exports = {
 		filename: production
 			? 'static/scripts/[name].[contenthash].js'
 			: 'static/scripts/[name].js',
-		publicPath: process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : '/'
-		// chunkFilename: 'static/scripts/[name].[contenthash].bundle.js', // имя подключаемых чанков (при bandle-spliting)
+		publicPath: process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : '/',
+		chunkFilename: 'static/scripts/[name].[contenthash].bundle.js'
 	},
 	module: {
 		rules: [
