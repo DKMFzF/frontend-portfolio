@@ -1,4 +1,4 @@
-import { AppHeader, AppFooter, Preloader, Head } from '@components';
+import { AppHeader, AppFooter, Preloader, MetaHead } from '@components';
 import { SeoData, YANDEX_METRIC, GOOOGLE_ANALYSIS } from '@utils-constants';
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
@@ -6,7 +6,7 @@ import style from './app.module.scss';
 
 export const AppLayout = () => (
 	<>
-		<Head
+		<MetaHead
 			title={SeoData.title.default}
 			description={SeoData.description}
 			name={SeoData.name}

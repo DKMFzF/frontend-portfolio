@@ -1,9 +1,9 @@
-import { SEO } from './seo/index';
-import { HeadMetaInfo } from './head-meta-info';
+import { SEO } from './seo';
+import { MetaHeadInfo } from './head-meta-info';
 import { FC } from 'react';
-import { HeadProps } from './type';
+import { MetaHeadProps } from './type';
 
-export const Head: FC<HeadProps> = ({
+export const MetaHead: FC<MetaHeadProps> = ({
 	title,
 	description,
 	name,
@@ -12,7 +12,7 @@ export const Head: FC<HeadProps> = ({
 	googleFlowAnalysis
 }) => (
 	<>
-		<HeadMetaInfo
+		<MetaHeadInfo
 			title={title}
 			description={description}
 			name={name}

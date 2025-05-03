@@ -1,4 +1,4 @@
-export type HeadMetaInfoProps = {
+export type MetaHeadInfoProps = {
 	title: string;
 	description: string;
 	name: string;

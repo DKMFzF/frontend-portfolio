@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { HeadMetaInfoProps } from './type';
+import { MetaHeadInfoProps } from './type';
 
-export const HeadMetaInfo: FC<HeadMetaInfoProps> = ({
+export const MetaHeadInfo: FC<MetaHeadInfoProps> = ({
 	title,
 	description,
 	name,

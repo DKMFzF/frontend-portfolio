@@ -1,4 +1,4 @@
-export * from './meta';
+export * from './meta-head';
 export * from './app-header';
 export * from './app-footer';
 export * from './common';
