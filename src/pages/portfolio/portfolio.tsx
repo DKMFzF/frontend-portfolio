@@ -1,4 +1,6 @@
 import { FC } from 'react';
 import { PortfolioPageUI } from '@ui/index';
 
-export const PortfolioPage: FC = () => <PortfolioPageUI />;
+const PortfolioPage: FC = () => <PortfolioPageUI />;
+
+export default PortfolioPage;
