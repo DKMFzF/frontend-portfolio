@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.70.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.69.2...v1.70.0) (2025-05-03)
+
+### Features
+
+-   added lazy loading file and preloader in load page ([f976ef1](https://github.com/DKMFzF/frontend-portfolio/commit/f976ef183fe2caea26844512e1de14f8507c48d8))
+
 ### [1.69.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.69.0...v1.69.2) (2025-05-03)
 
 ### Bug Fixes
