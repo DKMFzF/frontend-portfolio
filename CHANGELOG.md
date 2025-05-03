@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.69.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.69.0...v1.69.2) (2025-05-03)
+
+### Bug Fixes
+
+-   added basename in router ([d1e71c4](https://github.com/DKMFzF/frontend-portfolio/commit/d1e71c49d7e74a6eeb8dd4d2c02edf7191114dbd))
+-   rout on portfolio page ([6277943](https://github.com/DKMFzF/frontend-portfolio/commit/6277943451cfe0cbe7649e1d7cf27d24409a9664))
+
 ### [1.69.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.69.0...v1.69.1) (2025-05-03)
 
 ### Bug Fixes
