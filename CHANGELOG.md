@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.69.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.69.0...v1.69.1) (2025-05-03)
+
+### Bug Fixes
+
+-   rout on portfolio page ([886fff9](https://github.com/DKMFzF/frontend-portfolio/commit/886fff938f39b65cb17ac71a0aeaae80909aa939))
+
 ## [1.69.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.68.5...v1.69.0) (2025-05-03)
 
 ### Features
