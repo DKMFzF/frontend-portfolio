@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
 				element: <AboutMePage />
 			},
 			{
-				path: 'portfolio',
+				path: `${basename}/portfolio`,
 				element: <PortfolioPage />
 			},
 			{
