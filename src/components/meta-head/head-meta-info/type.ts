@@ -1,4 +1,4 @@
-export type SEOProps = {
+export type MetaHeadInfoProps = {
 	title: string;
 	description: string;
 	name: string;
