@@ -1,3 +1,6 @@
+export const YANDEX_METRIC = 101530999;
+export const GOOOGLE_ANALYSIS = 'G-QC3J4L6VP4';
+
 export const SeoData = {
 	title: {
 		default: '{ dkmfzf }',
