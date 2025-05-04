@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.72.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.71.2...v1.72.0) (2025-05-04)
+
+### Features
+
+-   added file-search for google-search-console ([772c46a](https://github.com/DKMFzF/frontend-portfolio/commit/772c46a901c0c46b0621367c01b761adac09d84c))
+
 ### [1.71.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.71.1...v1.71.2) (2025-05-03)
 
 ### [1.71.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.71.0...v1.71.1) (2025-05-03)
