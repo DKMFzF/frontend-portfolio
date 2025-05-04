@@ -138,11 +138,13 @@ module.exports = {
 				'./public/apple-touch-icon.png'
 			),
 			faviconSvg: path.resolve(__dirname, '..', './public/favicon.svg'),
-			faviconSvg: path.resolve(
+			googleSearchToken: path.resolve(
 				__dirname,
 				'..',
 				'./public/google43ea805923c8c986.html'
-			)
+			),
+			robots: path.resolve(__dirname, '..', './public/robots.txt'),
+			sitemap: path.resolve(__dirname, '..', './public/sitemap.xml')
 		}),
 		new CopyPlugin({
 			patterns: [

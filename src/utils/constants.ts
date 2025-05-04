@@ -1,7 +1,12 @@
 export const YANDEX_METRIC = 101530999;
 export const GOOOGLE_ANALYSIS = 'G-QC3J4L6VP4';
+export const googleVerificationCode = 'google43ea805923c8c986';
 
 export const SeoData = {
+	lang: {
+		en: 'en',
+		ru: 'ru'
+	},
 	title: {
 		default: '{ dkmfzf }',
 		aboutMe: '{ dkmfzf/AboutMe }',
@@ -11,8 +16,13 @@ export const SeoData = {
 		},
 		notFound: '{ dkmfzf/notFound??? }'
 	},
-	description: 'Portfolio of the Siberian programmer',
-	name: 'DKMFZF Frontend portfolio',
+	keywords:
+		'Frontend, React, JavaScript, Кирилл Дорошев, DKMFzF, Frontend Developer, Portfolio',
+	description: {
+		en: "Developer Kirill Doroshev's portfolio. React projects, experience, skills, contact information.",
+		ru: 'Портфолио разработчика Кирилла Дорошева. Проекты на React, опыт, навыки, контактная информация.'
+	},
+	name: 'DKMFZF',
 	type: 'website'
 };
 

@@ -9,14 +9,20 @@ export const MetaHead: FC<MetaHeadProps> = ({
 	name,
 	type,
 	yandexIdMetrika,
-	googleFlowAnalysis
+	googleFlowAnalysis,
+	googleVerificationCode,
+	keywords,
+	lang
 }) => (
 	<>
 		<MetaHeadInfo
+			lang={lang}
 			title={title}
 			description={description}
+			keywords={keywords}
 			name={name}
 			type={type}
+			googleVerificationCode={googleVerificationCode}
 		/>
 		<SEO
 			yandexIdMetrika={yandexIdMetrika}
