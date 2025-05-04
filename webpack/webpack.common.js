@@ -137,7 +137,12 @@ module.exports = {
 				'..',
 				'./public/apple-touch-icon.png'
 			),
-			faviconSvg: path.resolve(__dirname, '..', './public/favicon.svg')
+			faviconSvg: path.resolve(__dirname, '..', './public/favicon.svg'),
+			faviconSvg: path.resolve(
+				__dirname,
+				'..',
+				'./public/google43ea805923c8c986.html'
+			)
 		}),
 		new CopyPlugin({
 			patterns: [
