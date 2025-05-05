@@ -34,7 +34,7 @@ export const SEO: FC<SEOProps> = ({ yandexIdMetrika, googleFlowAnalysis }) => (
 		{/* Google Analytics */}
 		<script
 			async
-			src='https://www.googletagmanager.com/gtag/js?id=G-QC3J4L6VP4'
+			src='https://www.googletagmanager.com/gtag/js?id=G-QKD762B8V6'
 		/>
 		<script>
 			{`
