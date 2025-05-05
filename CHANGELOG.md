@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.74.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.73.2...v1.74.0) (2025-05-05)
+
+### Features
+
+-   **yandex-config:** added yarndex true root ([68019ec](https://github.com/DKMFzF/frontend-portfolio/commit/68019ec534cb0e7604cd2dc7da9c9cafb19d4663))
+
 ### [1.73.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.73.1...v1.73.2) (2025-05-05)
 
 ### Bug Fixes
