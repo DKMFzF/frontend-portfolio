@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.73.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.73.1...v1.73.2) (2025-05-05)
+
+### Bug Fixes
+
+-   **head-meta-info:** replace favicon.png on favicon.svg ([41474c7](https://github.com/DKMFzF/frontend-portfolio/commit/41474c707b5aab9b221bd46e78796c47c814ba3f))
+
 ### [1.73.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.73.0...v1.73.1) (2025-05-05)
 
 ### Bug Fixes
