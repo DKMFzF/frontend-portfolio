@@ -32,7 +32,7 @@ export const MetaHeadInfo: FC<MetaHeadInfoProps> = ({
 		{/* Favicons */}
 		<link rel='preload' href='/favicon.ico' as='image' />
 		<link rel='icon' href='/favicon.ico' sizes='any' />
-		<link rel='icon' href='favicon.png' type='image/svg+xml' />
+		<link rel='icon' href='favicon.svg' type='image/svg+xml' />
 		<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 
 		{/* base SEO */}
