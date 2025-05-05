@@ -46,6 +46,7 @@ export const MetaHeadInfo: FC<MetaHeadInfoProps> = ({
 				content={googleVerificationCode}
 			/>
 		)}
+		<meta name='yandex-verification' content='b13f68bb5aaf0466' />
 		<script type='application/ld+json'>
 			{`
 			{
