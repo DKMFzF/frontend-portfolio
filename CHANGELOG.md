@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.76.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.76.0...v1.76.1) (2025-05-05)
+
+### Bug Fixes
+
+-   meta schema.json remove old url ([9c22e1f](https://github.com/DKMFzF/frontend-portfolio/commit/9c22e1f46a4130cda92cf1b245d16d011179a68d))
+
 ## [1.76.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.75.3...v1.76.0) (2025-05-05)
 
 ### Features
