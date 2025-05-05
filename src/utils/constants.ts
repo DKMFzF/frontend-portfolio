@@ -1,6 +1,6 @@
 export const YANDEX_METRIC = 101530999;
 export const GOOOGLE_ANALYSIS = 'G-QKD762B8V6';
-export const googleVerificationCode = 'google43ea805923c8c986';
+export const googleVerificationCode = 'google7270fd3e02e06397';
 
 export const SeoData = {
 	lang: {
