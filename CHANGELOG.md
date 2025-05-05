@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.77.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.76.1...v1.77.0) (2025-05-05)
+
+### Features
+
+-   replace google flow analysis ([33308df](https://github.com/DKMFzF/frontend-portfolio/commit/33308df3365749a9c5b2ac32329c320c94295f2b))
+
 ### [1.76.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.76.0...v1.76.1) (2025-05-05)
 
 ### Bug Fixes
