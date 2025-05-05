@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.76.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.75.3...v1.76.0) (2025-05-05)
+
+### Features
+
+-   hide footer on route /portfolio ([da7ad54](https://github.com/DKMFzF/frontend-portfolio/commit/da7ad54447669ad7fe1c3f049ba8d5d29f88af21))
+
 ### [1.75.3](https://github.com/DKMFzF/frontend-portfolio/compare/v1.75.2...v1.75.3) (2025-05-05)
 
 ### [1.75.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.75.1...v1.75.2) (2025-05-05)
