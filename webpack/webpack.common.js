@@ -91,7 +91,6 @@ module.exports = {
 		alias: {
 			src: path.resolve(__dirname, '..', './src'),
 			styles: path.resolve(__dirname, '..', 'src/styles'),
-			// path.resolve(__dirname, '..', 'src/styles/'),
 			fonts: path.resolve(__dirname, '..', './src/fonts'),
 			components: path.resolve(__dirname, '..', './src/components'),
 			'@pages': path.resolve(__dirname, '..', './src/pages'),
@@ -131,20 +130,13 @@ module.exports = {
 	plugins: [
 		new HTMLWebpackPlugins({
 			template: path.resolve(__dirname, '..', './public/index.html'),
-			faviconIco: path.resolve(__dirname, '..', './public/favicon.ico'),
-			faviconPng: path.resolve(
+			favicon: path.resolve(__dirname, '..', './public/favicon.ico'),
+			favicon: path.resolve(
 				__dirname,
 				'..',
 				'./public/apple-touch-icon.png'
 			),
-			faviconSvg: path.resolve(__dirname, '..', './public/favicon.svg'),
-			googleSearchToken: path.resolve(
-				__dirname,
-				'..',
-				'./public/google43ea805923c8c986.html'
-			),
-			robots: path.resolve(__dirname, '..', './public/robots.txt'),
-			sitemap: path.resolve(__dirname, '..', './public/sitemap.xml')
+			favicon: path.resolve(__dirname, '..', './public/favicon.svg')
 		}),
 		new CopyPlugin({
 			patterns: [
