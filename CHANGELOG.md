@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.75.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.75.0...v1.75.1) (2025-05-05)
+
+### Bug Fixes
+
+-   router basename ([1128af3](https://github.com/DKMFzF/frontend-portfolio/commit/1128af3757826a07af00c622b9df218dd65f3b63))
+
 ## [1.75.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.74.1...v1.75.0) (2025-05-05)
 
 ### Features
