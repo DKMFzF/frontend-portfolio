@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.79.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.78.0...v1.79.0) (2025-05-05)
+
+### Features
+
+-   added yandex config ([3db401a](https://github.com/DKMFzF/frontend-portfolio/commit/3db401ab234a090ac8d42e4fcf96c274be82edbc))
+
 ## [1.78.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.77.0...v1.78.0) (2025-05-05)
 
 ### Features
