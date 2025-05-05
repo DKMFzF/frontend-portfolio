@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /favicon.ico
 
 Sitemap: https://dkmfzf.github.io/frontend-portfolio/sitemap.xml
