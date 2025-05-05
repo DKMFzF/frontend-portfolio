@@ -16,29 +16,23 @@ const PortfolioPage = lazy(
 		)
 );
 
-export const router = createBrowserRouter(
-	[
-		{
-			path: '/',
-			element: <AppLayout />,
-			children: [
-				{
-					index: true,
-					element: <AboutMePage />
-				},
-				{
-					path: 'portfolio',
-					element: <PortfolioPage />
-				},
-				{
-					path: '*',
-					element: <NotFound404 />
-				}
-			]
-		}
-	]
-	// {
-	// 	basename:
-	// 		process.env.NODE_ENV === 'production' ? '/frontend-portfolio' : '/'
-	// }
-);
+export const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <AppLayout />,
+		children: [
+			{
+				index: true,
+				element: <AboutMePage />
+			},
+			{
+				path: 'portfolio',
+				element: <PortfolioPage />
+			},
+			{
+				path: '*',
+				element: <NotFound404 />
+			}
+		]
+	}
+]);
