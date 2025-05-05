@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.75.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.74.1...v1.75.0) (2025-05-05)
+
+### Features
+
+-   added yandex verefication meta tag ([6fd2c49](https://github.com/DKMFzF/frontend-portfolio/commit/6fd2c49bb8f2216f3f67e8d5563b5adde3f415ac))
+
 ### [1.74.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.74.0...v1.74.1) (2025-05-05)
 
 ### Bug Fixes
