@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.73.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.73.0...v1.73.1) (2025-05-05)
+
+### Bug Fixes
+
+-   **favicon:** set webpack config ([c25c1ee](https://github.com/DKMFzF/frontend-portfolio/commit/c25c1eeeee673ddbd7a64689cb3f05543d25aa52))
+
 ## [1.73.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.72.0...v1.73.0) (2025-05-04)
 
 ### Features
