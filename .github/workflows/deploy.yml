@@ -53,7 +53,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build project
-        run: PUBLIC_PATH="/frontend-portfolio/" npm run build
+        run: PUBLIC_PATH="/" npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
