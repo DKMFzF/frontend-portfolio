@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.74.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.74.0...v1.74.1) (2025-05-05)
+
+### Bug Fixes
+
+-   **robot.tsx:** refactor config for search system ([37f6a1a](https://github.com/DKMFzF/frontend-portfolio/commit/37f6a1a85909877de521dd8008cc57b9bf2a79a9))
+
 ## [1.74.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.73.2...v1.74.0) (2025-05-05)
 
 ### Features
