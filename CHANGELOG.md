@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.78.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.77.0...v1.78.0) (2025-05-05)
+
+### Features
+
+-   replace google config analysis ([90e2d0a](https://github.com/DKMFzF/frontend-portfolio/commit/90e2d0a84f118f6b4725a43baffea795d23c5e85))
+
 ## [1.77.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.76.1...v1.77.0) (2025-05-05)
 
 ### Features
