@@ -30,10 +30,10 @@ export const MetaHeadInfo: FC<MetaHeadInfoProps> = ({
 		/>
 
 		{/* Favicons */}
-		<link rel='preload' href='/favicon.ico' as='image' />
-		<link rel='icon' href='/favicon.ico' sizes='any' />
+		<link rel='preload' href='favicon.ico' as='image' />
+		<link rel='icon' href='favicon.ico' sizes='any' />
 		<link rel='icon' href='favicon.svg' type='image/svg+xml' />
-		<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+		<link rel='apple-touch-icon' href='apple-touch-icon.png' />
 
 		{/* base SEO */}
 		<meta name='author' content={name} />
@@ -46,23 +46,20 @@ export const MetaHeadInfo: FC<MetaHeadInfoProps> = ({
 				content={googleVerificationCode}
 			/>
 		)}
-		<meta name='yandex-verification' content='b13f68bb5aaf0466' />
+		{/* <meta name='yandex-verification' content='b13f68bb5aaf0466' /> */}
 		<script type='application/ld+json'>
 			{`
 			{
 				"@context": "https://schema.org",
 				"@type": "Person",
 				"name": "${name}",
-				"url": "https://dkmfzf.github.io/frontend-portfolio/",
+				"url": "https://dkmfzf.github.io/",
 				"description": "${description}"
 			}
 		`}
 		</script>
 
 		{/* Canonical link */}
-		<link
-			rel='canonical'
-			href='https://dkmfzf.github.io/frontend-portfolio/'
-		/>
+		<link rel='canonical' href='https://dkmfzf.github.io/' />
 	</Helmet>
 );
