@@ -36,9 +36,9 @@ export const router = createBrowserRouter(
 				}
 			]
 		}
-	],
-	{
-		basename:
-			process.env.NODE_ENV === 'production' ? '/frontend-portfolio' : '/'
-	}
+	]
+	// {
+	// 	basename:
+	// 		process.env.NODE_ENV === 'production' ? '/frontend-portfolio' : '/'
+	// }
 );
