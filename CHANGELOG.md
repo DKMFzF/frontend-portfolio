@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.80.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.80.0...v1.80.1) (2025-05-07)
+
 ## 1.80.0 (2025-05-07)
 
 ### Features
