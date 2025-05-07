@@ -20,18 +20,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'yarn'
+
+      - name: Install Yarn
+        run: npm install -g yarn
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: yarn install --ignore-engines
 
       - name: Run unit tests
-        run: npm test
+        run: yarn test
 
       - name: Start server for e2e tests
-        run: npm run start &
+        run: yarn start &
       
       - name: Run e2e tests
-        run: npm run ci-test:e2e
+        run: yarn ci-test:e2e
         env:
           CYPRESS_BASE_URL: "http://localhost:8081"
 
@@ -48,12 +52,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'yarn'
+
+      - name: Install Yarn
+        run: npm install -g yarn
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: yarn install --ignore-engines
 
       - name: Build project
-        run: PUBLIC_PATH="/" npm run build
+        run: PUBLIC_PATH="/" yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
