@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[AboutMeArticle] [All props false]: Renders about-me-article correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="about-me__block  
+		
+		about-me__padding-default
+		
+		
+		"
+  >
+    <p>
+      Test element
+    </p>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`[AboutMeArticle] [All props true]: Renders about-me-article correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <article
+    class="about-me__block classname 
+		about-me__border-primaty
+		
+		about-me__border-radius-default
+		about-me__border-flag
+		about-me__flex-flag"
+  >
+    <header
+      class="about-me__sub-title"
+    >
+      <h3>
+        subtitle
+      </h3>
+    </header>
+    <p>
+      Test element
+    </p>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`[AboutMePage] Renders about-me-page correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="main"
+  >
+    <section
+      class="main__section-bg about-me"
+    >
+      <div
+        class="about-me__content"
+      >
+        <article
+          class="about-me__block about-me__title-container 
+		
+		about-me__padding-default
+		about-me__border-radius-default
+		about-me__border-flag
+		"
+        >
+          <h1
+            class="about-me__title"
+          >
+            About Me
+          </h1>
+        </article>
+        <article
+          class="about-me__block about-me__stack about-me__cards 
+		
+		about-me__padding-default
+		about-me__border-radius-default
+		about-me__border-flag
+		about-me__flex-flag"
+        >
+          <header
+            class="about-me__sub-title"
+          >
+            <h3>
+              my tech skills
+            </h3>
+          </header>
+          <div
+            class="knowledge-sidebar"
+          >
+            <div
+              class="knowledge-sidebar__body-slider"
+            >
+              <button
+                aria-label="Previous card"
+                class="knowledge-sidebar__button"
+                data-cy="card-btn-left"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 18L9 12L15 6"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div
+                aria-live="polite"
+                class="knowledge-sidebar__content"
+              >
+                <div
+                  class="knowledge-sidebar__card fade-in"
+                >
+                  <span
+                    class="knowledge-sidebar__skill"
+                    data-cy="card-title"
+                  >
+                    React
+                  </span>
+                </div>
+              </div>
+              <button
+                aria-label="Next card"
+                class="knowledge-sidebar__button"
+                data-cy="card-btn-right"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 18L15 12L9 6"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+            <footer
+              aria-live="polite"
+              class="knowledge-sidebar__stack-discription"
+            >
+              <span
+                class="fade-in"
+              >
+                Experience in SPA development. I work confidently with hooks, components, and routing.
+              </span>
+              <div
+                class="knowledge-sidebar__stack-arrow"
+              >
+                &gt;
+              </div>
+            </footer>
+          </div>
+        </article>
+        <article
+          class="about-me__block about-me__cards about-me__timeline 
+		about-me__border-primaty
+		about-me__padding-default
+		about-me__border-radius-default
+		about-me__border-flag
+		about-me__flex-flag"
+        >
+          <header
+            class="about-me__sub-title"
+          >
+            <h3>
+              my timeline
+            </h3>
+          </header>
+          <div
+            class="experience-card"
+          >
+            <div
+              class="experience-card__experience-container"
+            >
+              <span
+                class="experience-card__number"
+              >
+                2
+              </span>
+              <span
+                class="experience-card__years-label"
+              >
+                years
+              </span>
+            </div>
+            <div
+              class="experience-card__container-footer"
+            >
+              <p
+                class="experience-card__description"
+              >
+                I am immersed in the IT community, participate in hackathons, take courses and study at the SFU Institute
+              </p>
+              <div
+                class="experience-card__timeline-arrow"
+              >
+                &gt;
+              </div>
+            </div>
+          </div>
+        </article>
+        <article
+          class="about-me__block about-me__image-dkmfzf 
+		
+		
+		
+		
+		"
+        >
+          <div
+            class="about-me__image-wrapper"
+          >
+            <img
+              alt="human user"
+              class="about-me__image"
+              src=""
+            />
+          </div>
+        </article>
+        <article
+          class="about-me__block about-me__discriptrion-dkmfzf 
+		
+		about-me__padding-default
+		about-me__border-radius-default
+		about-me__border-flag
+		"
+        >
+          <p
+            class="about-me__description"
+          >
+            I am in love with complex algorithmic programming tasks and Hackathons!
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`[ExperienceCard] Renders experience-card correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="experience-card"
+  >
+    <div
+      class="experience-card__experience-container"
+    >
+      <span
+        class="experience-card__number"
+      >
+        2
+      </span>
+      <span
+        class="experience-card__years-label"
+      >
+        years
+      </span>
+    </div>
+    <div
+      class="experience-card__container-footer"
+    >
+      <p
+        class="experience-card__description"
+      >
+        I am immersed in the IT community, participate in hackathons, take courses and study at the SFU Institute
+      </p>
+      <div
+        class="experience-card__timeline-arrow"
+      >
+        &gt;
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

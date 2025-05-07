@@ -1,0 +1,1 @@
+export { useMetrika } from './useMetrika';

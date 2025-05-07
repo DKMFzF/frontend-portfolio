@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Icon] should match snapshot with all icons 1`] = `
+<DocumentFragment>
+  <div
+    style="display: flex; gap: 16px;"
+  >
+    <a
+      class="icon"
+      href="mailto:test@example.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        data-testid="email-icon"
+      />
+    </a>
+    <a
+      class="icon"
+      href="https://github.com/test"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        data-testid="github-icon"
+      />
+    </a>
+    <a
+      class="icon"
+      href="https://t.me/test"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        data-testid="telegram-icon"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;

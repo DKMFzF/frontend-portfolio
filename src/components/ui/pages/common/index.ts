@@ -1,1 +1,0 @@
-export { CommonPageUI } from './common';

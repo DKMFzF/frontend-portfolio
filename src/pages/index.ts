@@ -1,4 +1,3 @@
-export * from './not-fount-404';
-// export * from './about-me';
-export * from './common';
-// export * from './portfolio';
+export * from './NotFount404Page';
+export * from './AboutMePage';
+export * from './PortfolioPage';

@@ -1,1 +1,0 @@
-export { PortfolioPageUI } from './portfolio';

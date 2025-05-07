@@ -1,0 +1,1 @@
+export { AppFooterUI } from './FooterLink';

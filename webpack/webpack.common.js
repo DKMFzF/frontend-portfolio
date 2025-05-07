@@ -90,41 +90,32 @@ module.exports = {
 		extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
 		alias: {
 			src: path.resolve(__dirname, '..', './src'),
-			styles: path.resolve(__dirname, '..', 'src/styles'),
-			fonts: path.resolve(__dirname, '..', './src/fonts'),
+			styles: path.resolve(__dirname, '..', './src/shared/styles'),
+			fonts: path.resolve(__dirname, '..', './src/shared/assets/fonts'),
 			components: path.resolve(__dirname, '..', './src/components'),
+
 			'@pages': path.resolve(__dirname, '..', './src/pages'),
-			'@components': path.resolve(__dirname, '..', './src/components'),
-			'@ui': path.resolve(__dirname, '..', './src/components/ui'),
-			'@ui-pages': path.resolve(
+			'@widgets': path.resolve(__dirname, '..', './src/widgets'),
+			'@features': path.resolve(__dirname, '..', './src/features'),
+
+			'@meta': path.resolve(__dirname, '..', './src/shared/meta'),
+			'@lib': path.resolve(__dirname, '..', './src/shared/lib'),
+			'@styles': path.resolve(__dirname, '..', './src/shared/styles'),
+			'@ui': path.resolve(__dirname, '..', './src/shared/ui'),
+			'@config': path.resolve(__dirname, '..', './src/shared/config'),
+			'@fonts': path.resolve(
 				__dirname,
 				'..',
-				'./src/components/ui/pages'
+				'./src/shared/assets/fonts'
 			),
-			'@utils-types': path.resolve(__dirname, '..', './src/utils/types'),
-			'@utils-constants': path.resolve(
+			'@images': path.resolve(
 				__dirname,
 				'..',
-				'./src/utils/constants'
+				'./src/shared/assets/images'
 			),
-			'@utils-testing': path.resolve(
-				__dirname,
-				'..',
-				'src/utils/testing-helpers'
-			),
-			'@api': path.resolve(
-				__dirname,
-				'..',
-				'./src/utils/flv-test-api.ts'
-			),
-			'@slices': path.resolve(__dirname, '..', './src/services/slices'),
-			'@selectors': path.resolve(
-				__dirname,
-				'..',
-				'./src/services/selectors'
-			),
-			'@images': path.resolve(__dirname, '..', './src/image'),
-			'@hooks': path.resolve(__dirname, '..', './src/hooks')
+
+			'@layouts': path.resolve(__dirname, '..', './src/app/layouts'),
+			'@providers': path.resolve(__dirname, '..', './src/app/providers')
 		}
 	},
 	plugins: [
