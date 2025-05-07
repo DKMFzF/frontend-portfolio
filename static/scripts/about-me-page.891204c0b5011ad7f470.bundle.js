@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkdkmfzf_frontend_portfolio=globalThis.webpackChunkdkmfzf_frontend_portfolio||[]).push([[883],{41650:(o,f,t)=>{t.r(f),t.d(f,{default:()=>r});var l=t(74848),n=t(35198);const r=()=>(0,l.jsx)(n.FW,{})}}]);
