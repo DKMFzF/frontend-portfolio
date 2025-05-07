@@ -9,34 +9,34 @@ on:
       - main
 
 jobs:
-  # build-and-test:
-  #   runs-on: ubuntu-latest
+  build-and-test:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-  #     - name: Set up Node.js
-  #       uses: actions/setup-node@v4
-  #       with:
-  #         node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-  #     - name: Install dependencies
-  #       run: npm install --legacy-peer-deps
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
 
-  #     - name: Run unit tests
-  #       run: npm test
+      - name: Run unit tests
+        run: npm test
 
-  #     - name: Start server for e2e tests
-  #       run: npm run start &
+      - name: Start server for e2e tests
+        run: npm run start &
       
-  #     - name: Run e2e tests
-  #       run: npm run ci-test:e2e
-  #       env:
-  #         CYPRESS_BASE_URL: "http://localhost:8081"
+      - name: Run e2e tests
+        run: npm run ci-test:e2e
+        env:
+          CYPRESS_BASE_URL: "http://localhost:8081"
 
   deploy:
-    # needs: build-and-test
+    needs: build-and-test
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
 

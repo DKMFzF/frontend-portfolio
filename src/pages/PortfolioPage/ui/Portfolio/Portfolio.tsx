@@ -4,7 +4,7 @@ import { CardsProject } from '../CardsProject';
 import { portfolioCard } from '../../constants/portfolioCard';
 import { META_SITE_DATA } from '@config';
 import { useCards, useDragZoom } from '../../model';
-import styles from './portfolio.module.scss';
+import styles from './Portfolio.module.scss';
 
 export const PortfolioPage: FC = () => {
 	const [isMobileView, setIsMobileView] = useState(false);
