@@ -34,14 +34,14 @@ export const Header: FC = () => {
 			<div className={styles.header__container}>
 				<div className={styles['header__inside-wrapper']}>
 					<div className={styles.header__brand}>
-						<Link
+						<AnimatedNavLink
 							to='/'
-							className={styles.header__logo}
+							styles={styles.header__link}
 							data-text='portfolio'
 							data-cy='link-portfolio'
 						>
 							portfolio
-						</Link>
+						</AnimatedNavLink>
 					</div>
 
 					<nav className={styles.header__nav}>

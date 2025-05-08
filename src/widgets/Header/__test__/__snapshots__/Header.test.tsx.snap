@@ -14,15 +14,11 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
         <div
           class="header__brand"
         >
-          <a
-            class="header__logo"
-            data-cy="link-portfolio"
-            data-discover="true"
-            data-text="portfolio"
-            href="/"
+          <div
+            data-testid="animated-link"
           >
             portfolio
-          </a>
+          </div>
         </div>
         <nav
           class="header__nav"

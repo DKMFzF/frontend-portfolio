@@ -8,7 +8,8 @@
 		linear-gradient(black, black);
 	mask-composite: xor;
 	mask-composite: exclude;
-	padding: calc((100vh - var(--hole-height)) / 2) calc((100vw - var(--hole-width)) / 2);
+	padding: calc((100vh - var(--hole-height)) / 2)
+		calc((100vw - var(--hole-width)) / 2);
 	pointer-events: none;
 	position: fixed;
 	transform: translateY(100%);
