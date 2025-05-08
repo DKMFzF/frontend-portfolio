@@ -1,8 +1,32 @@
+@use '~styles/variables' as *;
+
 .overlay {
-	background: #121212;
+	background: #e9e9e9;
+	box-sizing: border-box;
 	inset: 0;
+	mask: linear-gradient(black, black) content-box,
+		linear-gradient(black, black);
+	mask-composite: xor;
+	mask-composite: exclude;
+	padding: calc((100vh - var(--hole-height)) / 2) calc((100vw - var(--hole-width)) / 2);
 	pointer-events: none;
 	position: fixed;
 	transform: translateY(100%);
 	z-index: 9999;
+
+	// vars for size hole
+	--hole-width: 0%;
+	--hole-height: 0%;
+}
+
+.dark-wrapper {
+	background-color: black;
+	block-size: 100%;
+	display: none;
+	inline-size: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	z-index: 20;
 }

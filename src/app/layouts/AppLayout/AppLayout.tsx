@@ -26,7 +26,7 @@ export const AppLayout: FC<TAppLayout> = ({
 		<>
 			{MetaInfo}
 			<TransitionOverlayPage />
-			<div className={style.app}>
+			<div id='page-content' className={style.app}>
 				{!shouldHideHeader && Header}
 				<Suspense fallback={<Preloader />}>
 					<Outlet />

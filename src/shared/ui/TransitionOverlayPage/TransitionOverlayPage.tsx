@@ -5,6 +5,8 @@ import styles from './PageTransitionOverlay.module.scss';
 
 export const TransitionOverlayPage = () => {
 	const overlayRef = useRef<HTMLDivElement>(null);
+	const darkWrapperRef = useRef<HTMLDivElement>(null);
+
 	const location = useLocation();
 	const [hasNavigated, setHasNavigated] = useState(false);
 
@@ -15,22 +17,64 @@ export const TransitionOverlayPage = () => {
 		}
 
 		const overlay = overlayRef.current;
-		if (!overlay) return;
+		const darkWrapper = darkWrapperRef.current;
+		const pageContent = document.getElementById('page-content');
 
-		gsap.to(overlay, {
-			y: '-100%',
-			duration: 0.5,
-			ease: 'power2.in',
-			delay: 0.2
+		if (!overlay || !darkWrapper) return;
+
+		const tl = gsap.timeline({
+			defaults: {
+				ease: 'power3.inOut'
+			}
 		});
+
+		gsap.set(pageContent, { scale: 1 });
+		darkWrapper.style.display = 'none';
+		gsap.set(darkWrapper, { opacity: 0 });
+
+		tl.to(overlay, {
+			'--hole-width': '30vw',
+			'--hole-height': '30vh',
+			duration: 0.5,
+			ease: 'power3.out'
+		})
+			.to(
+				pageContent,
+				{
+					scale: 0.98,
+					duration: 0.2
+				},
+				'<'
+			)
+			.to(overlay, {
+				'--hole-width': '100vw',
+				'--hole-height': '100vh',
+				duration: 0.6,
+				ease: 'expo.in'
+			})
+			.to(
+				pageContent,
+				{
+					scale: 1,
+					duration: 0.6,
+					ease: 'expo.in'
+				},
+				'<'
+			);
 	}, [location.pathname]);
 
 	return (
-		<div
-			ref={overlayRef}
-			id='transition-overlay'
-			className={styles.overlay}
-			style={{ transform: 'translateY(100%)' }}
-		/>
+		<>
+			<div
+				ref={darkWrapperRef}
+				id='dark-wrapper'
+				className={styles['dark-wrapper']}
+			/>
+			<div
+				ref={overlayRef}
+				id='transition-overlay'
+				className={styles.overlay}
+			/>
+		</>
 	);
 };
