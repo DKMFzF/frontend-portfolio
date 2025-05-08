@@ -1,4 +1,4 @@
-import { MemoryRouter } from 'react-router-dom';
+import { Link, MemoryRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import { Header } from '../ui/Header';
 import { SocialLinks } from '@providers';
@@ -12,7 +12,10 @@ jest.mock(
 jest.mock('@ui', () => ({
 	__esModule: true,
 	default: () => <div data-testid='icon' />,
-	Icon: () => <div data-testid='icon' />
+	Icon: () => <div data-testid='icon' />,
+	AnimatedNavLink: ({ children }: any) => (
+		<div data-testid='animated-link'>{children}</div>
+	)
 }));
 
 describe('[Header]', () => {

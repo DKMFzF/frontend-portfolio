@@ -33,24 +33,20 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
             <li
               class="header__menuItem"
             >
-              <a
-                class="header__link"
-                data-discover="true"
-                href="/"
+              <div
+                data-testid="animated-link"
               >
                 About Me
-              </a>
+              </div>
             </li>
             <li
               class="header__menu-item"
             >
-              <a
-                class="header__link"
-                data-discover="true"
-                href="/portfolio"
+              <div
+                data-testid="animated-link"
               >
                 portfolio
-              </a>
+              </div>
             </li>
             <li
               class="header__menu-item"

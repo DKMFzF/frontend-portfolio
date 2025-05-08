@@ -1,0 +1,1 @@
+export { useAnimatedNavigate } from './useAnimatedNavigate';
