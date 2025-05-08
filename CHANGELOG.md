@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.82.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.82.0...v1.82.1) (2025-05-08)
+
+### Bug Fixes
+
+-   **header:** replace default link on second page on animation link ([cc8f4fb](https://github.com/DKMFzF/frontend-portfolio/commit/cc8f4fb4ccb0ac34cf2f994c92b02a3fd4f36175))
+
 ## [1.82.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.81.0...v1.82.0) (2025-05-08)
 
 ### Features
