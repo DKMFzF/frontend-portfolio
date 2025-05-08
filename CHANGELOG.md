@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.82.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.81.0...v1.82.0) (2025-05-08)
+
+### Features
+
+-   **animatednavigate:** added animation for navigation on site ([8336287](https://github.com/DKMFzF/frontend-portfolio/commit/833628771862cf83e714837679f1fdfb03e1fa8b))
+
 ## [1.81.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.80.3...v1.81.0) (2025-05-08)
 
 ### Features
