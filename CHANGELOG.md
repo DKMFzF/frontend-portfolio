@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.84.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.84.1...v1.84.2) (2025-05-10)
+
+### Bug Fixes
+
+-   svg stellarburger ([e952b4a](https://github.com/DKMFzF/frontend-portfolio/commit/e952b4aafa9ce51c2bbe0624ebecbdb341e83a59))
+
 ### [1.84.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.84.0...v1.84.1) (2025-05-10)
 
 ### Bug Fixes
