@@ -67,3 +67,10 @@ export const portfolioCard: TPortfolioCard[] = [
 // 		'This puzzle game is made using TS and on a clean architecture.',
 // 	link: 'https://github.com/DKMFzF/puzzle-animal-game-clean-architecture'
 // }
+
+// {
+// 	title: 'Puzzle Animal Game',
+// 	content:
+// 		'This puzzle game is made using TS and on a clean architecture.',
+// 	link: 'https://github.com/DKMFzF/puzzle-animal-game-clean-architecture'
+// }
