@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[MouseFollowerUI] Renders mouse-follower correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-hidden="true"
+    class="mouse-follower"
+    data-cy="mouse-follower"
+    data-testid="mouse-follower"
+    role="presentation"
+  />
+</DocumentFragment>
+`;

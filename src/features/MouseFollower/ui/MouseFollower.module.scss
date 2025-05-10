@@ -1,0 +1,17 @@
+.mouse-follower {
+	border: 1px solid white;
+	border-radius: 50%;
+	height: 45px;
+	left: 0;
+	mix-blend-mode: difference;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transform: translate(-50%, -50%);
+	width: 45px;
+	z-index: 50;
+
+	@media (width <= 1200px) {
+		display: none;
+	}
+}

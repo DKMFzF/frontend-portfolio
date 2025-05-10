@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.83.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.82.1...v1.83.0) (2025-05-10)
+
+### Features
+
+-   **mouse-follower:** added features component in page for mouse ([b9c61c5](https://github.com/DKMFzF/frontend-portfolio/commit/b9c61c5c044f5ba335b50c4246045066ff5e016d))
+
 ### [1.82.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.82.0...v1.82.1) (2025-05-08)
 
 ### Bug Fixes

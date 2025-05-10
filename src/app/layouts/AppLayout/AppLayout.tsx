@@ -4,6 +4,7 @@ import { TransitionOverlayPage } from '@ui';
 import style from './AppLayout.module.scss';
 import { TAppLayout } from './type';
 import { type routesData } from '@config';
+import { MouseFollower } from '@features';
 
 export const AppLayout: FC<TAppLayout> = ({
 	MetaInfo,
@@ -25,6 +26,7 @@ export const AppLayout: FC<TAppLayout> = ({
 	return (
 		<>
 			{MetaInfo}
+			<MouseFollower />
 			<TransitionOverlayPage />
 			<div id='page-content' className={style.app}>
 				{!shouldHideHeader && Header}
