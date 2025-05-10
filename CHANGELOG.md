@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.85.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.84.2...v1.85.0) (2025-05-10)
+
+### Features
+
+-   replace svg on png ([540ea43](https://github.com/DKMFzF/frontend-portfolio/commit/540ea4300e0303e2e13cc2d9d8e59d94d39fa145))
+
 ### [1.84.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.84.1...v1.84.2) (2025-05-10)
 
 ### Bug Fixes
