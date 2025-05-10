@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.84.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.83.1...v1.84.0) (2025-05-10)
+
+### Features
+
+-   added portfolio interactive whiteboard ([2cc79dc](https://github.com/DKMFzF/frontend-portfolio/commit/2cc79dc804d841fa68314b3846115eec51f8d85e))
+
 ### [1.83.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.83.0...v1.83.1) (2025-05-10)
 
 ## [1.83.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.82.1...v1.83.0) (2025-05-10)
