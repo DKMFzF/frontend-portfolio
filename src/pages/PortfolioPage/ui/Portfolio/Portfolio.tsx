@@ -1,16 +1,18 @@
 import { Helmet } from 'react-helmet-async';
 import { FC, useState, useEffect } from 'react';
 import { CardsProject } from '../CardsProject';
-import { portfolioCard } from '../../constants/portfolioCard';
+import {
+	portfolioCard,
+	portfolioCardPositions
+} from '../../constants/portfolioCard';
 import { META_SITE_DATA } from '@config';
-import { useCards, useDragZoom } from '../../model';
+import { useDragZoom } from '../../model';
 import styles from './Portfolio.module.scss';
 
 export const PortfolioPage: FC = () => {
 	const [isMobileView, setIsMobileView] = useState(false);
 	const { isDragging, position, scale, handleMouseDown, containerRef } =
 		useDragZoom();
-	const { cards: positionedCards } = useCards();
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -22,37 +24,16 @@ export const PortfolioPage: FC = () => {
 	}, []);
 
 	const cardsWithPosition = portfolioCard.map((originalCard, index) => {
-		const positionData =
-			positionedCards[Math.min(index, positionedCards.length - 1)];
+		const positionData = portfolioCardPositions[index];
 
 		return {
 			...originalCard,
 			id: index,
 			x: positionData.x,
 			y: positionData.y,
-			rotation: positionData.rotation,
-			width: positionData.width,
-			height: positionData.height
+			rotation: positionData.rotation
 		};
 	});
-
-	if (isMobileView) {
-		return (
-			<>
-				<Helmet>
-					<title>
-						{
-							META_SITE_DATA.titles.portfolio
-								.portfolioWithNotApproval
-						}
-					</title>
-				</Helmet>
-				<main className={styles['mobile-message']} data-cy='content'>
-					Please open this page from your PC
-				</main>
-			</>
-		);
-	}
 
 	return (
 		<>
@@ -64,7 +45,16 @@ export const PortfolioPage: FC = () => {
 			<main
 				ref={containerRef}
 				className={styles.container}
-				style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+				style={{
+					cursor: isDragging ? 'grabbing' : 'grab',
+					position: 'fixed',
+					top: 0,
+					left: 0,
+					width: '100%',
+					height: '100%',
+					overflow: 'hidden',
+					touchAction: 'none'
+				}}
 				onMouseDown={handleMouseDown}
 			>
 				<CardsProject

@@ -12,7 +12,7 @@ exports[`[PortfolioPage] should render desktop view correctly 1`] = `
 <DocumentFragment>
   <main
     class="container"
-    style="cursor: grab;"
+    style="cursor: grab; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden;"
   >
     <div>
       CardsProject Mock
@@ -24,11 +24,12 @@ exports[`[PortfolioPage] should render desktop view correctly 1`] = `
 exports[`[PortfolioPage] should render mobile view correctly 1`] = `
 <DocumentFragment>
   <main
-    class="mobile-message"
-    data-cy="content"
-    style=""
+    class="container"
+    style="cursor: grab; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden;"
   >
-    Please open this page from your PC
+    <div>
+      CardsProject Mock
+    </div>
   </main>
 </DocumentFragment>
 `;

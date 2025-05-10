@@ -8,6 +8,7 @@ export const CardsProject: FC<CardsProjectProps> = ({
 	transformStyle
 }) => {
 	const cardRefs = useRef<Map<number, HTMLAnchorElement>>(new Map());
+	const contentWrapper = useRef<Map<number, HTMLDivElement>>(new Map());
 
 	return (
 		<ul
@@ -22,46 +23,74 @@ export const CardsProject: FC<CardsProjectProps> = ({
 						href={card.link}
 						className={styles.card}
 						style={{
-							left: `${card.x}px`,
 							top: `${card.y}px`,
-							transform: `rotate(${card.rotation}deg)`
+							left: `${card.x}px`,
+							transform: `translate(-50%, -50%) rotate(${card.rotation}deg)`
 						}}
 						onMouseEnter={() => {
 							const el = cardRefs.current.get(card.id);
+							const contentContainer = contentWrapper.current.get(
+								card.id
+							);
 							if (el) {
 								gsap.to(el, {
-									y: -15,
 									scale: 1.07,
-									boxShadow: '0 15px 25px rgba(0,0,0,0.2)',
+									boxShadow: '0 0 25px rgba(0,0,0,0.2)',
 									duration: 0.3,
 									ease: 'power3.out'
 								});
 								el.style.zIndex = '2';
 							}
+
+							if (contentContainer) {
+								gsap.to(contentContainer, {
+									x: 0,
+									duration: 0.5,
+									ease: 'power3.out'
+								});
+							}
 						}}
 						onMouseLeave={() => {
 							const el = cardRefs.current.get(card.id);
+							const contentContainer = contentWrapper.current.get(
+								card.id
+							);
 							if (el) {
 								gsap.to(el, {
-									y: 0,
 									scale: 1,
 									boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
 									duration: 0.3,
-									ease: 'power3.out'
+									ease: 'power1.out'
 								});
 								el.style.zIndex = '1';
+							}
+
+							if (contentContainer) {
+								gsap.to(contentContainer, {
+									x: '-100%',
+									duration: 0.5,
+									ease: 'power3.in'
+								});
 							}
 						}}
 						onMouseDown={(e) => e.stopPropagation()}
 					>
-						<div className={styles['card__title-container']}>
-							<h3 className={styles.card__title}>{card.title}</h3>
-						</div>
-						<div className={styles['card__discription-container']}>
-							<p className={styles.card__discription}>
-								{card.content}
-							</p>
-							<span className={styles.card__btn}>{'>'}</span>
+						<div className={styles['card__logo-wrapper']}>
+							<div
+								ref={(el) =>
+									el &&
+									contentWrapper.current.set(card.id, el)
+								}
+								className={styles['card__content-wrapper']}
+							>
+								<div
+									className={styles['card__title-container']}
+								>
+									<h3 className={styles.card__title}>
+										{card.title}
+									</h3>
+								</div>
+							</div>
 						</div>
 					</a>
 				</li>

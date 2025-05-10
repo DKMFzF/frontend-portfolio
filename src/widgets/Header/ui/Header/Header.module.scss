@@ -138,5 +138,9 @@ $header-gap-element-icon: 16px;
 			padding: 8px 0;
 			text-decoration: none;
 		}
+
+		@media (width <= 900px) {
+			border-bottom-left-radius: 25px;
+		}
 	}
 }
