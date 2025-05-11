@@ -1,4 +1,4 @@
-export type TPortfolioCard = {
+export type CardPortfolioProps = {
 	logo: string;
 	title?: string;
 	link: string;

@@ -1,69 +1,7 @@
-import { InteractiveBoard } from '../ui/InteractiveBoard';
 import { HelmetProvider } from 'react-helmet-async';
 import { PortfolioPage } from '../ui/Portfolio/Portfolio';
 import { render } from '@testing-library/react';
 import { expect } from '@jest/globals';
-
-describe('[InteractiveBoard]', () => {
-	it('Renders card-project correctly and matches snapshot', () => {
-		const { asFragment } = render(
-			<InteractiveBoard
-				cards={[
-					{
-						id: 1,
-						logo: '',
-						title: 'string',
-						link: 'string',
-						settingsView: {
-							x: 110,
-							y: 110,
-							rotation: 10,
-							bgColor: ''
-						}
-					},
-					{
-						id: 1,
-						logo: '',
-						title: 'string',
-						link: 'string',
-						settingsView: {
-							x: 110,
-							y: 110,
-							rotation: 10,
-							bgColor: ''
-						}
-					},
-					{
-						id: 1,
-						logo: '',
-						title: 'string',
-						link: 'string',
-						settingsView: {
-							x: 110,
-							y: 110,
-							rotation: 10,
-							bgColor: ''
-						}
-					},
-					{
-						id: 1,
-						logo: '',
-						title: 'string',
-						link: 'string',
-						settingsView: {
-							x: 110,
-							y: 110,
-							rotation: 10,
-							bgColor: ''
-						}
-					}
-				]}
-				transformStyle='test-styles'
-			/>
-		);
-		expect(asFragment()).toMatchSnapshot();
-	});
-});
 
 jest.mock('../model', () => ({
 	__esModule: true,

@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[InteractiveBoard] Renders card-project correctly and matches snapshot 1`] = `
-<DocumentFragment>
-  <div>
-    InteractiveBoard Mock
-  </div>
-</DocumentFragment>
-`;
-
 exports[`[PortfolioPage] should render desktop view correctly 1`] = `
 <DocumentFragment>
   <main

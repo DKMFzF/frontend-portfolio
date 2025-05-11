@@ -4,16 +4,13 @@ import { InteractiveBoard } from '../InteractiveBoard';
 import { portfolioCard } from '../../constants/portfolioCard';
 import { META_SITE_DATA } from '@config';
 import { useDragZoom } from '../../model';
-import { mappingPortfolioCard } from '../../lib/mappingPortfolioCard';
+import { CardsList } from '../CardsList';
 import styles from './Portfolio.module.scss';
+import { CardPortfolio } from '../CardPortfolio';
 
 export const PortfolioPage: FC = () => {
 	const { isDragging, position, scale, handleMouseDown, containerRef } =
 		useDragZoom();
-
-	const cardsWithPosition = portfolioCard.map((originalCard, index) =>
-		mappingPortfolioCard(originalCard, index)
-	);
 
 	return (
 		<>
@@ -32,9 +29,20 @@ export const PortfolioPage: FC = () => {
 				onMouseDown={handleMouseDown}
 			>
 				<InteractiveBoard
-					cards={cardsWithPosition}
 					transformStyle={`translate(${position.x}px, ${position.y}px) scale(${scale})`}
-				/>
+				>
+					<CardsList>
+						{portfolioCard.map((card, index) => (
+							<CardPortfolio
+								key={index}
+								logo={card.logo}
+								link={card.link}
+								title={card.title}
+								settingsView={card.settingsView}
+							/>
+						))}
+					</CardsList>
+				</InteractiveBoard>
 			</main>
 		</>
 	);

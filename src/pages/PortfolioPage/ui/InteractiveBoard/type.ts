@@ -1,17 +1,6 @@
-export interface Card {
-	id: number;
-	logo: string;
-	title: string;
-	link: string;
-	settingsView: {
-		x: number;
-		y: number;
-		rotation: number;
-		bgColor: string;
-	};
-}
+import { ReactNode } from 'react';
 
 export interface InteractiveBoardProps {
-	cards: Card[];
 	transformStyle: string;
+	children: ReactNode;
 }

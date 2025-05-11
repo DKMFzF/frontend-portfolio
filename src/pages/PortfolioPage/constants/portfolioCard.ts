@@ -47,7 +47,6 @@ export const portfolioCard: TPortfolioCard[] = [
 	},
 	{
 		logo: film,
-		title: 'Film',
 		link: 'https://github.com/DKMFzF/film-mvc-event',
 		settingsView: {
 			x: 400,
@@ -69,7 +68,6 @@ export const portfolioCard: TPortfolioCard[] = [
 	},
 	{
 		logo: webLorek,
-		title: 'Web-larek',
 		link: 'https://github.com/DKMFzF/web-larek-MVC.git',
 		settingsView: {
 			x: 900,
@@ -80,7 +78,6 @@ export const portfolioCard: TPortfolioCard[] = [
 	},
 	{
 		logo: tikTalk,
-		title: 'Tik-Talk',
 		link: 'https://github.com/DKMFzF/tik-talk',
 		settingsView: {
 			x: -1000,
@@ -91,7 +88,6 @@ export const portfolioCard: TPortfolioCard[] = [
 	},
 	{
 		logo: mesto,
-		title: 'Mesto',
 		link: 'https://github.com/DKMFzF/mesto-project-ff',
 		settingsView: {
 			x: 1000,

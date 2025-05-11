@@ -1,10 +1,8 @@
 import { TPortfolioCard } from '../constants/type';
-import { Card } from '../ui/InteractiveBoard/type';
+import { CardPortfolioProps } from '../ui/CardPortfolio/type';
 
 export const mappingPortfolioCard = (
-	originalCard: TPortfolioCard,
-	index: number
-): Card => ({
-	id: index,
+	originalCard: TPortfolioCard
+): CardPortfolioProps => ({
 	...originalCard
 });
