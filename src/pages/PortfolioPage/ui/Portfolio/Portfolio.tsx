@@ -1,39 +1,19 @@
 import { Helmet } from 'react-helmet-async';
-import { FC, useState, useEffect } from 'react';
-import { CardsProject } from '../CardsProject';
-import {
-	portfolioCard,
-	portfolioCardPositions
-} from '../../constants/portfolioCard';
+import { FC } from 'react';
+import { InteractiveBoard } from '../InteractiveBoard';
+import { portfolioCard } from '../../constants/portfolioCard';
 import { META_SITE_DATA } from '@config';
 import { useDragZoom } from '../../model';
+import { mappingPortfolioCard } from '../../lib/mappingPortfolioCard';
 import styles from './Portfolio.module.scss';
 
 export const PortfolioPage: FC = () => {
-	const [isMobileView, setIsMobileView] = useState(false);
 	const { isDragging, position, scale, handleMouseDown, containerRef } =
 		useDragZoom();
 
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobileView(window.innerWidth < 1440);
-		};
-		handleResize();
-		window.addEventListener('resize', handleResize);
-		return () => window.removeEventListener('resize', handleResize);
-	}, []);
-
-	const cardsWithPosition = portfolioCard.map((originalCard, index) => {
-		const positionData = portfolioCardPositions[index];
-
-		return {
-			...originalCard,
-			id: index,
-			x: positionData.x,
-			y: positionData.y,
-			rotation: positionData.rotation
-		};
-	});
+	const cardsWithPosition = portfolioCard.map((originalCard, index) =>
+		mappingPortfolioCard(originalCard, index)
+	);
 
 	return (
 		<>
@@ -44,20 +24,14 @@ export const PortfolioPage: FC = () => {
 			</Helmet>
 			<main
 				ref={containerRef}
-				className={styles.container}
+				className={styles['portfolio-content']}
 				style={{
 					cursor: isDragging ? 'grabbing' : 'grab',
-					position: 'fixed',
-					top: 0,
-					left: 0,
-					width: '100%',
-					height: '100%',
-					overflow: 'hidden',
 					touchAction: 'none'
 				}}
 				onMouseDown={handleMouseDown}
 			>
-				<CardsProject
+				<InteractiveBoard
 					cards={cardsWithPosition}
 					transformStyle={`translate(${position.x}px, ${position.y}px) scale(${scale})`}
 				/>

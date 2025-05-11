@@ -1,49 +1,61 @@
-import { CardsProject } from '../ui/CardsProject';
+import { InteractiveBoard } from '../ui/InteractiveBoard';
 import { HelmetProvider } from 'react-helmet-async';
 import { PortfolioPage } from '../ui/Portfolio/Portfolio';
 import { render } from '@testing-library/react';
 import { expect } from '@jest/globals';
 
-describe('[CardsProject]', () => {
+describe('[InteractiveBoard]', () => {
 	it('Renders card-project correctly and matches snapshot', () => {
 		const { asFragment } = render(
-			<CardsProject
+			<InteractiveBoard
 				cards={[
 					{
 						id: 1,
+						logo: '',
 						title: 'string',
-						content: 'string',
 						link: 'string',
-						x: 110,
-						y: 110,
-						rotation: 10
+						settingsView: {
+							x: 110,
+							y: 110,
+							rotation: 10,
+							bgColor: ''
+						}
 					},
 					{
-						id: 2,
+						id: 1,
+						logo: '',
 						title: 'string',
-						content: 'string',
 						link: 'string',
-						x: 220,
-						y: 220,
-						rotation: 20
+						settingsView: {
+							x: 110,
+							y: 110,
+							rotation: 10,
+							bgColor: ''
+						}
 					},
 					{
-						id: 3,
+						id: 1,
+						logo: '',
 						title: 'string',
-						content: 'string',
 						link: 'string',
-						x: 330,
-						y: 330,
-						rotation: -10
+						settingsView: {
+							x: 110,
+							y: 110,
+							rotation: 10,
+							bgColor: ''
+						}
 					},
 					{
-						id: 4,
+						id: 1,
+						logo: '',
 						title: 'string',
-						content: 'string',
 						link: 'string',
-						x: 440,
-						y: 440,
-						rotation: -20
+						settingsView: {
+							x: 110,
+							y: 110,
+							rotation: 10,
+							bgColor: ''
+						}
 					}
 				]}
 				transformStyle='test-styles'
@@ -70,9 +82,9 @@ jest.mock('../model', () => ({
 	}))
 }));
 
-jest.mock('../ui/CardsProject', () => ({
+jest.mock('../ui/InteractiveBoard', () => ({
 	__esModule: true,
-	CardsProject: jest.fn(() => <div>CardsProject Mock</div>)
+	InteractiveBoard: jest.fn(() => <div>InteractiveBoard Mock</div>)
 }));
 
 describe('[PortfolioPage]', () => {

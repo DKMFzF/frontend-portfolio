@@ -1,0 +1,1 @@
+export { InteractiveBoard } from './InteractiveBoard';

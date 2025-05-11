@@ -109,7 +109,7 @@ export const useDragZoom = () => {
 	const handleWheel = (e: WheelEvent) => {
 		e.preventDefault();
 		const delta = e.deltaY > 0 ? -0.1 : 0.1;
-		const newScale = Math.min(Math.max(0.5, scale + delta), 2);
+		const newScale = Math.min(Math.max(0.2, scale + delta), 2);
 
 		const rect = containerRef.current?.getBoundingClientRect();
 		if (rect) {

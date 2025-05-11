@@ -1,4 +1,5 @@
-export interface TPortfolioCard {
+export interface Card {
+	id: number;
 	logo: string;
 	title: string;
 	link: string;
@@ -8,4 +9,9 @@ export interface TPortfolioCard {
 		rotation: number;
 		bgColor: string;
 	};
+}
+
+export interface InteractiveBoardProps {
+	cards: Card[];
+	transformStyle: string;
 }
