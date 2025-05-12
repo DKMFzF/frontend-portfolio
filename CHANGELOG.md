@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.88.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.87.0...v1.88.0) (2025-05-12)
+
+### Features
+
+-   **usecardportfoliohandlesmouse:** added animation for card hover effect ([7f87603](https://github.com/DKMFzF/frontend-portfolio/commit/7f876030698b60d6b63550ce2dbf04c0701e6843))
+
 ## [1.87.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.86.0...v1.87.0) (2025-05-11)
 
 ### Features
