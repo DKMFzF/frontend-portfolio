@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.89.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.88.0...v1.89.0) (2025-05-12)
+
+### Features
+
+-   **portfolio:** added text in board portfolio ([cc5ccb0](https://github.com/DKMFzF/frontend-portfolio/commit/cc5ccb01f519c41fedbe0e07eb9769c641d61d43))
+
 ## [1.88.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.87.0...v1.88.0) (2025-05-12)
 
 ### Features
