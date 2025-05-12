@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { useCardPortfolioHandlesMouse } from '../../model';
 import { type CardPortfolioProps } from './type';
+import commonPortfolioStyles from '../../styles/CommonPortfolio.module.scss';
 import styles from './CardPortfolio.module.scss';
 
 export const CardPortfolio: FC<CardPortfolioProps> = ({
@@ -19,7 +20,7 @@ export const CardPortfolio: FC<CardPortfolioProps> = ({
 					ref={cardRef}
 					target='_blank'
 					href={link}
-					className={styles.card}
+					className={`${commonPortfolioStyles['common-portfolio']} ${styles.card}`}
 					style={{
 						top: `${settingsView.y}px`,
 						left: `${settingsView.x}px`,

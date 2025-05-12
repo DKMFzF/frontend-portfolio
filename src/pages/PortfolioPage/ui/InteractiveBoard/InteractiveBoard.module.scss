@@ -5,9 +5,7 @@ $premary-card-color: #cec2e6;
 .interactive-board {
 	&__wrapper {
 		left: 0;
-		position: absolute;
 		top: 0;
-		transform-origin: center center;
 		will-change: transform;
 	}
 }
