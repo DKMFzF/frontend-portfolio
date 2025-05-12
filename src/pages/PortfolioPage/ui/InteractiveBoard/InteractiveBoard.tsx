@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { InteractiveBoardProps } from './type';
+import commonPortfolioStyles from '../../styles/CommonPortfolio.module.scss';
 import styles from './InteractiveBoard.module.scss';
 
 export const InteractiveBoard: FC<InteractiveBoardProps> = ({
@@ -7,7 +8,7 @@ export const InteractiveBoard: FC<InteractiveBoardProps> = ({
 	children
 }) => (
 	<div
-		className={styles['interactive-board__wrapper']}
+		className={`${commonPortfolioStyles['common-portfolio']} ${styles['interactive-board__wrapper']}`}
 		style={{ transform: transformStyle }}
 	>
 		{children}

@@ -7,7 +7,7 @@ import webLorek from '@images/portfolioPorjectCards/web-lorek.png';
 import tikTalk from '@images/portfolioPorjectCards/tik-talk.png';
 import mesto from '@images/portfolioPorjectCards/mesto.png';
 import puzzleAnimalGame from '@images/portfolioPorjectCards/puzzle-animal-game.png';
-import { TPortfolioCard } from './type';
+import { TPortfolioCard } from '../model';
 
 const bgColor = 'rgb(29, 29, 29)';
 
@@ -17,9 +17,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		title: 'StellarBurger',
 		link: 'https://github.com/DKMFzF/stellar-burgers.git',
 		settingsView: {
-			x: -200,
-			y: -200,
-			rotation: -10,
+			x: -250,
+			y: -700,
+			rotation: -6,
 			bgColor
 		}
 	},
@@ -28,9 +28,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		title: 'Lindenmayer System',
 		link: 'https://github.com/DKMFzF/lindenmayer-system-clean-architecture',
 		settingsView: {
-			x: 200,
-			y: 200,
-			rotation: 10,
+			x: -1750,
+			y: 0,
+			rotation: 20,
 			bgColor
 		}
 	},
@@ -39,9 +39,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		title: 'ToDoRun',
 		link: 'https://github.com/DKMFzF/to-do-run-django',
 		settingsView: {
-			x: -400,
-			y: 200,
-			rotation: -10,
+			x: 500,
+			y: -700,
+			rotation: 0,
 			bgColor
 		}
 	},
@@ -49,9 +49,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		logo: film,
 		link: 'https://github.com/DKMFzF/film-mvc-event',
 		settingsView: {
-			x: 400,
-			y: -200,
-			rotation: 10,
+			x: -1300,
+			y: -250,
+			rotation: -5,
 			bgColor
 		}
 	},
@@ -60,9 +60,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		title: 'Quadracopter24',
 		link: 'https://github.com/DKMFzF/Quadracopter24-service',
 		settingsView: {
-			x: -900,
-			y: -200,
-			rotation: 0,
+			x: 1100,
+			y: -700,
+			rotation: -20,
 			bgColor
 		}
 	},
@@ -70,9 +70,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		logo: webLorek,
 		link: 'https://github.com/DKMFzF/web-larek-MVC.git',
 		settingsView: {
-			x: 900,
-			y: 200,
-			rotation: 0,
+			x: -2300,
+			y: 150,
+			rotation: -20,
 			bgColor
 		}
 	},
@@ -80,9 +80,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		logo: tikTalk,
 		link: 'https://github.com/DKMFzF/tik-talk',
 		settingsView: {
-			x: -1000,
-			y: 200,
-			rotation: 0,
+			x: -900,
+			y: -700,
+			rotation: 16,
 			bgColor
 		}
 	},
@@ -90,9 +90,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		logo: mesto,
 		link: 'https://github.com/DKMFzF/mesto-project-ff',
 		settingsView: {
-			x: 1000,
-			y: -200,
-			rotation: 0,
+			x: -2000,
+			y: 400,
+			rotation: -15,
 			bgColor
 		}
 	},
@@ -101,9 +101,9 @@ export const portfolioCard: TPortfolioCard[] = [
 		title: 'Puzzle Animal Game',
 		link: 'https://github.com/DKMFzF/puzzle-animal-game-clean-architecture',
 		settingsView: {
-			x: 500,
-			y: -600,
-			rotation: 0,
+			x: 1800,
+			y: 0,
+			rotation: 30,
 			bgColor
 		}
 	}

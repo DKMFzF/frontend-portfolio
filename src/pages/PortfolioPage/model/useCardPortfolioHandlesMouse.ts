@@ -12,38 +12,44 @@ export const useCardPortfolioHandlesMouse = () => {
 	});
 
 	const handleMouseEnter = () => {
+		tl.clear();
+
 		if (cardRef.current) {
 			tl.to(cardRef.current, {
-				scale: 1.07,
-				boxShadow: '0 0 25px rgba(0,0,0,0.2)',
-				duration: 0.3
+				scale: 1.07
 			});
 			cardRef.current.style.zIndex = '2';
 		}
 
 		if (titleRef.current) {
-			tl.to(titleRef.current, {
-				x: 0,
-				duration: 0.5
-			});
+			tl.to(
+				titleRef.current,
+				{
+					x: 0
+				},
+				'<'
+			);
 		}
 	};
 
 	const handleMouseLeave = () => {
+		tl.clear();
+
 		if (cardRef.current) {
 			tl.to(cardRef.current, {
-				scale: 1,
-				boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-				duration: 0.3
+				scale: 1
 			});
 			cardRef.current.style.zIndex = '1';
 		}
 
 		if (titleRef.current) {
-			tl.to(titleRef.current, {
-				x: '-100%',
-				duration: 0.5
-			});
+			tl.to(
+				titleRef.current,
+				{
+					x: '-100%'
+				},
+				'<'
+			);
 		}
 	};
 

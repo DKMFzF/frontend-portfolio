@@ -1,0 +1,1 @@
+export { ImgPortfolio } from './ImgPortfolio';

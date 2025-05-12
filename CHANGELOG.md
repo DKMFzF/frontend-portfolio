@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.89.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.88.0...v1.89.0) (2025-05-12)
+
+### Features
+
+-   **portfolio:** added text in board portfolio ([cc5ccb0](https://github.com/DKMFzF/frontend-portfolio/commit/cc5ccb01f519c41fedbe0e07eb9769c641d61d43))
+
+## [1.88.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.87.0...v1.88.0) (2025-05-12)
+
+### Features
+
+-   **usecardportfoliohandlesmouse:** added animation for card hover effect ([7f87603](https://github.com/DKMFzF/frontend-portfolio/commit/7f876030698b60d6b63550ce2dbf04c0701e6843))
+
 ## [1.87.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.86.0...v1.87.0) (2025-05-11)
 
 ### Features

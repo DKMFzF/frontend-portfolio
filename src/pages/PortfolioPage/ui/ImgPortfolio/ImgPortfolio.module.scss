@@ -1,0 +1,7 @@
+@use '~styles/mixins' as *;
+
+.logo-portfolio {
+	@include noselect;
+
+	transform: translate(-50%, -50%);
+}
