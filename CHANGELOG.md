@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.90.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.89.0...v1.90.0) (2025-05-15)
+
+### Features
+
+-   **three:** added new page sketches-page and new hook connectglslforwebgl ([cc4e849](https://github.com/DKMFzF/frontend-portfolio/commit/cc4e84960ac169fcba3b2fbd526b220887189c10))
+
 ## [1.89.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.88.0...v1.89.0) (2025-05-12)
 
 ### Features
