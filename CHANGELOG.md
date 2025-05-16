@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.91.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.90.0...v1.91.0) (2025-05-16)
+
+### Features
+
+-   **model-about-me:** added test model in page ([0c9ef7b](https://github.com/DKMFzF/frontend-portfolio/commit/0c9ef7b0f34bc356ef6dcf5eb03df9ccd94d8f1c))
+
 ## [1.90.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.89.0...v1.90.0) (2025-05-15)
 
 ### Features
