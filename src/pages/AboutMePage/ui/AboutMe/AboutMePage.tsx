@@ -7,6 +7,7 @@ import { CommonPage } from '@ui';
 import { AboutMeArticle } from '../AboutMeArticle';
 import { ExperienceCard } from '../ExperienceCard';
 import { KnowledgeSidebar } from '@features';
+import { ExplodingText } from '../ExplodingText';
 
 import { META_SITE_DATA } from '@config';
 
@@ -15,6 +16,7 @@ export const AboutMePage: FC = () => (
 		<Helmet>
 			<title>{META_SITE_DATA.titles.aboutMe}</title>
 		</Helmet>
+		<ExplodingText />
 		<CommonPage pageStyles={styles['about-me']}>
 			<div className={styles['about-me__content']}>
 				<AboutMeArticle

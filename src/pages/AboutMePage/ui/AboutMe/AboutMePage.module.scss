@@ -49,6 +49,10 @@ $timeline-block-col: 2;
 		font-size: $page-title;
 		font-weight: 900;
 		text-transform: uppercase;
+
+		canvas {
+			display: block;
+		}
 	}
 
 	&__stack {
