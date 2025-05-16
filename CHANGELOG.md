@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.92.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.91.0...v1.92.0) (2025-05-16)
+
+### Features
+
+-   **models-lang:** added new model in about-page ([96d4d30](https://github.com/DKMFzF/frontend-portfolio/commit/96d4d3009adef5a8b0cab19d2fb6c5a6e9df0c74))
+
 ## [1.91.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.90.0...v1.91.0) (2025-05-16)
 
 ### Features
