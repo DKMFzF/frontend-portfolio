@@ -7,6 +7,7 @@ import { CommonPage } from '@ui';
 import { AboutMeArticle } from '../AboutMeArticle';
 import { ExperienceCard } from '../ExperienceCard';
 import { KnowledgeSidebar } from '@features';
+import { ExplodingText } from '../ExplodingText';
 
 import { META_SITE_DATA } from '@config';
 
@@ -15,12 +16,14 @@ export const AboutMePage: FC = () => (
 		<Helmet>
 			<title>{META_SITE_DATA.titles.aboutMe}</title>
 		</Helmet>
+		<ExplodingText />
 		<CommonPage pageStyles={styles['about-me']}>
 			<div className={styles['about-me__content']}>
 				<AboutMeArticle
 					className={styles['about-me__title-container']}
 					borderFlag
 					borderRadiusFlag
+					bgBlur
 				>
 					<h1 className={styles['about-me__title']}>About Me</h1>
 				</AboutMeArticle>
@@ -63,6 +66,7 @@ export const AboutMePage: FC = () => (
 					className={styles['about-me__discriptrion-dkmfzf']}
 					borderFlag
 					borderRadiusFlag
+					bgBlur
 				>
 					<p className={styles['about-me__description']}>
 						I am in love with complex algorithmic programming tasks

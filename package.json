@@ -1,6 +1,6 @@
 {
 	"name": "dkmfzf-frontend-portfolio",
-	"version": "1.89.0",
+	"version": "1.92.0",
 	"description": "Frontend portfolio project by DKMFzF",
 	"keywords": [
 		"frontend",
@@ -127,6 +127,8 @@
 		"webpack-log": "^3.0.2"
 	},
 	"dependencies": {
+		"@react-three/drei": "^10.0.7",
+		"@react-three/fiber": "^8.15.13",
 		"@reduxjs/toolkit": "^2.7.0",
 		"@types/react-helmet": "^6.1.11",
 		"@zlden/react-developer-burger-ui-components": "^1.15.0",
@@ -143,7 +145,8 @@
 		"react-helmet-async": "^2.0.5",
 		"react-redux": "^9.2.0",
 		"react-router-dom": "^7.5.3",
-		"redux": "^5.0.1"
+		"redux": "^5.0.1",
+		"three": "^0.176.0"
 	},
 	"eslintConfig": {
 		"extends": [

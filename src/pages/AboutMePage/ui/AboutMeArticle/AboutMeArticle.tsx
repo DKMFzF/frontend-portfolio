@@ -10,7 +10,8 @@ export const AboutMeArticle: FC<AboutMeArticleProps> = ({
 	paddingFlag = false,
 	borderRadiusFlag = false,
 	borderFlag = false,
-	flexFlag = false
+	flexFlag = false,
+	bgBlur = false
 }) => (
 	<article
 		className={`${styles['about-me__block']} ${className} 
@@ -18,7 +19,8 @@ export const AboutMeArticle: FC<AboutMeArticleProps> = ({
 		${!paddingFlag ? styles['about-me__padding-default'] : ''}
 		${borderRadiusFlag ? styles['about-me__border-radius-default'] : ''}
 		${borderFlag ? styles['about-me__border-flag'] : ''}
-		${flexFlag ? styles['about-me__flex-flag'] : ''}`}
+		${flexFlag ? styles['about-me__flex-flag'] : ''}
+		${bgBlur ? styles['about-me__bg-blur'] : ''}`}
 	>
 		{subtitle && (
 			<header className={styles['about-me__sub-title']}>

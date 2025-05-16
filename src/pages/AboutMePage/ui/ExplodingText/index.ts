@@ -1,0 +1,1 @@
+export { ExplodingText } from './ExplodingText';

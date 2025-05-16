@@ -46,6 +46,10 @@ $border-premary-card-color: 1px solid #cec2e6;
 		}
 	}
 
+	&__bg-blur {
+		backdrop-filter: blur(10px);
+	}
+
 	@media (width <= 1000px) {
 		&__block {
 			height: -webkit-fill-available;
