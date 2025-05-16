@@ -9,4 +9,5 @@ export interface AboutMeArticleProps {
 	borderRadiusFlag?: boolean;
 	borderFlag?: boolean;
 	flexFlag?: boolean;
+	bgBlur?: boolean;
 }

@@ -1,19 +1,10 @@
 import { Canvas } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
 import { Suspense } from 'react';
-
-function LaptopModel() {
-	const gltf = useGLTF('/laptope.glb');
-	return <primitive object={gltf.scene} scale={8} position={[-14, 3.5, 0]} />;
-}
-
-function ClockModel() {
-	const gltf = useGLTF('/clock.glb');
-	return <primitive object={gltf.scene} scale={1} position={[14, -6.5, 0]} />;
-}
+import styles from './ExplodingText.module.scss';
+import { RotatingBgModel } from './RotatingBgModel';
 
 export const ExplodingText = () => (
-	<div style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
+	<div className={styles['exploding-text']}>
 		<Canvas
 			orthographic
 			camera={{
@@ -26,8 +17,20 @@ export const ExplodingText = () => (
 			<ambientLight intensity={1} />
 			<directionalLight position={[5, 5, 5]} />
 			<Suspense fallback={null}>
-				<LaptopModel />
-				<ClockModel />
+				<RotatingBgModel
+					modelPath='/ts.glb'
+					rotationDirection={1}
+					basePosition={[-14, 3.5, 0]}
+					shakeOffset={[-0.5, 0.2]}
+					snippetZ={0}
+				/>
+				<RotatingBgModel
+					modelPath='/js.glb'
+					rotationDirection={-1}
+					basePosition={[14, -3.5, 0]}
+					shakeOffset={[0.5, -0.2]}
+					snippetZ={2}
+				/>
 			</Suspense>
 		</Canvas>
 	</div>
