@@ -16,8 +16,11 @@ $header-gap-element-icon: 16px;
 	width: 100%;
 	z-index: $header-z-index;
 
-	&__container {
+	&__container-default {
 		margin: 0 auto;
+	}
+
+	&__container {
 		max-width: $max-page-width;
 	}
 

@@ -1,4 +1,7 @@
 import zaglushka from '@images/zaglushka.png';
+import animatedBackground from '@images/cardsSketchs/animatedBackground.png';
+import flexibleSomething from '@images/cardsSketchs/flexibleSomething.png';
+
 import { routesData } from '../routesData';
 
 type SketchesDataType = {
@@ -12,14 +15,14 @@ type SketchesDataType = {
 export const sketchesData: SketchesDataType[] = [
 	{
 		id: 'sketch-1',
-		screenshot: zaglushka,
+		screenshot: animatedBackground,
 		title: 'Animated background',
 		tags: ['react', 'webgl', 'three.js'],
 		github: ''
 	},
 	{
 		id: 'sketch-2',
-		screenshot: zaglushka,
+		screenshot: flexibleSomething,
 		title: 'Flexible something?',
 		tags: ['react', 'webgl', 'three.js'],
 		github: ''

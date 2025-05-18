@@ -4,7 +4,8 @@ import { META_SITE_DATA, sketchesData } from '@config';
 import { lazy, Suspense } from 'react';
 
 const SketchComponents = {
-	'sketch-1': lazy(() => import('../AnimatedBackground/AnimatedBackground'))
+	'sketch-1': lazy(() => import('../AnimatedBackground/AnimatedBackground')),
+	'sketch-2': lazy(() => import('../FlexibleSomething/FlexibleSomething'))
 };
 
 export const SketchDetail = () => {
