@@ -4,11 +4,25 @@ import styles from './common.module.scss';
 
 export const CommonPage: FC<TCommonPageUIProps> = ({
 	pageStyles = '',
-	children
+	children,
+	isCentralPage = false
 }) => (
-	<main className={styles.main}>
-		<section className={`${styles['main__section-bg']} ${pageStyles}`}>
-			{children}
-		</section>
+	<main
+		className={`${
+			isCentralPage ? styles['main--central-page'] : styles.main
+		}`}
+	>
+		<div
+			className={`${
+				isCentralPage
+					? styles['main__content-wrapper--central-page']
+					: styles['main__content-wrapper']
+			}
+		`}
+		>
+			<div className={`${styles.main__content} ${pageStyles}`}>
+				{children}
+			</div>
+		</div>
 	</main>
 );

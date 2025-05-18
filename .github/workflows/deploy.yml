@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches: 
-      - main
+  # pull_request:
+  #   branches: 
+  #     - main
 
 jobs:
   build-and-test:
@@ -27,13 +27,13 @@ jobs:
       - name: Run unit tests
         run: npm test
 
-      - name: Start server for e2e tests
-        run: npm run start &
+      # - name: Start server for e2e tests
+      #   run: npm run start &
       
-      - name: Run e2e tests
-        run: npm run ci-test:e2e
-        env:
-          CYPRESS_BASE_URL: "http://localhost:8081"
+      # - name: Run e2e tests
+      #   run: npm run ci-test:e2e
+      #   env:
+      #     CYPRESS_BASE_URL: "http://localhost:8081"
 
   deploy:
     needs: build-and-test

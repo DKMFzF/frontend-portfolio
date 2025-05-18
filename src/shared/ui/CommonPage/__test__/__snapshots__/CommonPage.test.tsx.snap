@@ -5,13 +5,18 @@ exports[`[CommonPage] Renders common-page correctly and matches snapshot 1`] = `
   <main
     class="main"
   >
-    <section
-      class="main__section-bg styles"
+    <div
+      class="main__content-wrapper
+		"
     >
-      <div>
-        test
+      <div
+        class="main__content styles"
+      >
+        <div>
+          test
+        </div>
       </div>
-    </section>
+    </div>
   </main>
 </DocumentFragment>
 `;
