@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.97.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.96.0...v1.97.0) (2025-05-18)
+
+### Features
+
+-   **added iridescentstar:** added new page ([a6cb6fd](https://github.com/DKMFzF/frontend-portfolio/commit/a6cb6fd184735bc9be89852aab26d02bc7b098c4))
+
 ## [1.96.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.95.0...v1.96.0) (2025-05-18)
 
 ### Features
