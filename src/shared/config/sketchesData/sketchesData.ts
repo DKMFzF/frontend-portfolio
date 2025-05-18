@@ -20,34 +20,34 @@ export const sketchesData: SketchesDataType[] = [
 		screenshot: animatedBackground,
 		title: 'Animated background',
 		tags: ['react', 'webgl', 'three.js'],
-		github: ''
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/AnimatedBackground/AnimatedBackground.tsx'
 	},
 	{
 		id: 'sketch-2',
 		screenshot: flexibleSomething,
 		title: 'Flexible something?',
 		tags: ['react', 'webgl', 'three.js'],
-		github: ''
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/FlexibleSomething/FlexibleSomething.tsx'
 	},
 	{
 		id: 'sketch-3',
 		screenshot: brightSphere,
 		title: 'Bright sphere',
 		tags: ['react', 'webgl', 'three.js'],
-		github: ''
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/BrightSphere/BrightSphere.tsx'
 	},
 	{
 		id: 'sketch-4',
 		screenshot: iridescentStar,
 		title: 'Bright sphere',
 		tags: ['react', 'webgl', 'three.js'],
-		github: ''
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/IridescentStar/IridescentStar.tsx'
 	},
 	{
 		id: 'sketch-5',
 		screenshot: curlySector,
 		title: 'Curly Sector',
 		tags: ['react', 'webgl', 'three.js'],
-		github: ''
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/CurlySector/CurlySector.tsx'
 	}
 ];
