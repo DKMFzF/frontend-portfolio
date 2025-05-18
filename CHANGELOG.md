@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.94.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.93.0...v1.94.0) (2025-05-18)
+
+### Features
+
+-   **sketche-page:** added new formating pages common styles ([f260424](https://github.com/DKMFzF/frontend-portfolio/commit/f2604242014d3eeddaece5f7fa589bd66306183e))
+
+## [1.93.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.92.0...v1.93.0) (2025-05-18)
+
+### Features
+
+-   **sketches-page:** added sketches-page in project ([3255fb6](https://github.com/DKMFzF/frontend-portfolio/commit/3255fb6c95c0149254bd6c198db97b92e61b2858))
+
 ## [1.92.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.91.0...v1.92.0) (2025-05-16)
 
 ### Features

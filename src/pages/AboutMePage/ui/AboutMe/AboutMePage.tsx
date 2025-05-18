@@ -17,8 +17,8 @@ export const AboutMePage: FC = () => (
 			<title>{META_SITE_DATA.titles.aboutMe}</title>
 		</Helmet>
 		<ExplodingText />
-		<CommonPage pageStyles={styles['about-me']}>
-			<div className={styles['about-me__content']}>
+		<CommonPage pageStyles={styles['about-me']} isCentralPage>
+			<section className={styles['about-me__content']}>
 				<AboutMeArticle
 					className={styles['about-me__title-container']}
 					borderFlag
@@ -73,7 +73,7 @@ export const AboutMePage: FC = () => (
 						and Hackathons!
 					</p>
 				</AboutMeArticle>
-			</div>
+			</section>
 		</CommonPage>
 	</>
 );

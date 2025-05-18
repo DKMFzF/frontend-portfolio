@@ -14,11 +14,12 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
         <div
           class="header__brand"
         >
-          <div
-            data-testid="animated-link"
+          <span
+            class="header__link"
+            style="cursor: pointer;"
           >
             portfolio
-          </div>
+          </span>
         </div>
         <nav
           class="header__nav"
@@ -29,20 +30,32 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
             <li
               class="header__menuItem"
             >
-              <div
-                data-testid="animated-link"
+              <span
+                class="header__link"
+                style="cursor: pointer;"
               >
-                About Me
-              </div>
+                about Me
+              </span>
+            </li>
+            <li
+              class="header__menuItem"
+            >
+              <span
+                class="header__link"
+                style="cursor: pointer;"
+              >
+                sketches
+              </span>
             </li>
             <li
               class="header__menu-item"
             >
-              <div
-                data-testid="animated-link"
+              <span
+                class="header__link"
+                style="cursor: pointer;"
               >
                 portfolio
-              </div>
+              </span>
             </li>
             <li
               class="header__menu-item"
@@ -54,17 +67,6 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
               >
                 download resume
               </a>
-            </li>
-            <li
-              class="header__menu-item"
-            >
-              <div
-                class="header__icons"
-              >
-                <div
-                  data-testid="icon"
-                />
-              </div>
             </li>
           </ul>
         </nav>

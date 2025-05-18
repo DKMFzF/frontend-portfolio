@@ -4,22 +4,32 @@ $main-padding-start: 94px;
 $main-border: 1px solid $bg-primary-color;
 
 .main {
-	margin: auto;
-	max-width: $max-page-width;
-	padding-block-start: $main-padding-start;
 	position: relative;
 	width: 100%;
 	z-index: 0;
 
-	&__section-bg {
+	&__content-wrapper {
+		margin: auto;
+		max-width: $max-page-width;
+
+		&--central-page {
+			max-width: $max-page-width;
+		}
+	}
+
+	&__content {
 		color: $bg-primary-color;
 		font-family: $font-family;
 		margin: $margin-section;
 		margin-inline: $section-outsice-margin;
-		max-width: $max-page-width;
+		padding-block-start: $main-padding-start;
 
 		@media (width <= 900px) {
 			margin-inline: 15px;
 		}
+	}
+
+	&--central-page {
+		margin: auto;
 	}
 }

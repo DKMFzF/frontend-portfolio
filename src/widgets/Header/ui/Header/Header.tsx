@@ -1,14 +1,9 @@
-import { FC, useContext } from 'react';
-import { Icon, AnimatedNavLink } from '@ui';
-import { Link } from 'react-router-dom';
+import { FC } from 'react';
+import { AnimatedNavLink } from '@ui';
 import { useMobileMenu } from '../../model';
 import { useMetrika } from '@lib';
 import resumeFile from '../../../../../public/kirill-doroshev-resume.pdf';
 import styles from './Header.module.scss';
-import { SocialLinks } from '@providers';
-import { TIconDataLinks } from './type';
-
-import { useAnimatedNavigate } from '@lib';
 
 // TODO: Распил компонента
 // TODO: Выделить данные с хуков в пропсы и кинуть на уровень выше
@@ -22,10 +17,6 @@ export const Header: FC = () => {
 		toggleMenu,
 		closeMenu
 	} = useMobileMenu();
-
-	const links: TIconDataLinks = useContext(SocialLinks);
-
-	const animatedNavigate = useAnimatedNavigate();
 
 	const { ym, gtag } = useMetrika();
 
@@ -51,7 +42,15 @@ export const Header: FC = () => {
 									to='/'
 									styles={styles.header__link}
 								>
-									About Me
+									about Me
+								</AnimatedNavLink>
+							</li>
+							<li className={styles.header__menuItem}>
+								<AnimatedNavLink
+									to='/sketches'
+									styles={styles.header__link}
+								>
+									sketches
 								</AnimatedNavLink>
 							</li>
 							<li className={styles['header__menu-item']}>
@@ -78,11 +77,6 @@ export const Header: FC = () => {
 								>
 									download resume
 								</a>
-							</li>
-							<li className={styles['header__menu-item']}>
-								<div className={styles.header__icons}>
-									<Icon links={links} />
-								</div>
 							</li>
 						</ul>
 					</nav>
@@ -120,6 +114,14 @@ export const Header: FC = () => {
 									</AnimatedNavLink>
 
 									<AnimatedNavLink
+										to='/sketches'
+										styles={styles.header__link}
+										onClick={closeMenu}
+									>
+										sketches
+									</AnimatedNavLink>
+
+									<AnimatedNavLink
 										to='/portfolio'
 										styles={styles.header__link}
 										onClick={() => closeMenu()}
@@ -142,9 +144,6 @@ export const Header: FC = () => {
 									>
 										download resume
 									</a>
-									<div className={styles.header__icons}>
-										<Icon links={links} />
-									</div>
 								</nav>
 							</>
 						)}

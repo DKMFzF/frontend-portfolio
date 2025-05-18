@@ -10,7 +10,7 @@ $header-gap-element: 32px;
 $header-gap-element-icon: 16px;
 
 .header {
-	color: $bg-primary-color;
+	mix-blend-mode: difference;
 	position: fixed;
 	top: $header-inset-top;
 	width: 100%;
@@ -28,7 +28,6 @@ $header-gap-element-icon: 16px;
 		display: flex;
 		justify-content: space-between;
 		margin-inline: $section-outsice-margin;
-		padding-inline: $header-padding;
 
 		@media (width <= 900px) {
 			margin-inline: 15px;
@@ -73,7 +72,7 @@ $header-gap-element-icon: 16px;
 	}
 
 	&__link {
-		@include link($font-size-min, $bg-primary-color);
+		@include link($font-size-min, rgb(226, 226, 226));
 
 		font-family: $font-family;
 		text-transform: uppercase;
@@ -124,8 +123,6 @@ $header-gap-element-icon: 16px;
 		display: flex;
 		flex-direction: column;
 		gap: 24px;
-
-		// height: 100vh;
 		padding: 24px;
 		position: fixed;
 		right: 0;
@@ -135,7 +132,6 @@ $header-gap-element-icon: 16px;
 
 		a {
 			font-size: 18px;
-			padding: 8px 0;
 			text-decoration: none;
 		}
 
