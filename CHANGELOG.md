@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.95.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.94.0...v1.95.0) (2025-05-18)
+
+### Features
+
+-   **added sketchescard:** added SketchesCard ([9bcea91](https://github.com/DKMFzF/frontend-portfolio/commit/9bcea917f615b35a31afdae71a7a37f6e8685f1e))
+
 ## [1.94.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.93.0...v1.94.0) (2025-05-18)
 
 ### Features
