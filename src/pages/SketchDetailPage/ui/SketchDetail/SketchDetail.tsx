@@ -5,7 +5,10 @@ import { lazy, Suspense } from 'react';
 
 const SketchComponents = {
 	'sketch-1': lazy(() => import('../AnimatedBackground/AnimatedBackground')),
-	'sketch-2': lazy(() => import('../FlexibleSomething/FlexibleSomething'))
+	'sketch-2': lazy(() => import('../FlexibleSomething/FlexibleSomething')),
+	'sketch-3': lazy(() => import('../BrightSphere/BrightSphere')),
+	'sketch-4': lazy(() => import('../IridescentStar/IridescentStar')),
+	'sketch-5': lazy(() => import('../CurlySector/CurlySector'))
 };
 
 export const SketchDetail = () => {

@@ -1,6 +1,8 @@
-import zaglushka from '@images/zaglushka.png';
 import animatedBackground from '@images/cardsSketchs/animatedBackground.png';
 import flexibleSomething from '@images/cardsSketchs/flexibleSomething.png';
+import brightSphere from '@images/cardsSketchs/brightSphere.png';
+import iridescentStar from '@images/cardsSketchs/iridescentStar.png';
+import curlySector from '@images/cardsSketchs/curlySector.png';
 
 import { routesData } from '../routesData';
 
@@ -29,8 +31,22 @@ export const sketchesData: SketchesDataType[] = [
 	},
 	{
 		id: 'sketch-3',
-		screenshot: zaglushka,
+		screenshot: brightSphere,
 		title: 'Bright sphere',
+		tags: ['react', 'webgl', 'three.js'],
+		github: ''
+	},
+	{
+		id: 'sketch-4',
+		screenshot: iridescentStar,
+		title: 'Bright sphere',
+		tags: ['react', 'webgl', 'three.js'],
+		github: ''
+	},
+	{
+		id: 'sketch-5',
+		screenshot: curlySector,
+		title: 'Curly Sector',
 		tags: ['react', 'webgl', 'three.js'],
 		github: ''
 	}

@@ -9,4 +9,6 @@ export type routesData =
 	| '/sketches'
 	| 'sketch-1'
 	| 'sketch-2'
-	| 'sketch-3';
+	| 'sketch-3'
+	| 'sketch-4'
+	| 'sketch-5';
