@@ -25,8 +25,6 @@ export const Header: FC = () => {
 
 	const links: TIconDataLinks = useContext(SocialLinks);
 
-	const animatedNavigate = useAnimatedNavigate();
-
 	const { ym, gtag } = useMetrika();
 
 	return (
@@ -51,7 +49,15 @@ export const Header: FC = () => {
 									to='/'
 									styles={styles.header__link}
 								>
-									About Me
+									about Me
+								</AnimatedNavLink>
+							</li>
+							<li className={styles.header__menuItem}>
+								<AnimatedNavLink
+									to='/sketches'
+									styles={styles.header__link}
+								>
+									sketches
 								</AnimatedNavLink>
 							</li>
 							<li className={styles['header__menu-item']}>

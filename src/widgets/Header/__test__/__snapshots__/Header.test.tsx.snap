@@ -32,7 +32,16 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
               <div
                 data-testid="animated-link"
               >
-                About Me
+                about Me
+              </div>
+            </li>
+            <li
+              class="header__menuItem"
+            >
+              <div
+                data-testid="animated-link"
+              >
+                sketches
               </div>
             </li>
             <li

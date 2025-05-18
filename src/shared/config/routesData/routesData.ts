@@ -1,1 +1,8 @@
-export type routesData = 'portfolio' | 'about-me' | '*' | '/' | '/portfolio';
+export type routesData =
+	| 'portfolio'
+	| 'about-me'
+	| 'sketches'
+	| '*'
+	| '/'
+	| '/portfolio'
+	| '/sketches';

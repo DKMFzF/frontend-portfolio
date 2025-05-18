@@ -25,6 +25,12 @@ const PortfolioPage = lazy(
 			/* webpackChunkName: "portfolio-page" */ '../pages/PortfolioPage/ui/Portfolio/Portfolio'
 		)
 );
+const SketchesPage = lazy(
+	() =>
+		import(
+			/* webpackChunkName: "sketches-page" */ '../pages/SketchesPage/ui/Sketches/Sketches'
+		)
+);
 
 export const router = createBrowserRouter([
 	{
@@ -64,6 +70,7 @@ export const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <AboutMePage /> },
 			{ path: 'portfolio', element: <PortfolioPage /> },
+			{ path: 'sketches', element: <SketchesPage /> },
 			{ path: '*', element: <NotFound404Page /> }
 		]
 	}
