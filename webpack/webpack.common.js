@@ -20,6 +20,10 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.(glsl|vs|fs|vert|frag)$/,
+				use: ['raw-loader']
+			},
+			{
 				test: /\.(pdf)$/,
 				type: 'asset/resource',
 				generator: {

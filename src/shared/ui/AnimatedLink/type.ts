@@ -5,7 +5,7 @@ type AnimatedNavLinkProps = {
 	to: routesData;
 	styles?: string;
 	children?: ReactNode;
-	onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+	onClick?: (event: MouseEvent<HTMLDivElement>) => void;
 };
 
 export default AnimatedNavLinkProps;

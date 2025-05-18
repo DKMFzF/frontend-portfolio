@@ -11,6 +11,13 @@ type TTitles = {
 	default: string;
 	aboutMe: string;
 	portfolio: TTitlesPortfolio;
+	sketches: {
+		mainPage: string;
+		sketchesDetailInfo: {
+			[key: string]: string;
+		};
+	};
+	sketchInfoCard: string;
 	notFound: string;
 };
 
@@ -30,10 +37,19 @@ export const META_SITE_DATA: TMETA_SITE_DATA = {
 	},
 	titles: {
 		default: '{ dkmfzf }',
-		aboutMe: '{ dkmfzf/AboutMe }',
+		aboutMe: '{ dkmfzf/aboutMe }',
+		sketches: {
+			mainPage: '{ dkmfzf/sketches }',
+			sketchesDetailInfo: {
+				'sketch-1': '{ dkmfzf/sketches/animated-background }',
+				'sketch-2': '{ dkmfzf/sketches/flexible-something }',
+				'sketch-3': '{ dkmfzf/sketches/bright-sphere }'
+			}
+		},
+		sketchInfoCard: '{ dkmfzf/card }',
 		portfolio: {
-			portfolioWithApproval: '{ dkmfzf/Portfolio }',
-			portfolioWithNotApproval: '{ dkmfzf/Open on PC?? }'
+			portfolioWithApproval: '{ dkmfzf/portfolio }',
+			portfolioWithNotApproval: '{ dkmfzf/open on PC?? }'
 		},
 		notFound: '{ dkmfzf/notFound??? }'
 	},

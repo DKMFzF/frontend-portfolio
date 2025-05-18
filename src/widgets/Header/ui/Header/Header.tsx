@@ -4,6 +4,7 @@ import { useMobileMenu } from '../../model';
 import { useMetrika } from '@lib';
 import resumeFile from '../../../../../public/kirill-doroshev-resume.pdf';
 import styles from './Header.module.scss';
+import { useLocation } from 'react-router-dom';
 
 // TODO: Распил компонента
 // TODO: Выделить данные с хуков в пропсы и кинуть на уровень выше
@@ -18,11 +19,21 @@ export const Header: FC = () => {
 		closeMenu
 	} = useMobileMenu();
 
+	const location = useLocation();
+
+	const shouldApplyEmptyStyle =
+		location.pathname === '/portfolio' ||
+		location.pathname.startsWith('/sketches/');
+
 	const { ym, gtag } = useMetrika();
 
 	return (
 		<header className={styles.header}>
-			<div className={styles.header__container}>
+			<div
+				className={`${styles['header__container-default']}
+				${shouldApplyEmptyStyle ? '' : styles.header__container}
+			`}
+			>
 				<div className={styles['header__inside-wrapper']}>
 					<div className={styles.header__brand}>
 						<AnimatedNavLink

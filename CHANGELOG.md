@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.99.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.98.0...v1.99.0) (2025-05-18)
+
+### Features
+
+-   **added new header perfome:** added new ([e88c237](https://github.com/DKMFzF/frontend-portfolio/commit/e88c2377b0c9190cdfd69f1255137938d2212ac7))
+
+## [1.98.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.97.0...v1.98.0) (2025-05-18)
+
+### Features
+
+-   **sketchdetail:** added lazy loading ([59a5fb2](https://github.com/DKMFzF/frontend-portfolio/commit/59a5fb2fe87e90fc490c268c96831ab14d2fb91d))
+
+## [1.97.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.96.0...v1.97.0) (2025-05-18)
+
+### Features
+
+-   **added iridescentstar:** added new page ([a6cb6fd](https://github.com/DKMFzF/frontend-portfolio/commit/a6cb6fd184735bc9be89852aab26d02bc7b098c4))
+
+## [1.96.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.95.0...v1.96.0) (2025-05-18)
+
+### Features
+
+-   **flexiblesomething:** added new shader ([9afff18](https://github.com/DKMFzF/frontend-portfolio/commit/9afff18a47e4e71c450c96901f3221523abb7968))
+
+## [1.95.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.94.0...v1.95.0) (2025-05-18)
+
+### Features
+
+-   **added sketchescard:** added SketchesCard ([9bcea91](https://github.com/DKMFzF/frontend-portfolio/commit/9bcea917f615b35a31afdae71a7a37f6e8685f1e))
+
 ## [1.94.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.93.0...v1.94.0) (2025-05-18)
 
 ### Features

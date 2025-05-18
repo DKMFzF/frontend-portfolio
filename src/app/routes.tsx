@@ -31,6 +31,13 @@ const SketchesPage = lazy(
 		)
 );
 
+const SketchDetailPage = lazy(
+	() =>
+		import(
+			/* webpackChunkName: "sketch-detail-page" */ '../pages/SketchDetailPage/ui/SketchDetail/SketchDetail'
+		)
+);
+
 export const router = createBrowserRouter([
 	{
 		path: '/',
@@ -55,13 +62,14 @@ export const router = createBrowserRouter([
 				Header={<Header />}
 				Footer={<Footer />}
 				hideHeaderRoutes={[]}
-				hideFooterRoutes={['/portfolio']}
+				hideFooterRoutes={['/portfolio', '/sketches/:sketchId']}
 			/>
 		),
 		children: [
 			{ index: true, element: <AboutMePage /> },
 			{ path: 'portfolio', element: <PortfolioPage /> },
 			{ path: 'sketches', element: <SketchesPage /> },
+			{ path: 'sketches/:sketchId', element: <SketchDetailPage /> },
 			{ path: '*', element: <NotFound404Page /> }
 		]
 	}

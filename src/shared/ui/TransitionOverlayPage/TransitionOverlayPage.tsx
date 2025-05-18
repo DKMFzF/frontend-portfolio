@@ -57,7 +57,23 @@ export const TransitionOverlayPage = () => {
 				{
 					scale: 1,
 					duration: 0.6,
-					ease: 'expo.in'
+					ease: 'expo.in',
+					onComplete: () => {
+						if (pageContent) {
+							const currentTransform =
+								pageContent.style.transform;
+							const transformWithoutTranslate = currentTransform
+								.replace(/translate\(.*?\)/, '')
+								.trim();
+
+							if (transformWithoutTranslate === '') {
+								pageContent.style.removeProperty('transform');
+							} else {
+								pageContent.style.transform =
+									transformWithoutTranslate;
+							}
+						}
+					}
 				},
 				'<'
 			);

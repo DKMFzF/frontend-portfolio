@@ -13,7 +13,7 @@ export const AnimatedNavLink: FC<AnimatedNavLinkProps> = ({
 	const animatedNavigate = useAnimatedNavigate();
 
 	// added local component onClick
-	const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
+	const handleClick = (event: MouseEvent<HTMLDivElement>) => {
 		if (onClick) onClick(event);
 		if (!event.defaultPrevented && location.pathname !== to)
 			animatedNavigate(to);

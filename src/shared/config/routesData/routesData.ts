@@ -5,4 +5,10 @@ export type routesData =
 	| '*'
 	| '/'
 	| '/portfolio'
-	| '/sketches';
+	| '/sketches/:sketchId'
+	| '/sketches'
+	| 'sketch-1'
+	| 'sketch-2'
+	| 'sketch-3'
+	| 'sketch-4'
+	| 'sketch-5';
