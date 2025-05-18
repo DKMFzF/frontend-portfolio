@@ -16,6 +16,7 @@ export const Sketches = () => (
 			<SketchesList>
 				{sketchesData.map((dataCard) => (
 					<SketchesCard
+						key={dataCard.id}
 						id={dataCard.id}
 						screenshot={dataCard.screenshot}
 						title={dataCard.title}

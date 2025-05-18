@@ -34,7 +34,9 @@ export const SketchesCard = ({
 				<div className={styles['sketche__card-description']}>
 					<div className={styles['sketche__card-tags']}>
 						{tags.map((tag) => (
-							<span className={styles.sketche__tag}>{tag}</span>
+							<span className={styles.sketche__tag} key={tag}>
+								{tag}
+							</span>
 						))}
 					</div>
 					<span className={styles['sketche__card-title']}>

@@ -4,11 +4,36 @@ import { META_SITE_DATA, sketchesData } from '@config';
 import { lazy, Suspense } from 'react';
 
 const SketchComponents = {
-	'sketch-1': lazy(() => import('../AnimatedBackground/AnimatedBackground')),
-	'sketch-2': lazy(() => import('../FlexibleSomething/FlexibleSomething')),
-	'sketch-3': lazy(() => import('../BrightSphere/BrightSphere')),
-	'sketch-4': lazy(() => import('../IridescentStar/IridescentStar')),
-	'sketch-5': lazy(() => import('../CurlySector/CurlySector'))
+	'sketch-1': lazy(
+		() =>
+			/* webpackChunkName: "animated-background" */ import(
+				'../AnimatedBackground/AnimatedBackground'
+			)
+	),
+	'sketch-2': lazy(
+		() =>
+			/* webpackChunkName: "flexible-something" */ import(
+				'../FlexibleSomething/FlexibleSomething'
+			)
+	),
+	'sketch-3': lazy(
+		() =>
+			/* webpackChunkName: "bright-sphere" */ import(
+				'../BrightSphere/BrightSphere'
+			)
+	),
+	'sketch-4': lazy(
+		() =>
+			/* webpackChunkName: "iridescent-star" */ import(
+				'../IridescentStar/IridescentStar'
+			)
+	),
+	'sketch-5': lazy(
+		() =>
+			/* webpackChunkName: "curly-sector" */ import(
+				'../CurlySector/CurlySector'
+			)
+	)
 };
 
 export const SketchDetail = () => {
