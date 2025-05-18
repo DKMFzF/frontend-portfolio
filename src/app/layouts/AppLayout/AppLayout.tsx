@@ -16,9 +16,14 @@ export const AppLayout: FC<TAppLayout> = ({
 }) => {
 	const location = useLocation();
 
-	const shouldHideFooter = hideFooterRoutes.includes(
-		location.pathname as routesData
+	const isSketchDetail = /^\/sketches\/[^/]+$/.test(location.pathname);
+
+	const shouldHideFooter = hideFooterRoutes.some(
+		(route) =>
+			route === location.pathname ||
+			(route === '/sketches/:sketchId' && isSketchDetail)
 	);
+
 	const shouldHideHeader = hideHeaderRoutes.includes(
 		location.pathname as routesData
 	);

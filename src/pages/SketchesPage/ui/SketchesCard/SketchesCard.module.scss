@@ -1,0 +1,111 @@
+/* stylelint-disable */
+
+@use '~styles/variables' as *;
+
+.sketche {
+	&__item {
+		text-decoration: none;
+		color: $bg-primary-color;
+	}
+
+	&__card {
+		cursor: pointer;
+	}
+
+	&__link {
+		text-decoration: inherit;
+		color: inherit;
+	}
+
+	&__card-decor-arrow {
+		$position: 30px;
+
+		transform: scale(1) rotate(-45deg);
+		position: absolute;
+		top: $position;
+		right: $position;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity $time-transition;
+	}
+
+	&__card-img-wrapper {
+		position: relative;
+		margin-bottom: 15px;
+		overflow: hidden;
+		border-radius: 50px;
+
+		&:hover {
+			.sketche__card-img {
+				filter: grayscale(0.7);
+			}
+
+			.sketche__card-decor-arrow {
+				opacity: 1;
+				pointer-events: auto;
+			}
+
+			.sketche__card-link-code {
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
+	}
+
+	&__card-img {
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		object-fit: cover;
+		transition: filter $time-transition;
+	}
+
+	&__card-link-code {
+		$position: 40px;
+
+		position: absolute;
+		bottom: $position;
+		right: $position;
+		transform: scale(2);
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity $time-transition;
+	}
+
+	&__card-description {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__card-tags {
+		flex-wrap: wrap;
+		display: flex;
+		line-height: 1.5;
+		gap: 5px;
+		text-transform: lowercase;
+		text-overflow: ellipsis;
+		flex: none;
+	}
+
+	&__tag {
+		border: 1px solid $bg-primary-color;
+		border-radius: 25px;
+		padding-inline: 5px;
+		font-size: 16px;
+		transition: opacity $time-transition;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__card-title {
+		font-size: 30px;
+		font-weight: 900;
+		transition: opacity $time-transition;
+
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
