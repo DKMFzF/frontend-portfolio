@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.96.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.95.0...v1.96.0) (2025-05-18)
+
+### Features
+
+-   **flexiblesomething:** added new shader ([9afff18](https://github.com/DKMFzF/frontend-portfolio/commit/9afff18a47e4e71c450c96901f3221523abb7968))
+
 ## [1.95.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.94.0...v1.95.0) (2025-05-18)
 
 ### Features
