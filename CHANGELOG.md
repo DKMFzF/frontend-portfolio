@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.99.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.98.0...v1.99.0) (2025-05-18)
+
+### Features
+
+-   **added new header perfome:** added new ([e88c237](https://github.com/DKMFzF/frontend-portfolio/commit/e88c2377b0c9190cdfd69f1255137938d2212ac7))
+
 ## [1.98.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.97.0...v1.98.0) (2025-05-18)
 
 ### Features
