@@ -3,11 +3,12 @@
 
 $header-z-index: 1;
 $header-padding: 32px;
-$header-inset-top: 20px;
+$header-inset-top: 36px;
 $header-ls: 10px;
 $header-border: none;
 $header-gap-element: 32px;
 $header-gap-element-icon: 16px;
+$header-inver-color: rgb(226 226 226);
 
 .header {
 	mix-blend-mode: difference;
@@ -46,7 +47,7 @@ $header-gap-element-icon: 16px;
 	}
 
 	&__logo {
-		@include link($font-size-min, $bg-primary-color);
+		@include link($font-size-min, $header-inver-color);
 
 		transition: opacity $time-transition;
 	}
@@ -75,14 +76,14 @@ $header-gap-element-icon: 16px;
 	}
 
 	&__link {
-		@include link($font-size-min, rgb(226, 226, 226));
+		@include link($font-size-min, $header-inver-color);
 
 		font-family: $font-family;
 		text-transform: uppercase;
 		white-space: nowrap;
 
 		@media (width <= 1000px) {
-			color: $bg-primary-color;
+			color: $header-inver-color;
 		}
 	}
 
@@ -103,9 +104,10 @@ $header-gap-element-icon: 16px;
 	&__burger-button {
 		background: none;
 		border: none;
-		color: $bg-primary-color;
+		color: $header-inver-color;
 		cursor: pointer;
 		font-size: 24px;
+		padding: 0;
 		z-index: 1001;
 	}
 
@@ -120,7 +122,7 @@ $header-gap-element-icon: 16px;
 	}
 
 	&__mobile-menu-content {
-		background-color: rgb(255 255 255 / 90%);
+		background-color: rgb(29 29 29 / 90%);
 		border: 1px solid black;
 		border-bottom-left-radius: 50px;
 		display: flex;
