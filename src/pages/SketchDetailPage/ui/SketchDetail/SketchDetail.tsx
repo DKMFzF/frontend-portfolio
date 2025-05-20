@@ -33,6 +33,12 @@ const SketchComponents = {
 			/* webpackChunkName: "curly-sector" */ import(
 				'../CurlySector/CurlySector'
 			)
+	),
+	'sketch-6': lazy(
+		() =>
+			/* webpackChunkName: "my-first-project-on-webgl" */ import(
+				'../MyFirstProjectOnWebGl/MyFirstProjectOnWebGl'
+			)
 	)
 };
 

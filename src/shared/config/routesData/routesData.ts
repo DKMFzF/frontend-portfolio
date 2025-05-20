@@ -11,4 +11,11 @@ export type routesData =
 	| 'sketch-2'
 	| 'sketch-3'
 	| 'sketch-4'
-	| 'sketch-5';
+	| 'sketch-5'
+	| 'sketch-6'
+	| 'sketch-7'
+	| 'sketch-8'
+	| 'sketch-9'
+	| 'sketch-10'
+	| 'sketch-11'
+	| 'sketch-12';
