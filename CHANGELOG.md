@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.100.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.1...v1.100.2) (2025-05-20)
+
+### Bug Fixes
+
+-   **sketchescard:** click on link github code ([57f0dbc](https://github.com/DKMFzF/frontend-portfolio/commit/57f0dbcef847e0784628c825077472edcaf8b5d0))
+
 ### [1.100.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.0...v1.100.1) (2025-05-20)
 
 ### Bug Fixes
