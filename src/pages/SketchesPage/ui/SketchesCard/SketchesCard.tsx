@@ -24,12 +24,6 @@ export const SketchesCard = ({
 					<a href='#' className={styles['sketche__card-decor-arrow']}>
 						<ArrowLink />
 					</a>
-					<a
-						href={github}
-						className={styles['sketche__card-link-code']}
-					>
-						<GitHub />
-					</a>
 				</div>
 				<div className={styles['sketche__card-description']}>
 					<div className={styles['sketche__card-tags']}>
@@ -44,6 +38,9 @@ export const SketchesCard = ({
 					</span>
 				</div>
 			</AnimatedNavLink>
+			<a href={github} className={styles['sketche__card-link-code']}>
+				<GitHub />
+			</a>
 		</article>
 	</li>
 );
