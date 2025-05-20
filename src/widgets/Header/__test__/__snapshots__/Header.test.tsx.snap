@@ -16,12 +16,12 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
         <div
           class="header__brand"
         >
-          <span
+          <div
             class="header__link"
             style="cursor: pointer;"
           >
             portfolio
-          </span>
+          </div>
         </div>
         <nav
           class="header__nav"
@@ -32,32 +32,32 @@ exports[`[Header] renders header correctly and matches snapshot 1`] = `
             <li
               class="header__menuItem"
             >
-              <span
+              <div
                 class="header__link"
                 style="cursor: pointer;"
               >
                 about Me
-              </span>
+              </div>
             </li>
             <li
               class="header__menuItem"
             >
-              <span
+              <div
                 class="header__link"
                 style="cursor: pointer;"
               >
                 sketches
-              </span>
+              </div>
             </li>
             <li
               class="header__menu-item"
             >
-              <span
+              <div
                 class="header__link"
                 style="cursor: pointer;"
               >
                 portfolio
-              </span>
+              </div>
             </li>
             <li
               class="header__menu-item"

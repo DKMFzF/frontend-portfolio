@@ -9,7 +9,19 @@
 	}
 
 	&__card {
+		position: relative;
 		cursor: pointer;
+		&:hover {
+			.sketche__card-decor-arrow {
+				opacity: 1;
+				pointer-events: auto;
+			}
+
+			.sketche__card-link-code {
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
 	}
 
 	&__link {
@@ -40,16 +52,6 @@
 			.sketche__card-img {
 				filter: opacity(0.75);
 			}
-
-			.sketche__card-decor-arrow {
-				opacity: 1;
-				pointer-events: auto;
-			}
-
-			.sketche__card-link-code {
-				opacity: 1;
-				pointer-events: auto;
-			}
 		}
 
 		@media (width < 900px) {
@@ -69,15 +71,19 @@
 	}
 
 	&__card-link-code {
-		$position: 40px;
-
 		position: absolute;
-		bottom: $position;
-		right: $position;
+		bottom: 116px;
+		right: 40px;
 		transform: scale(2);
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity $time-transition;
+
+		@media (width <= 350px) {
+			& {
+				bottom: 150px;
+			}
+		}
 	}
 
 	&__card-description {

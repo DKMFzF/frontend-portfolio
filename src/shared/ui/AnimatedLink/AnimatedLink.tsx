@@ -20,7 +20,7 @@ export const AnimatedNavLink: FC<AnimatedNavLinkProps> = ({
 	};
 
 	return (
-		<span
+		<div
 			className={styles}
 			onClick={handleClick}
 			style={{
@@ -28,6 +28,6 @@ export const AnimatedNavLink: FC<AnimatedNavLinkProps> = ({
 			}}
 		>
 			{children}
-		</span>
+		</div>
 	);
 };
