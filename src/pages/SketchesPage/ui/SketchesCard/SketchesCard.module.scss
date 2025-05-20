@@ -30,6 +30,7 @@
 	}
 
 	&__card-img-wrapper {
+		border: 1px solid rgba(0, 0, 0, 0.2);
 		position: relative;
 		margin-bottom: 15px;
 		overflow: hidden;
@@ -50,13 +51,21 @@
 				pointer-events: auto;
 			}
 		}
+
+		@media (width < 900px) {
+			& {
+				border-radius: 25px;
+			}
+		}
 	}
 
 	&__card-img {
+		transform: scale(1.03);
 		aspect-ratio: 1 / 1;
 		width: 100%;
 		object-fit: cover;
 		transition: filter $time-transition;
+		pointer-events: none;
 	}
 
 	&__card-link-code {

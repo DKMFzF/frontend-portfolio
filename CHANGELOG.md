@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.100.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.0...v1.100.1) (2025-05-20)
+
+### Bug Fixes
+
+-   **transition animation:** skip browser navigation ([f5cd460](https://github.com/DKMFzF/frontend-portfolio/commit/f5cd46017775840cd3f4387eb5c1355b97dc3e85))
+
+## [1.100.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.99.1...v1.100.0) (2025-05-20)
+
+### Features
+
+-   **my-first-project-on-webgl\:** added my first project ([bb1872d](https://github.com/DKMFzF/frontend-portfolio/commit/bb1872d8d74b8ded516c3dd9240746b8bcb973a4))
+
 ### [1.99.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.99.0...v1.99.1) (2025-05-18)
 
 ## [1.99.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.98.0...v1.99.0) (2025-05-18)

@@ -1,40 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 import { META_SITE_DATA, sketchesData } from '@config';
-import { lazy, Suspense } from 'react';
-
-const SketchComponents = {
-	'sketch-1': lazy(
-		() =>
-			/* webpackChunkName: "animated-background" */ import(
-				'../AnimatedBackground/AnimatedBackground'
-			)
-	),
-	'sketch-2': lazy(
-		() =>
-			/* webpackChunkName: "flexible-something" */ import(
-				'../FlexibleSomething/FlexibleSomething'
-			)
-	),
-	'sketch-3': lazy(
-		() =>
-			/* webpackChunkName: "bright-sphere" */ import(
-				'../BrightSphere/BrightSphere'
-			)
-	),
-	'sketch-4': lazy(
-		() =>
-			/* webpackChunkName: "iridescent-star" */ import(
-				'../IridescentStar/IridescentStar'
-			)
-	),
-	'sketch-5': lazy(
-		() =>
-			/* webpackChunkName: "curly-sector" */ import(
-				'../CurlySector/CurlySector'
-			)
-	)
-};
+import { Suspense } from 'react';
+import { SketchComponents } from './componentsLoaderLazy';
 
 export const SketchDetail = () => {
 	const { sketchId } = useParams<{

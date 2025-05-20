@@ -10,7 +10,20 @@ export const TransitionOverlayPage = () => {
 	const location = useLocation();
 	const [hasNavigated, setHasNavigated] = useState(false);
 
+	const [skipAnimation, setSkipAnimation] = useState(false);
+
 	useEffect(() => {
+		const handlePopState = () => setSkipAnimation(true);
+		window.addEventListener('popstate', handlePopState);
+		return () => window.removeEventListener('popstate', handlePopState);
+	}, []);
+
+	useEffect(() => {
+		if (skipAnimation) {
+			setSkipAnimation(false);
+			return;
+		}
+
 		if (!hasNavigated) {
 			setHasNavigated(true);
 			return;
