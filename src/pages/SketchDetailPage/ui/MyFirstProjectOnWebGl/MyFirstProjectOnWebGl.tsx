@@ -8,9 +8,25 @@ import {
 	PerspectiveCamera,
 	WebGLRenderer
 } from 'three';
+// import gsap from 'gsap';
+
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export const MyFirstProjectOnWebGl: FC = () => {
+	// const animationRef = useRef<gsap.core.Tween>();
+	// const cameraAnimation = useRef<gsap.core.Tween>();
+
 	useEffect(() => {
+		// const cursor = {
+		// 	x: 0,
+		// 	y: 0,
+		// }
+
+		// window.addEventListener('mousemove', (evt) => {
+		// 	cursor.x = (evt.clientX / window.innerWidth - 0.5);
+		// 	cursor.y = -(evt.clientY / window.innerHeight - 0.5);
+		// });
+
 		const scene = new Scene();
 
 		const geometry = new BoxGeometry(1, 1, 1);
@@ -24,11 +40,12 @@ export const MyFirstProjectOnWebGl: FC = () => {
 		};
 
 		const camera = new PerspectiveCamera(
-			75,
+			45,
 			sizes.width / sizes.height,
 			0.1,
-			1000
+			100
 		);
+
 		camera.position.z = 2;
 		scene.add(camera);
 
@@ -41,15 +58,29 @@ export const MyFirstProjectOnWebGl: FC = () => {
 		});
 		renderer.setSize(sizes.width, sizes.height);
 
-		const animate = () => {
-			requestAnimationFrame(animate);
+		const controls = new OrbitControls(camera, canvas);
+		controls.enableDamping = true;
 
-			mesh.rotation.x += 0.01;
-			mesh.rotation.y += 0.01;
+		// animationRef.current = gsap.to(mesh.rotation, {
+		//   x: Math.PI * 2,
+		//   y: Math.PI * 2,
+		//   duration: 10,
+		//   repeat: -1,
+		//   ease: "none",
+		//   onUpdate: () => renderer.render(scene, camera),
+		// });
 
+		const tick = () => {
+			// camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 3;
+			// camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 3;
+			// camera.position.y = cursor.y * 5;
+			// camera.lookAt(new Vector3());
+			controls.update();
 			renderer.render(scene, camera);
+			window.requestAnimationFrame(tick);
 		};
-		animate();
+
+		tick();
 
 		const handleResize = () => {
 			sizes.width = window.innerWidth;
@@ -59,6 +90,7 @@ export const MyFirstProjectOnWebGl: FC = () => {
 			camera.updateProjectionMatrix();
 
 			renderer.setSize(sizes.width, sizes.height);
+			renderer.render(scene, camera);
 		};
 
 		window.addEventListener('resize', handleResize);
