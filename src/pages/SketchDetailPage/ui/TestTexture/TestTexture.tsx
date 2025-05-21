@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { useRef } from 'react';
 import { useEffect } from 'react';
 import {
 	Scene,
@@ -7,35 +7,38 @@ import {
 	Mesh,
 	PerspectiveCamera,
 	WebGLRenderer,
-	Color
+	Color,
+	TextureLoader,
+	LoadingManager,
+	NearestFilter
 } from 'three';
-// import gsap from 'gsap';
 import GUI from 'lil-gui';
+
+import imageTexture from './textures/minecraft.png';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-export const MyFirstProjectOnWebGl: FC = () => {
-	// const animationRef = useRef<gsap.core.Tween>();
-	// const cameraAnimation = useRef<gsap.core.Tween>();
+export const TestTexture = () => {
 	const guiRef = useRef<GUI>();
 
 	useEffect(() => {
-		// const cursor = {
-		// 	x: 0,
-		// 	y: 0,
-		// }
+		const loaderManager = new LoadingManager();
+		loaderManager.onLoad = () => console.log('done loader');
+		loaderManager.onError = () => console.log('error loader');
+		const textureLoader = new TextureLoader(loaderManager);
+		const texture = textureLoader.load(
+			imageTexture,
+			() => console.log('texure done'),
+			() => console.log('texure error')
+		);
 
-		// window.addEventListener('mousemove', (evt) => {
-		// 	cursor.x = (evt.clientX / window.innerWidth - 0.5);
-		// 	cursor.y = -(evt.clientY / window.innerHeight - 0.5);
-		// });
+		texture.magFilter = NearestFilter;
 
 		const scene = new Scene();
 
 		const geometry = new BoxGeometry(1, 1, 1);
 		const material = new MeshBasicMaterial({
-			color: 0xff0000,
-			wireframe: true
+			map: texture
 		});
 		const mesh = new Mesh(geometry, material);
 		scene.add(mesh);
@@ -85,7 +88,7 @@ export const MyFirstProjectOnWebGl: FC = () => {
 
 		const params = {
 			color: '#ff0000',
-			wireframe: true
+			wireframe: false
 		};
 
 		gui.addColor(params, 'color')
@@ -100,20 +103,7 @@ export const MyFirstProjectOnWebGl: FC = () => {
 				material.wireframe = value;
 			});
 
-		// animationRef.current = gsap.to(mesh.rotation, {
-		//   x: Math.PI * 2,
-		//   y: Math.PI * 2,
-		//   duration: 10,
-		//   repeat: -1,
-		//   ease: "none",
-		//   onUpdate: () => renderer.render(scene, camera),
-		// });
-
 		const tick = () => {
-			// camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 3;
-			// camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 3;
-			// camera.position.y = cursor.y * 5;
-			// camera.lookAt(new Vector3());
 			controls.update();
 			renderer.render(scene, camera);
 			window.requestAnimationFrame(tick);
@@ -153,4 +143,4 @@ export const MyFirstProjectOnWebGl: FC = () => {
 	return <canvas className='webgl-canvas' />;
 };
 
-export default MyFirstProjectOnWebGl;
+export default TestTexture;
