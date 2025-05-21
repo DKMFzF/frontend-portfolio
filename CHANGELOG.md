@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.101.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.3...v1.101.0) (2025-05-21)
+
+### Features
+
+-   added ui control in sketch ([07abe14](https://github.com/DKMFzF/frontend-portfolio/commit/07abe1488d149fda57514fa13a66f5bbad42cae5))
+
 ### [1.100.3](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.2...v1.100.3) (2025-05-20)
 
 ### [1.100.2](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.1...v1.100.2) (2025-05-20)
