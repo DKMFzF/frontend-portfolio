@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.102.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.101.0...v1.102.0) (2025-05-21)
+
+### Features
+
+-   **testtexture:** added new sketch ([b6509c1](https://github.com/DKMFzF/frontend-portfolio/commit/b6509c1368d5586df7a84725907f09506b482d8f))
+
 ## [1.101.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.100.3...v1.101.0) (2025-05-21)
 
 ### Features
