@@ -24,6 +24,18 @@ module.exports = {
 				use: ['raw-loader']
 			},
 			{
+				test: /\.(exr)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							// limit: 8192, // если файл меньше 8KB, он будет встроен как data URL
+							name: '[name].[ext]'
+						}
+					}
+				]
+			},
+			{
 				test: /\.(pdf)$/,
 				type: 'asset/resource',
 				generator: {

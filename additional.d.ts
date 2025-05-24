@@ -168,3 +168,8 @@ declare module '*.frag' {
 	const content: string;
 	export default content;
 }
+
+declare module '*.exr' {
+	const content: string;
+	export default content;
+}

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.103.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.102.0...v1.103.0) (2025-05-24)
+
+### Features
+
+-   **testmaterials:** added pbr texture model ([d84d70c](https://github.com/DKMFzF/frontend-portfolio/commit/d84d70c8aa0844029749f493bc22ca61188176d6))
+
 ## [1.102.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.101.0...v1.102.0) (2025-05-21)
 
 ### Features
