@@ -54,5 +54,11 @@ export const SketchComponents = {
 			/* webpackChunkName: "my-first-project-on-webgl" */ import(
 				'../MyFirstProjectOnWebGl/MyFirstProjectOnWebGl'
 			)
+	),
+	'sketch-10': lazy(
+		() =>
+			/* webpackChunkName: "test-wgsl" */ import(
+				'../WebGPUTest/WebGPUTest'
+			)
 	)
 };

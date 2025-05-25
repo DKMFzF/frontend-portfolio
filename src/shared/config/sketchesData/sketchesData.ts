@@ -7,6 +7,7 @@ import myFirstProjectOnWebGl from '@images/cardsSketchs/myFirstProjectOnWebGl.pn
 import testTexture from '@images/cardsSketchs/testTexture.png';
 import testpbr from '@images/cardsSketchs/testpbr.png';
 import threeText from '@images/cardsSketchs/threeText.png';
+import testWebGPU from '@images/cardsSketchs/testWebGPU.png';
 
 import { routesData } from '../routesData';
 
@@ -20,9 +21,16 @@ type SketchesDataType = {
 
 export const sketchesData: SketchesDataType[] = [
 	{
+		id: 'sketch-10',
+		screenshot: testWebGPU,
+		title: 'Animated background (WGSL)',
+		tags: ['webGPU', 'wgsl', 'experimental technology', 'chrome^+113'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/WebGPUTest/WebGPUTest.tsx'
+	},
+	{
 		id: 'sketch-1',
 		screenshot: animatedBackground,
-		title: 'Animated background',
+		title: 'Animated background (GLSL)',
 		tags: ['three.js', 'glsl'],
 		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/AnimatedBackground/AnimatedBackground.tsx'
 	},
