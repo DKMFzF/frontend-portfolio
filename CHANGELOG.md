@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.106.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.105.0...v1.106.0) (2025-05-25)
+
+### Features
+
+-   **webgputest:** added wgsl shader ([78648a2](https://github.com/DKMFzF/frontend-portfolio/commit/78648a29bf9d96ca688c29f2b8cb46596f2ed143))
+
 ## [1.105.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.104.0...v1.105.0) (2025-05-25)
 
 ### Features
