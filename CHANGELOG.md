@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.105.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.104.0...v1.105.0) (2025-05-25)
+
+### Features
+
+-   **threejstext:** added new Sketches ([2176609](https://github.com/DKMFzF/frontend-portfolio/commit/2176609c701ffd72a0fbcc1ff0fe231acf067b02))
+
 ## [1.104.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.103.0...v1.104.0) (2025-05-25)
 
 ### Features
