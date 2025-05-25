@@ -29,7 +29,17 @@ module.exports = {
 					{
 						loader: 'url-loader',
 						options: {
-							// limit: 8192, // если файл меньше 8KB, он будет встроен как data URL
+							name: '[name].[ext]'
+						}
+					}
+				]
+			},
+			{
+				test: /\.(wgsl)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
 							name: '[name].[ext]'
 						}
 					}
