@@ -62,13 +62,20 @@ export const sketchesData: SketchesDataType[] = [
 	},
 	{
 		id: 'sketch-7',
+		screenshot: testpbr,
+		title: 'PBR Materials',
+		tags: ['three.js', 'pbr', 'real render'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MyFirstProjectOnWebGl/MyFirstProjectOnWebGl.tsx'
+	},
+	{
+		id: 'sketch-8',
 		screenshot: testTexture,
 		title: 'Test Textures',
 		tags: ['three.js', 'mesh primitive', 'course Bruno Simon'],
 		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MyFirstProjectOnWebGl/MyFirstProjectOnWebGl.tsx'
 	},
 	{
-		id: 'sketch-8',
+		id: 'sketch-9',
 		screenshot: myFirstProjectOnWebGl,
 		title: 'My first project on WebGl',
 		tags: ['three.js', 'mesh primitive', 'course Bruno Simon'],
