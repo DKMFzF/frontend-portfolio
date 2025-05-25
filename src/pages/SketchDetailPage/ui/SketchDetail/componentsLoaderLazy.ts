@@ -34,16 +34,22 @@ export const SketchComponents = {
 	'sketch-6': lazy(
 		() =>
 			/* webpackChunkName: "test-material" */ import(
-				'../TestMaterials/TestMaterials'
+				'../ThreeJsText/ThreeJsText'
 			)
 	),
 	'sketch-7': lazy(
+		() =>
+			/* webpackChunkName: "test-material" */ import(
+				'../TestMaterials/TestMaterials'
+			)
+	),
+	'sketch-8': lazy(
 		() =>
 			/* webpackChunkName: "test-texture" */ import(
 				'../TestTexture/TestTexture'
 			)
 	),
-	'sketch-8': lazy(
+	'sketch-9': lazy(
 		() =>
 			/* webpackChunkName: "my-first-project-on-webgl" */ import(
 				'../MyFirstProjectOnWebGl/MyFirstProjectOnWebGl'

@@ -6,6 +6,7 @@ import curlySector from '@images/cardsSketchs/curlySector.png';
 import myFirstProjectOnWebGl from '@images/cardsSketchs/myFirstProjectOnWebGl.png';
 import testTexture from '@images/cardsSketchs/testTexture.png';
 import testpbr from '@images/cardsSketchs/testpbr.png';
+import threeText from '@images/cardsSketchs/threeText.png';
 
 import { routesData } from '../routesData';
 
@@ -55,20 +56,27 @@ export const sketchesData: SketchesDataType[] = [
 	},
 	{
 		id: 'sketch-6',
+		screenshot: threeText,
+		title: '3D Text',
+		tags: ['three.js', 'text', 'random'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MyFirstProjectOnWebGl/MyFirstProjectOnWebGl.tsx'
+	},
+	{
+		id: 'sketch-7',
 		screenshot: testpbr,
 		title: 'PBR Materials',
 		tags: ['three.js', 'pbr', 'real render'],
 		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MyFirstProjectOnWebGl/MyFirstProjectOnWebGl.tsx'
 	},
 	{
-		id: 'sketch-7',
+		id: 'sketch-8',
 		screenshot: testTexture,
 		title: 'Test Textures',
 		tags: ['three.js', 'mesh primitive', 'course Bruno Simon'],
 		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MyFirstProjectOnWebGl/MyFirstProjectOnWebGl.tsx'
 	},
 	{
-		id: 'sketch-8',
+		id: 'sketch-9',
 		screenshot: myFirstProjectOnWebGl,
 		title: 'My first project on WebGl',
 		tags: ['three.js', 'mesh primitive', 'course Bruno Simon'],
