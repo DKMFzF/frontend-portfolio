@@ -1,24 +1,79 @@
 import { useEffect } from 'react';
 import {
-	BoxGeometry,
+	LoadingManager,
 	Mesh,
-	MeshBasicMaterial,
+	MeshMatcapMaterial,
+	MeshNormalMaterial,
 	PerspectiveCamera,
 	Scene,
+	TextureLoader,
+	TorusGeometry,
 	WebGLRenderer
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+
+import textureTextLoad from './matcaps/1.png';
 
 export const ThreeJsText = () => {
 	useEffect(() => {
 		const scene = new Scene();
-		const material = new MeshBasicMaterial({
-			color: 'red',
-			wireframe: true
+
+		const laoderManager = new LoadingManager();
+		laoderManager.onLoad = () => console.log('Start laoding');
+		laoderManager.onError = () => console.log('Error loading');
+
+		const textureLoader = new TextureLoader(laoderManager);
+		const textureText = textureLoader.load(textureTextLoad);
+
+		const fontsLoader = new FontLoader(laoderManager);
+		fontsLoader.load('../helvetiker_regular.typeface.json', (font) => {
+			console.log('Done font loader');
+			const textGeometry = new TextGeometry('Sketch text', {
+				font,
+				size: 0.5,
+				depth: 0.1,
+				curveSegments: 3
+			});
+
+			// center text (hard guide)
+			// textGeometry.computeBoundingBox();
+			// textGeometry.translate(
+			//   -textGeometry.boundingBox!.max.x * 0.5,
+			//   -textGeometry.boundingBox!.max.y * 0.5,
+			//   -textGeometry.boundingBox!.max.z * 0.5,
+			// );
+
+			// center text easy guide
+			textGeometry.center();
+
+			const textMaterial = new MeshMatcapMaterial({
+				matcap: textureText
+			});
+			const text = new Mesh(textGeometry, textMaterial);
+			scene.add(text);
+
+			const geometryDonut = new TorusGeometry(0.3, 0.2, 20, 35);
+			const normalMap2 = new MeshNormalMaterial();
+
+			for (let i = 0; i < 200; i++) {
+				const meshDonut = new Mesh(geometryDonut, normalMap2);
+
+				meshDonut.position.x = (Math.random() - 0.5) * 10;
+				meshDonut.position.y = (Math.random() - 0.5) * 10;
+				meshDonut.position.z = (Math.random() - 0.5) * 10;
+
+				meshDonut.rotateX(Math.random() * 10);
+				meshDonut.rotateY(Math.random() * 10);
+				meshDonut.rotateZ(Math.random() * 10);
+
+				const scale = Math.random();
+				meshDonut.scale.set(scale, scale, scale);
+
+				scene.add(meshDonut);
+			}
 		});
-		const geometry = new BoxGeometry(1, 1, 1);
-		const mesh = new Mesh(geometry, material);
-		scene.add(mesh);
 
 		const sizes = {
 			width: window.innerWidth,
@@ -38,8 +93,7 @@ export const ThreeJsText = () => {
 			'.webgl-canvas'
 		) as HTMLCanvasElement;
 		const renderer = new WebGLRenderer({
-			canvas,
-			alpha: true
+			canvas
 		});
 		renderer.setSize(sizes.width, sizes.height);
 		renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
@@ -72,8 +126,8 @@ export const ThreeJsText = () => {
 			else document.exitFullscreen();
 		};
 
-		document.addEventListener('dblclick', handleFullScreen);
-		document.addEventListener('resize', handleResize);
+		window.addEventListener('resize', handleResize);
+		window.addEventListener('dblclick', handleFullScreen);
 
 		return () => {
 			document.removeEventListener('dblclick', handleFullScreen);
