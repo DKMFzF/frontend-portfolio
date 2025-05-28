@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.107.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.106.0...v1.107.0) (2025-05-28)
+
+### Features
+
+-   **apartments:** added project for xr-place ([1b40d4f](https://github.com/DKMFzF/frontend-portfolio/commit/1b40d4f59c2aa7cef434430d35b08eff5bbe2b2a))
+
 ## [1.106.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.105.0...v1.106.0) (2025-05-25)
 
 ### Features
