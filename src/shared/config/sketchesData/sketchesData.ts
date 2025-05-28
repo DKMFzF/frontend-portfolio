@@ -8,6 +8,7 @@ import testTexture from '@images/cardsSketchs/testTexture.png';
 import testpbr from '@images/cardsSketchs/testpbr.png';
 import threeText from '@images/cardsSketchs/threeText.png';
 import testWebGPU from '@images/cardsSketchs/testWebGPU.png';
+import apartments from '@images/cardsSketchs/apartments.png';
 
 import { routesData } from '../routesData';
 
@@ -20,6 +21,13 @@ type SketchesDataType = {
 };
 
 export const sketchesData: SketchesDataType[] = [
+	{
+		id: 'sketch-11',
+		screenshot: apartments,
+		title: 'Apartments',
+		tags: ['webgl', 'threejs', 'glsl'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/Apartments/Apartments.tsx'
+	},
 	{
 		id: 'sketch-10',
 		screenshot: testWebGPU,

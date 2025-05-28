@@ -46,6 +46,28 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.(exr)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							name: '[name].[ext]'
+						}
+					}
+				]
+			},
+			{
+				test: /\.(glb)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							name: '[name].[ext]'
+						}
+					}
+				]
+			},
+			{
 				test: /\.(pdf)$/,
 				type: 'asset/resource',
 				generator: {
