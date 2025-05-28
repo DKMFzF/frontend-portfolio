@@ -20,6 +20,8 @@ import {
 	HDRIMap
 } from '../helpers';
 
+import { Preloader } from '@ui';
+
 export const WrapperModelScale = () => {
 	const orbitControlsRef = useRef(null);
 	const { cameraAnimation, setCameraAnimation, startCameraAnimation } =
@@ -45,20 +47,21 @@ export const WrapperModelScale = () => {
 
 	return (
 		<div className={styles['wrapper-model-scale']}>
-			<Canvas
-				camera={{
-					position: CameraSettings.camera.position,
-					fov: CameraSettings.camera.fov,
-					near: CameraSettings.camera.near,
-					far: CameraSettings.camera.far
-				}}
-				shadows={{ type: CameraSettings.shadows.type }}
-			>
-				<CameraAnimator
-					cameraAnimation={cameraAnimation}
-					onAnimationComplete={handleAnimationComplete}
-				/>
-				<Suspense fallback={null}>
+			<Suspense fallback={<Preloader />}>
+				<Canvas
+					camera={{
+						position: CameraSettings.camera.position,
+						fov: CameraSettings.camera.fov,
+						near: CameraSettings.camera.near,
+						far: CameraSettings.camera.far
+					}}
+					shadows={{ type: CameraSettings.shadows.type }}
+				>
+					<CameraAnimator
+						cameraAnimation={cameraAnimation}
+						onAnimationComplete={handleAnimationComplete}
+					/>
+
 					<hemisphereLight groundColor='#b97a20' intensity={0.2} />
 					<ambientLight intensity={0} />
 					<directionalLight
@@ -119,25 +122,25 @@ export const WrapperModelScale = () => {
 						<planeGeometry args={[400, 400]} />
 						<shadowMaterial opacity={0.3} />
 					</mesh>
-				</Suspense>
 
-				{firstPersonMode ? (
-					<FirstPersonControls
-						targetPosition={targetPosition}
-						onExit={exitFirstPersonMode}
-					/>
-				) : (
-					<OrbitControls
-						ref={orbitControlsRef}
-						enableZoom
-						enablePan
-						enableRotate
-						maxPolarAngle={Math.PI / 2}
-						minDistance={7}
-						maxDistance={30}
-					/>
-				)}
-			</Canvas>
+					{firstPersonMode ? (
+						<FirstPersonControls
+							targetPosition={targetPosition}
+							onExit={exitFirstPersonMode}
+						/>
+					) : (
+						<OrbitControls
+							ref={orbitControlsRef}
+							enableZoom
+							enablePan
+							enableRotate
+							maxPolarAngle={Math.PI / 2}
+							minDistance={7}
+							maxDistance={30}
+						/>
+					)}
+				</Canvas>
+			</Suspense>
 		</div>
 	);
 };

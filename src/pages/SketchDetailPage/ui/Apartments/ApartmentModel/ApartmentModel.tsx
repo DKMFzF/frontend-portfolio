@@ -14,6 +14,7 @@ import {
 	useModelSetup,
 	useShaderAnimation
 } from '../hooks';
+import { Suspense } from 'react';
 
 export const ApartmentModel = ({
 	modelPath,
@@ -31,6 +32,7 @@ export const ApartmentModel = ({
 
 	return (
 		<>
+			{/* <Suspense></Suspense> */}
 			{lightsMap.map((pointLight, index) => (
 				<PointLightRooms
 					key={index}
