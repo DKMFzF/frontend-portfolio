@@ -60,5 +60,11 @@ export const SketchComponents = {
 			/* webpackChunkName: "test-wgsl" */ import(
 				'../WebGPUTest/WebGPUTest'
 			)
+	),
+	'sketch-11': lazy(
+		() =>
+			/* webpackChunkName: "apartments" */ import(
+				'../Apartments/Apartments'
+			)
 	)
 };
