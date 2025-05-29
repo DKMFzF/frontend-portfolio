@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.109.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.108.0...v1.109.0) (2025-05-29)
+
+### Features
+
+-   **requestpointerlockmesh:** added hooks fixer ([ba2cf5e](https://github.com/DKMFzF/frontend-portfolio/commit/ba2cf5edb773813b54e03ddd9734ef0f484e50fa))
+
 ## [1.108.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.107.0...v1.108.0) (2025-05-28)
 
 ### Features

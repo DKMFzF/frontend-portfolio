@@ -2,22 +2,23 @@ import {
 	useCollisionDetection,
 	useKeyboardControls,
 	useMovement,
-	useSceneObjects
+	useSceneObjects,
+	useFixPointerLockSecurityError
 } from '../hooks';
 import { PointerLockControls } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
 import { Vector3 } from 'three';
 
+import { FirstPersonControlsProps } from './type';
+
 export const FirstPersonControls = ({
 	targetPosition,
 	onExit
-}: {
-	targetPosition: Vector3 | null;
-	onExit: () => void;
-}) => {
+}: FirstPersonControlsProps) => {
 	const { camera } = useThree();
 	const initialHeight = useRef<number | null>(null);
+	const controlsRef = useRef(null);
 
 	const keys = useKeyboardControls(onExit);
 	const { wallsRef } = useSceneObjects();
@@ -25,6 +26,7 @@ export const FirstPersonControls = ({
 		useCollisionDetection(wallsRef);
 
 	useMovement(keys, checkWallCollisions, playerCollider, initialHeight);
+	useFixPointerLockSecurityError(onExit);
 
 	useEffect(() => {
 		if (targetPosition) {
@@ -35,8 +37,11 @@ export const FirstPersonControls = ({
 			camera.position.copy(cameraPosition);
 			camera.rotation.set(0, 0, 0);
 			playerCollider.current.position.copy(cameraPosition);
+
+			// @ts-ignore
+			if (controlsRef.current) controlsRef.current.lock();
 		}
 	}, [targetPosition, camera, playerCollider]);
 
-	return <PointerLockControls />;
+	return <PointerLockControls ref={controlsRef} />;
 };

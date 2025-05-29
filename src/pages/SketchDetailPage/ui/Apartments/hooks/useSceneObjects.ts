@@ -54,7 +54,6 @@ export const useSceneObjects = () => {
 		wallsRef.current = walls;
 		roofRef.current = roof;
 
-		// Восстановление оригинальных материалов
 		[lights, walls, roof].forEach((objects) => {
 			objects.forEach((obj) => {
 				if (obj.userData.originalMaterial) {
