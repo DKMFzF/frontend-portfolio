@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.108.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.107.0...v1.108.0) (2025-05-28)
+
+### Features
+
+-   **wrappermodelscale:** added preloader in load cavas ([8a73a1d](https://github.com/DKMFzF/frontend-portfolio/commit/8a73a1d67850fa5bd3bbf3b856519a9a415bf44f))
+
 ## [1.107.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.106.0...v1.107.0) (2025-05-28)
 
 ### Features

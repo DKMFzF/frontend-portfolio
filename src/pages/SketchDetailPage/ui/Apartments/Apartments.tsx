@@ -1,4 +1,3 @@
-import { ControlManual } from './ControlManual';
 import { WrapperModelScale } from './WrapperModelScale';
 
 /**
