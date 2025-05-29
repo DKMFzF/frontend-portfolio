@@ -1,3 +1,4 @@
+import { ControlManual } from './ControlManual';
 import { WrapperModelScale } from './WrapperModelScale';
 
 /**
@@ -7,7 +8,7 @@ export default function Apartments() {
 	return (
 		<>
 			<WrapperModelScale />
-			{/* <ControlManual /> */}
+			<ControlManual />
 		</>
 	);
 }

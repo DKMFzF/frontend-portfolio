@@ -10,3 +10,4 @@ export { useSceneObjects } from './useSceneObjects';
 export { useShaderAnimation } from './useShaderAnimation';
 export { useTransparencyControl } from './useTransparencyControl';
 export { useViewModes } from './useViewModes';
+export { useFixPointerLockSecurityError } from './useFixPointerLockSecurityError';

@@ -35,14 +35,19 @@ export const WrapperModelScale = () => {
 	} = useViewModes();
 
 	const handleFloorClick = (position: Vector3) => {
-		// if (firstPersonMode || cameraAnimation?.isAnimating) return;
-		// startCameraAnimation(position);
-		// setTargetPosition(position);
+		if (firstPersonMode || cameraAnimation?.isAnimating) return;
+		startCameraAnimation(position);
+		setTargetPosition(position);
 	};
 
-	const handleAnimationComplete = () => {
+	const handleAnimationComplete = async () => {
 		setCameraAnimation(null);
 		setFirstPersonMode(true);
+		try {
+			await document.body.requestPointerLock();
+		} catch (err) {
+			console.error('Ошибка при запросе блокировки указателя:', err);
+		}
 	};
 
 	return (
@@ -135,7 +140,7 @@ export const WrapperModelScale = () => {
 							enablePan
 							enableRotate
 							maxPolarAngle={Math.PI / 2}
-							minDistance={7}
+							minDistance={10}
 							maxDistance={30}
 						/>
 					)}
