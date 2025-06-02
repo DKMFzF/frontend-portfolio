@@ -1,6 +1,6 @@
 {
 	"name": "dkmfzf-frontend-portfolio",
-	"version": "1.111.1",
+	"version": "1.112.0",
 	"description": "Frontend portfolio project by DKMFzF",
 	"keywords": [
 		"frontend",
@@ -47,6 +47,7 @@
 		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {
+		"@davcri/webpack-glsl-loader": "^1.0.2",
 		"@jest/globals": "^29.7.0",
 		"@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
 		"@storybook/addon-essentials": "^8.0.5",
@@ -88,6 +89,7 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"gh-pages": "^6.3.0",
 		"glob": "7",
+		"glslify-loader": "^2.0.0",
 		"html-webpack-plugin": "^5.5.1",
 		"husky": "^8.0.3",
 		"identity-obj-proxy": "^3.0.0",

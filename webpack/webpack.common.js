@@ -21,7 +21,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(glsl|vs|fs|vert|frag)$/,
-				use: ['raw-loader']
+				use: ['raw-loader', 'glslify-loader']
 			},
 			{
 				test: /\.(exr)$/,
