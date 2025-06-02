@@ -66,5 +66,15 @@ export const SketchComponents = {
 			/* webpackChunkName: "apartments" */ import(
 				'../Apartments/Apartments'
 			)
+	),
+	'sketch-12': lazy(
+		() =>
+			/* webpackChunkName: "apartments" */ import('../SlideImg/SlideImg')
+	),
+	'sketch-13': lazy(
+		() =>
+			/* webpackChunkName: "music-shape" */ import(
+				'../MusicShape/MusicShape'
+			)
 	)
 };

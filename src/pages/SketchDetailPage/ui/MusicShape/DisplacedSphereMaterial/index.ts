@@ -1,0 +1,1 @@
+export { DisplacedSphereMaterial } from './DisplacedSphereMaterial';
