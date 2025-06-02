@@ -9,6 +9,7 @@ import testpbr from '@images/cardsSketchs/testpbr.png';
 import threeText from '@images/cardsSketchs/threeText.png';
 import testWebGPU from '@images/cardsSketchs/testWebGPU.png';
 import apartments from '@images/cardsSketchs/apartments.png';
+import musicShape from '@images/cardsSketchs/musicShape.png';
 
 import { routesData } from '../routesData';
 
@@ -21,6 +22,20 @@ type SketchesDataType = {
 };
 
 export const sketchesData: SketchesDataType[] = [
+	{
+		id: 'sketch-13',
+		screenshot: musicShape,
+		title: 'Apartments',
+		tags: ['webgl', 'threejs', 'glsl', 'noise map'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MusicShape/MusicShape.tsx'
+	},
+	// {
+	// 	id: 'sketch-12',
+	// 	screenshot: apartments,
+	// 	title: 'Apartments',
+	// 	tags: ['webgl', 'threejs', 'glsl'],
+	// 	github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/Apartments/Apartments.tsx'
+	// },
 	{
 		id: 'sketch-11',
 		screenshot: apartments,

@@ -57,6 +57,17 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.(mp3)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							name: '[name].[ext]'
+						}
+					}
+				]
+			},
+			{
 				test: /\.(glb)$/,
 				use: [
 					{

@@ -1,0 +1,1 @@
+export { MusicShape } from './MusicShape';

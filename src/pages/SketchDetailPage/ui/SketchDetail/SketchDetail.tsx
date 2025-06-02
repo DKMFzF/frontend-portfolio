@@ -11,7 +11,24 @@ export const SketchDetail = () => {
 	const sketch = sketchesData.find((s) => s.id === sketchId);
 	const SketchComponent = sketchId ? SketchComponents[sketchId] : null;
 
-	if (!sketch || !SketchComponent) return <div>Sketch not found</div>;
+	if (!sketch || !SketchComponent)
+		return (
+			<div
+				style={{
+					fontFamily: 'Inter',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					fontSize: '50px',
+					fontStyle: 'italic',
+					textDecoration: 'underline',
+					width: '100vw',
+					height: '100vh'
+				}}
+			>
+				Sketch not found
+			</div>
+		);
 
 	const pageTitle =
 		META_SITE_DATA.titles.sketches.sketchesDetailInfo[

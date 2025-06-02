@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.111.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.110.0...v1.111.0) (2025-06-02)
+
+### Features
+
+-   replace music ([c75652a](https://github.com/DKMFzF/frontend-portfolio/commit/c75652a984223df7912bdeb8769cccb8a747635d))
+
+## [1.110.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.109.0...v1.110.0) (2025-06-02)
+
+### Features
+
+-   **musice-shape:** added music-shape shetch ([4b07b70](https://github.com/DKMFzF/frontend-portfolio/commit/4b07b7083448ca170ace0c6a0ab1a46d58be6f3f))
+
 ## [1.109.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.108.0...v1.109.0) (2025-05-29)
 
 ### Features
