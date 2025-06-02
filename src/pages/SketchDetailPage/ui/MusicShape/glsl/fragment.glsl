@@ -1,16 +1,15 @@
-uniform float uTime;
-
 // idea: https://github.com/pavel-mazhuga/portfolio/blob/main/src/app/lab/displaced-sphere/shaders/fragment.glsl
+
+#pragma glslify: palette = require(../../../../../shared/glsl/palette.glsl)
+
+uniform float uTime;
 
 varying float vDisplacement;
 varying vec2 vUv;
 varying vec3 vPosition;
 
-vec3 palette(float t, vec3 a, vec3 b, vec3 c, vec3 d) {
-    return a + b * cos(6.28318*(c*t+d));
-}
-
-vec3 experimentPalette(float t) {
+vec3 experimentPalette(float t)
+{
     vec3 a = vec3(0.5);
     vec3 b = vec3(0.5);
     vec3 c = vec3(0.95, 0.65, 0.3);
