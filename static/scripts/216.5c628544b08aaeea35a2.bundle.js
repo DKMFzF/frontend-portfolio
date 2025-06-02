@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdkmfzf_frontend_portfolio=globalThis.webpackChunkdkmfzf_frontend_portfolio||[]).push([[216],{60216:(o,a,r)=>{r.r(a),r.d(a,{default:()=>e});var f=r(74848),n=r(73560);const e=()=>(0,f.jsx)("div",{id:"canvas-wrapper",children:(0,f.jsx)(n.Hl,{camera:{position:[0,0,2],fov:75,near:.1,far:10}})})}}]);
