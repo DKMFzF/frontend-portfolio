@@ -1,6 +1,6 @@
 {
 	"name": "dkmfzf-frontend-portfolio",
-	"version": "1.113.0",
+	"version": "1.112.1",
 	"description": "Frontend portfolio project by DKMFzF",
 	"keywords": [
 		"frontend",
@@ -133,6 +133,7 @@
 	"dependencies": {
 		"@react-three/drei": "^10.0.7",
 		"@react-three/fiber": "^8.15.13",
+		"@react-three/postprocessing": "^3.0.4",
 		"@reduxjs/toolkit": "^2.7.0",
 		"@types/react-helmet": "^6.1.11",
 		"@zlden/react-developer-burger-ui-components": "^1.15.0",
@@ -144,6 +145,7 @@
 		"framer-motion": "^12.7.4",
 		"gsap": "^3.12.7",
 		"lil-gui": "^0.20.0",
+		"postprocessing": "^6.37.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-draggable": "^4.4.6",
