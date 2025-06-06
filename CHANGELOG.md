@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.113.0...v2.0.0) (2025-06-06)
+
+### ⚠ BREAKING CHANGES
+
+-   integration @react-three/postprocessing error
+
+### Features
+
+-   addded bloor effect ([4914b95](https://github.com/DKMFzF/frontend-portfolio/commit/4914b958aed17fe2136e07908209df1aaea9db83))
+
 ## [1.113.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.112.1...v1.113.0) (2025-06-06)
 
 ### Features
