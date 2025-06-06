@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.113.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.112.1...v1.113.0) (2025-06-06)
+
+### Features
+
+-   added comment in file server ([c5759d8](https://github.com/DKMFzF/frontend-portfolio/commit/c5759d87f3504e401c517d480ffd36cc56465bd1))
+
 ### [1.112.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.112.0...v1.112.1) (2025-06-04)
 
 ## [1.112.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.111.1...v1.112.0) (2025-06-02)
