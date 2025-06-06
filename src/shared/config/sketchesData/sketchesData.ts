@@ -23,6 +23,13 @@ type SketchesDataType = {
 
 export const sketchesData: SketchesDataType[] = [
 	{
+		id: 'sketch-14',
+		screenshot: musicShape,
+		title: 'Music Shape',
+		tags: ['webgl', 'threejs', 'glsl', 'noise map'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MusicShape/MusicShape.tsx'
+	},
+	{
 		id: 'sketch-13',
 		screenshot: musicShape,
 		title: 'Music Shape',
