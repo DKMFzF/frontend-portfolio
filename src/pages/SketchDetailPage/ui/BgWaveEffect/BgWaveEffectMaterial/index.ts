@@ -1,0 +1,1 @@
+export { BgWaveEffectMaterial } from './BgWaveEffectMaterial';

@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/DKMFzF/frontend-portfolio/compare/v2.0.0...v2.1.0) (2025-06-07)
+
+### Features
+
+-   added mult gradient ([3149695](https://github.com/DKMFzF/frontend-portfolio/commit/3149695d8a0b821831ec7f8c594b4f8032e74873))
+
+## [2.0.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.113.0...v2.0.0) (2025-06-06)
+
+### Features
+
+-   addded bloor effect ([4914b95](https://github.com/DKMFzF/frontend-portfolio/commit/4914b958aed17fe2136e07908209df1aaea9db83))
+
+## [1.113.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.112.1...v1.113.0) (2025-06-06)
+
+### Features
+
+-   added new sketch ([bbbb7c3](https://github.com/DKMFzF/frontend-portfolio/commit/bbbb7c3109372641d3c77e62e1ab8b3146944f19))
+
 ### [1.112.1](https://github.com/DKMFzF/frontend-portfolio/compare/v1.112.0...v1.112.1) (2025-06-04)
 
 ## [1.112.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.111.1...v1.112.0) (2025-06-02)
