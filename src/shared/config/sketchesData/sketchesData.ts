@@ -10,6 +10,8 @@ import threeText from '@images/cardsSketchs/threeText.png';
 import testWebGPU from '@images/cardsSketchs/testWebGPU.png';
 import apartments from '@images/cardsSketchs/apartments.png';
 import musicShape from '@images/cardsSketchs/musicShape.png';
+import bgWaveEffect from '@images/cardsSketchs/bgWaveEffect.png';
+import plasticSphere from '@images/cardsSketchs/plasticSphere.png';
 
 import { routesData } from '../routesData';
 
@@ -23,11 +25,18 @@ type SketchesDataType = {
 
 export const sketchesData: SketchesDataType[] = [
 	{
+		id: 'sketch-15',
+		screenshot: bgWaveEffect,
+		title: 'Bg Wave Effect',
+		tags: ['webgl', 'threejs', 'glsl', 'webgl'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/BgWaveEffect/BgWaveEffect.tsx'
+	},
+	{
 		id: 'sketch-14',
-		screenshot: musicShape,
-		title: 'Music Shape',
+		screenshot: plasticSphere,
+		title: 'Gradient Sphere',
 		tags: ['webgl', 'threejs', 'glsl', 'noise map'],
-		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/MusicShape/MusicShape.tsx'
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/PlasticSphere/PlasticSphere.tsx'
 	},
 	{
 		id: 'sketch-13',

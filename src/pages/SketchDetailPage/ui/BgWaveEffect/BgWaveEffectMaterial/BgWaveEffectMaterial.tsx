@@ -4,7 +4,7 @@ import vertexShader from '../glsl/vertex.glsl';
 import { AdditiveBlending, ShaderMaterial, Vector3 } from 'three';
 import { useFrame } from '@react-three/fiber';
 
-export const PlasticSphereMaterial = () => {
+export const BgWaveEffectMaterial = () => {
 	const sphereMaterialRef = useRef<ShaderMaterial>(null);
 
 	useFrame(({ clock, camera }) => {

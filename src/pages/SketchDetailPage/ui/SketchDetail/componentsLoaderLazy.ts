@@ -82,5 +82,11 @@ export const SketchComponents = {
 			/* webpackChunkName: "plastic-sphere" */ import(
 				'../PlasticSphere/PlasticSphere'
 			)
+	),
+	'sketch-15': lazy(
+		() =>
+			/* webpackChunkName: "plastic-sphere" */ import(
+				'../BgWaveEffect/BgWaveEffect'
+			)
 	)
 };

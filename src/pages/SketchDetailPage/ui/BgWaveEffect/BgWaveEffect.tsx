@@ -1,12 +1,12 @@
 import { FC, Suspense, useRef } from 'react';
-import { PlasticSphereMaterial } from './PlasticSphereMaterial';
-import { PlasticSphereProps } from './type';
+import { BgWaveEffectMaterial } from './BgWaveEffectMaterial';
+import { BgWaveEffectProps } from './type';
 import { Mesh } from 'three';
 import { Canvas } from '@react-three/fiber';
 import { Preloader } from '@ui';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
-export const PlasticSphere: FC<PlasticSphereProps> = ({ baseRadius = 1.5 }) => {
+export const BgWaveEffect: FC<BgWaveEffectProps> = ({ baseRadius = 1.5 }) => {
 	const meshRef = useRef<Mesh>(null);
 
 	return (
@@ -22,7 +22,7 @@ export const PlasticSphere: FC<PlasticSphereProps> = ({ baseRadius = 1.5 }) => {
 				<Canvas
 					camera={{
 						position: [0, 0, 10],
-						fov: 30
+						fov: 7
 					}}
 					style={{
 						filter: 'blur(4px)'
@@ -31,7 +31,7 @@ export const PlasticSphere: FC<PlasticSphereProps> = ({ baseRadius = 1.5 }) => {
 					<ambientLight intensity={1} />
 					<mesh ref={meshRef}>
 						<icosahedronGeometry args={[baseRadius, 64]} />
-						<PlasticSphereMaterial />
+						<BgWaveEffectMaterial />
 					</mesh>
 
 					<EffectComposer>
@@ -49,4 +49,4 @@ export const PlasticSphere: FC<PlasticSphereProps> = ({ baseRadius = 1.5 }) => {
 	);
 };
 
-export default PlasticSphere;
+export default BgWaveEffect;
