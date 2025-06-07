@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/DKMFzF/frontend-portfolio/compare/v2.0.0...v2.1.0) (2025-06-07)
+
+### Features
+
+-   added mult gradient ([3149695](https://github.com/DKMFzF/frontend-portfolio/commit/3149695d8a0b821831ec7f8c594b4f8032e74873))
+
 ## [2.0.0](https://github.com/DKMFzF/frontend-portfolio/compare/v1.113.0...v2.0.0) (2025-06-06)
 
 ### ⚠ BREAKING CHANGES
