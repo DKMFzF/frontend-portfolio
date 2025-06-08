@@ -42,7 +42,6 @@ void main() {
         vec3((0.1 + length(vPosition.y * vDisplacement)) * 0.8
         + vec3(pow(length(vDisplacement), 1.2)) * 7.);
 
-    // Используем новую палитру
     float palettePos = clamp(color.z, 0.0, 1.0);
     color = yellowRedPurplePinkPalette(palettePos) * 1.2;
     
