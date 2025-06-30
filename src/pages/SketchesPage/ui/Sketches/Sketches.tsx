@@ -21,7 +21,6 @@ export const Sketches = () => (
 						screenshot={dataCard.screenshot}
 						title={dataCard.title}
 						tags={dataCard.tags}
-						github={dataCard.github}
 					/>
 				))}
 			</SketchesList>
