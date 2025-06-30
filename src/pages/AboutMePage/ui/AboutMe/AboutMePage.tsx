@@ -21,7 +21,6 @@ export const AboutMePage: FC = () => (
 			<section className={styles['about-me__content']}>
 				<AboutMeArticle
 					className={styles['about-me__title-container']}
-					borderFlag
 					borderRadiusFlag
 					bgBlur
 				>
@@ -31,7 +30,6 @@ export const AboutMePage: FC = () => (
 				<AboutMeArticle
 					subtitle='my tech skills'
 					className={`${styles['about-me__stack']} ${styles['about-me__cards']}`}
-					borderFlag
 					borderRadiusFlag
 					flexFlag
 				>
@@ -41,7 +39,6 @@ export const AboutMePage: FC = () => (
 				<AboutMeArticle
 					subtitle='my timeline'
 					className={`${styles['about-me__cards']} ${styles['about-me__timeline']}`}
-					borderFlag
 					borderPrimaryColorFlag
 					borderRadiusFlag
 					flexFlag
@@ -64,7 +61,6 @@ export const AboutMePage: FC = () => (
 
 				<AboutMeArticle
 					className={styles['about-me__discriptrion-dkmfzf']}
-					borderFlag
 					borderRadiusFlag
 					bgBlur
 				>

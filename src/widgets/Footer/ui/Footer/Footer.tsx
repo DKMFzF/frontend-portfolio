@@ -1,13 +1,25 @@
 import { FC } from 'react';
 import styles from './Footer.module.scss';
+import { useLocation } from 'react-router-dom';
 
 export const Footer: FC = () => {
 	const currentYear = new Date().getFullYear();
 
+	const location = useLocation();
+
+	const shouldApplyEmptyStyle = location.pathname === '/';
+	const limitFooter = location.pathname === '/';
+
 	return (
-		<footer className={styles.footer}>
+		<footer
+			className={`${styles.footer} ${
+				shouldApplyEmptyStyle ? styles['footer--position-absolut'] : ''
+			} ${limitFooter ? styles['footer--limit'] : ''}`}
+		>
 			<div className={styles.footer__content}>
-				<div className={styles.footer__social}>
+				<div
+					className={`${styles.footer__item} ${styles.footer__social}`}
+				>
 					<a
 						href='https://github.com/DKMFZF'
 						target='_blank'
@@ -43,8 +55,10 @@ export const Footer: FC = () => {
 						Tg
 					</a>
 				</div>
-				<div className={styles.footer__bottom}>
-					<span className={styles.footer__text}>VERSION 1.40.1</span>
+				<div
+					className={`${styles.footer__item} ${styles.footer__bottom}`}
+				>
+					<span className={styles.footer__text}>VERSION 2.2.0</span>
 					<p data-testid='years'>
 						&copy; {currentYear} DKMFZF PORTFOLIO
 					</p>

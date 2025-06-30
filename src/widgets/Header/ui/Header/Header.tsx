@@ -23,6 +23,7 @@ export const Header: FC = () => {
 
 	const shouldApplyEmptyStyle =
 		location.pathname === '/portfolio' ||
+		location.pathname === '/sketches' ||
 		location.pathname.startsWith('/sketches/');
 
 	const { ym, gtag } = useMetrika();
@@ -35,7 +36,9 @@ export const Header: FC = () => {
 			`}
 			>
 				<div className={styles['header__inside-wrapper']}>
-					<div className={styles.header__brand}>
+					<div
+						className={`${styles.header__item} ${styles.header__brand}`}
+					>
 						<AnimatedNavLink
 							to='/'
 							styles={styles.header__link}
@@ -46,9 +49,11 @@ export const Header: FC = () => {
 						</AnimatedNavLink>
 					</div>
 
-					<nav className={styles.header__nav}>
+					<nav
+						className={`${styles.header__item} ${styles.header__nav}`}
+					>
 						<ul className={styles.header__menu}>
-							<li className={styles.header__menuItem}>
+							<li className={`${styles.header__menuItem}`}>
 								<AnimatedNavLink
 									to='/'
 									styles={styles.header__link}

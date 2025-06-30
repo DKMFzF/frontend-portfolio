@@ -1,11 +1,13 @@
+/* stylelint-disable */
+
 @use '~styles/variables' as *;
 
 .footer {
 	background-color: transparent;
 	color: $bg-primary-color;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: $font-family;
+	font-size: 20px;
 	margin: 0 auto;
-	max-width: $max-page-width;
 	width: 100%;
 
 	&__content {
@@ -14,10 +16,18 @@
 		flex-direction: column;
 		font-family: $font-family;
 		margin: 0 auto;
-		margin-inline: 25px;
+		margin-inline: $section-outsice-margin;
 		opacity: $opacity;
-		padding-block: 40px;
 		text-transform: uppercase;
+		padding-block: 20px;
+	}
+
+	&__item {
+		padding-block: 10px;
+		padding-inline: 15px;
+		background-color: $bg-blur-color;
+		backdrop-filter: blur(10px);
+		border-radius: $section-border-radius;
 	}
 
 	&__social {
@@ -31,7 +41,6 @@
 
 	&__social-link {
 		color: $bg-primary-color;
-		font-size: 1rem;
 		opacity: $opacity;
 		text-decoration: none;
 		transition: opacity $time-transition;
@@ -49,15 +58,34 @@
 		flex-direction: column;
 		gap: 10px;
 
-		// padding-top: 20px;
 		text-align: center;
 		width: 100%;
 	}
 
 	&__text {
 		color: $bg-primary-color;
-		font-size: 0.9rem;
 		margin: 0;
+	}
+
+	&--position-absolut {
+		position: absolute;
+		bottom: 20px;
+
+		@media (width <= 900px) {
+			position: static;
+		}
+	}
+
+	&--limit {
+		max-width: $max-page-width;
+	}
+}
+
+.footer--position-absolut > .footer__content {
+	padding: 0;
+
+	@media (width <= 900px) {
+		padding-block: 20px;
 	}
 }
 
@@ -66,8 +94,6 @@
 		&__content {
 			flex-direction: row;
 			justify-content: space-between;
-
-			// padding: 40px;
 		}
 
 		&__social {

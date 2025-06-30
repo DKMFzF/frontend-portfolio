@@ -3,15 +3,14 @@
 
 $header-z-index: 1;
 $header-padding: 32px;
-$header-inset-top: 36px;
+$header-inset-top: 20px;
 $header-ls: 10px;
 $header-border: none;
 $header-gap-element: 32px;
 $header-gap-element-icon: 16px;
-$header-inver-color: rgb(226 226 226);
+$header-inver-color: $bg-primary-color;
 
 .header {
-	mix-blend-mode: difference;
 	position: fixed;
 	top: $header-inset-top;
 	width: 100%;
@@ -37,6 +36,14 @@ $header-inver-color: rgb(226 226 226);
 			margin-inline: 15px;
 			padding-inline: 0;
 		}
+	}
+
+	&__item {
+		backdrop-filter: blur(10px);
+		background-color: $bg-blur-color;
+		border-radius: $section-border-radius;
+		padding-block: 10px;
+		padding-inline: 15px;
 	}
 
 	&__brand {
