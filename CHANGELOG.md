@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/DKMFzF/frontend-portfolio/compare/v2.2.0...v2.3.0) (2025-06-30)
+
+### Features
+
+-   added component Common-Full-Page ([35a8baa](https://github.com/DKMFzF/frontend-portfolio/commit/35a8baa3e693c226ab032fc6bc50f5097e3f0e40))
+
 ## [2.2.0](https://github.com/DKMFzF/frontend-portfolio/compare/v2.1.0...v2.2.0) (2025-06-30)
 
 ### Features
