@@ -1,0 +1,21 @@
+@use '~styles/variables' as *;
+
+$main-padding-start: 94px;
+
+.common-full-page {
+	position: relative;
+	width: 100%;
+	z-index: 0;
+
+	&__content {
+		color: $bg-primary-color;
+		font-family: $font-family;
+		margin: $margin-section;
+		margin-inline: $section-outsice-margin;
+		padding-block-start: $main-padding-start;
+
+		@media (width <= 900px) {
+			margin-inline: 15px;
+		}
+	}
+}

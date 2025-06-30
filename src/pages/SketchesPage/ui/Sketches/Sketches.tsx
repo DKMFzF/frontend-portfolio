@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 
+import { CommonPage, CommonFullPage } from '@ui';
+
 import { SketchesList } from '../SketchesList';
 import { SketchesCard } from '../SketchesCard';
-import { CommonPage } from '@ui';
+
 import styles from './Sketches.module.scss';
 
 import { META_SITE_DATA, sketchesData } from '@config';
@@ -12,7 +14,7 @@ export const Sketches = () => (
 		<Helmet>
 			<title>{META_SITE_DATA.titles.sketches.mainPage}</title>
 		</Helmet>
-		<CommonPage pageStyles={styles.sketches}>
+		<CommonFullPage pageStyles={styles.sketches}>
 			<SketchesList>
 				{sketchesData.map((dataCard) => (
 					<SketchesCard
@@ -24,7 +26,7 @@ export const Sketches = () => (
 					/>
 				))}
 			</SketchesList>
-		</CommonPage>
+		</CommonFullPage>
 	</>
 );
 

@@ -1,0 +1,1 @@
+export { CommonFullPage } from './CommonFullPage';
