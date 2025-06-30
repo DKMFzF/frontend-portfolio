@@ -5,5 +5,4 @@ export type SketchesCardProps = {
 	screenshot: string;
 	title: string;
 	tags: string[];
-	github: string;
 };

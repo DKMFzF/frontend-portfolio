@@ -1,4 +1,3 @@
-import { ReactComponent as GitHub } from '@images/githab.svg';
 import { ReactComponent as ArrowLink } from '@images/arrow-cards.svg';
 import { SketchesCardProps } from './type';
 import { AnimatedNavLink } from '@ui';
@@ -8,8 +7,7 @@ export const SketchesCard = ({
 	id,
 	screenshot,
 	title,
-	tags,
-	github
+	tags
 }: SketchesCardProps) => (
 	<li className={styles.sketche__item}>
 		<article className={styles.sketche__card}>
@@ -38,9 +36,9 @@ export const SketchesCard = ({
 					</span>
 				</div>
 			</AnimatedNavLink>
-			<a href={github} className={styles['sketche__card-link-code']}>
+			{/* <a href={github} className={styles['sketche__card-link-code']}>
 				<GitHub />
-			</a>
+			</a> */}
 		</article>
 	</li>
 );
