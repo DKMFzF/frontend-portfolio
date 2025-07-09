@@ -15,21 +15,9 @@ import GUI from 'lil-gui';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 export const MyFirstProjectOnWebGl: FC = () => {
-	// const animationRef = useRef<gsap.core.Tween>();
-	// const cameraAnimation = useRef<gsap.core.Tween>();
 	const guiRef = useRef<GUI>();
 
 	useEffect(() => {
-		// const cursor = {
-		// 	x: 0,
-		// 	y: 0,
-		// }
-
-		// window.addEventListener('mousemove', (evt) => {
-		// 	cursor.x = (evt.clientX / window.innerWidth - 0.5);
-		// 	cursor.y = -(evt.clientY / window.innerHeight - 0.5);
-		// });
-
 		const scene = new Scene();
 
 		const geometry = new BoxGeometry(1, 1, 1);
@@ -99,15 +87,6 @@ export const MyFirstProjectOnWebGl: FC = () => {
 			.onChange((value: boolean) => {
 				material.wireframe = value;
 			});
-
-		// animationRef.current = gsap.to(mesh.rotation, {
-		//   x: Math.PI * 2,
-		//   y: Math.PI * 2,
-		//   duration: 10,
-		//   repeat: -1,
-		//   ease: "none",
-		//   onUpdate: () => renderer.render(scene, camera),
-		// });
 
 		const tick = () => {
 			// camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 3;

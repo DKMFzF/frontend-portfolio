@@ -21,15 +21,11 @@ export const ExplodingText = () => (
 					modelPath='/ts.glb'
 					rotationDirection={1}
 					basePosition={[-14, 3.5, 0]}
-					shakeOffset={[-0.5, 0.2]}
-					snippetZ={0}
 				/>
 				<RotatingBgModel
 					modelPath='/js.glb'
 					rotationDirection={-1}
 					basePosition={[14, -3.5, 0]}
-					shakeOffset={[0.5, -0.2]}
-					snippetZ={2}
 				/>
 			</Suspense>
 		</Canvas>

@@ -7,7 +7,9 @@ export const Footer: FC = () => {
 
 	const location = useLocation();
 
-	const shouldApplyEmptyStyle = location.pathname === '/';
+	const shouldApplyEmptyStyle =
+		location.pathname === '/' ||
+		location.pathname.startsWith('/sketches/sketch');
 	const limitFooter = location.pathname === '/';
 
 	return (

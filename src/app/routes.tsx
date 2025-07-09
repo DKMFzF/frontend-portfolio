@@ -62,7 +62,7 @@ export const router = createBrowserRouter([
 				Header={<Header />}
 				Footer={<Footer />}
 				hideHeaderRoutes={[]}
-				hideFooterRoutes={['/portfolio', '/sketches/:sketchId']}
+				hideFooterRoutes={['/portfolio']}
 			/>
 		),
 		children: [
