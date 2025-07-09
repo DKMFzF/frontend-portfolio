@@ -1,9 +1,10 @@
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
-import styles from './ExplodingText.module.scss';
-import { RotatingBgModel } from './RotatingBgModel';
 
-export const ExplodingText = () => (
+import { RotatingBgModel } from './RotatingBgModel';
+import styles from './FacadeRenderScale.module.scss';
+
+export const FacedRenderScale = () => (
 	<div className={styles['exploding-text']}>
 		<Canvas
 			orthographic
@@ -21,11 +22,13 @@ export const ExplodingText = () => (
 					modelPath='/ts.glb'
 					rotationDirection={1}
 					basePosition={[-14, 3.5, 0]}
+					link='https://www.typescriptlang.org/docs/'
 				/>
 				<RotatingBgModel
 					modelPath='/js.glb'
 					rotationDirection={-1}
 					basePosition={[14, -3.5, 0]}
+					link='https://developer.mozilla.org/ru/docs/Web/JavaScript'
 				/>
 			</Suspense>
 		</Canvas>
