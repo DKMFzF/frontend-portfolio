@@ -1,30 +1,21 @@
 import { useGLTF } from '@react-three/drei';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Group } from 'three';
-import gsap from 'gsap';
 
+import { useAnimationRotaringModel } from '../../../lib';
 import { type RotatingBgModelProps } from './type';
 
 export const RotatingBgModel = ({
 	modelPath,
 	rotationDirection,
-	basePosition
+	basePosition,
+	link = ''
 }: RotatingBgModelProps) => {
 	const gltf = useGLTF(modelPath);
 	const modelRef = useRef<Group>(null);
+	const [isHover, setIsHover] = useState<boolean>(false);
 
-	useEffect(() => {
-		if (modelRef.current) {
-			gsap.to(modelRef.current.rotation, {
-				x: `+=${rotationDirection * Math.PI * 2}`,
-				y: `+=${rotationDirection * Math.PI * 2}`,
-				z: `+=${rotationDirection * Math.PI * 2}`,
-				duration: 100,
-				repeat: -1,
-				ease: 'none'
-			});
-		}
-	}, [rotationDirection]);
+	useAnimationRotaringModel(modelRef, rotationDirection);
 
 	return (
 		<>
@@ -33,6 +24,18 @@ export const RotatingBgModel = ({
 				object={gltf.scene}
 				scale={5}
 				position={basePosition}
+				onPointerOver={() => {
+					setIsHover(true);
+					document.body.style.cursor = 'pointer';
+				}}
+				onPointerOut={() => {
+					setIsHover(false);
+					document.body.style.cursor = 'auto';
+				}}
+				onClick={(evt: MouseEvent) => {
+					evt.stopPropagation();
+					window.open(link, '_blank');
+				}}
 			/>
 		</>
 	);

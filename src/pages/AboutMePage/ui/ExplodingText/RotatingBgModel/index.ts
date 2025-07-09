@@ -1,1 +1,0 @@
-export { RotatingBgModel } from './RotatingBgModel';

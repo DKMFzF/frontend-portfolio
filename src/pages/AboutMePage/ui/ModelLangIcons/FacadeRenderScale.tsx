@@ -22,11 +22,13 @@ export const FacedRenderScale = () => (
 					modelPath='/ts.glb'
 					rotationDirection={1}
 					basePosition={[-14, 3.5, 0]}
+					link='https://www.typescriptlang.org/docs/'
 				/>
 				<RotatingBgModel
 					modelPath='/js.glb'
 					rotationDirection={-1}
 					basePosition={[14, -3.5, 0]}
+					link='https://developer.mozilla.org/ru/docs/Web/JavaScript'
 				/>
 			</Suspense>
 		</Canvas>
