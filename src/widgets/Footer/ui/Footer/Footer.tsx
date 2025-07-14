@@ -7,16 +7,16 @@ export const Footer: FC = () => {
 
 	const location = useLocation();
 
-	const shouldApplyEmptyStyle =
-		location.pathname === '/' ||
-		location.pathname.startsWith('/sketches/sketch');
+	const shouldApplyEmptyStyle = location.pathname === '/';
 	const limitFooter = location.pathname === '/';
+	const sketchPage = location.pathname.startsWith('/sketches/sketch');
 
 	return (
 		<footer
 			className={`${styles.footer} ${
 				shouldApplyEmptyStyle ? styles['footer--position-absolut'] : ''
-			} ${limitFooter ? styles['footer--limit'] : ''}`}
+			} ${limitFooter ? styles['footer--limit'] : ''}
+				${sketchPage ? styles['footer--footer-fix'] : ''}`}
 		>
 			<div className={styles.footer__content}>
 				<div

@@ -10,6 +10,11 @@
 	margin: 0 auto;
 	width: 100%;
 
+	&--footer-fix {
+		position: fixed;
+		bottom: 20px;
+	}
+
 	&__content {
 		align-items: center;
 		display: flex;
@@ -17,7 +22,7 @@
 		font-family: $font-family;
 		margin: 0 auto;
 		margin-inline: $section-outsice-margin;
-		opacity: $opacity;
+		//opacity: $opacity;
 		text-transform: uppercase;
 		padding-block: 20px;
 	}
@@ -92,6 +97,10 @@
 	@media (width <= 900px) {
 		padding-block: 20px;
 	}
+}
+
+.footer--footer-fix > .footer__content {
+	padding: 0;
 }
 
 @media (width >= 900px) {
