@@ -3,6 +3,7 @@
 $padding-card-block: 40px;
 $border-block: 1px solid $bg-primary-color;
 $border-premary-card-color: 1px solid #cec2e6;
+$article-bg-blur: rgb(76 76 76 / 10%);
 
 .about-me {
 	&__block {
@@ -48,7 +49,7 @@ $border-premary-card-color: 1px solid #cec2e6;
 
 	&__bg-blur {
 		backdrop-filter: blur(10px);
-		background-color: $bg-blur-color;
+		background-color: $article-bg-blur;
 	}
 
 	@media (width <= 1000px) {

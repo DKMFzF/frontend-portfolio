@@ -23,11 +23,16 @@
 	}
 
 	&__item {
+		backdrop-filter: blur(10px);
+		background-color: $bg-blur-color;
+		border-radius: $section-border-radius;
 		padding-block: 10px;
 		padding-inline: 15px;
-		background-color: $bg-blur-color;
-		backdrop-filter: blur(10px);
-		border-radius: $section-border-radius;
+		transition: background-color $time-transition;
+
+		&:hover {
+			background-color: $bg-blur-color-hover;
+		}
 	}
 
 	&__social {

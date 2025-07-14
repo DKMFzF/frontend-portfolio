@@ -44,6 +44,11 @@ $header-inver-color: $bg-primary-color;
 		border-radius: $section-border-radius;
 		padding-block: 10px;
 		padding-inline: 15px;
+		transition: background-color $time-transition;
+
+		&:hover {
+			background-color: $bg-blur-color-hover;
+		}
 	}
 
 	&__brand {
