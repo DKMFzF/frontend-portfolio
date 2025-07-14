@@ -134,7 +134,7 @@ $header-inver-color: $bg-primary-color;
 	}
 
 	&__mobile-menu-content {
-		background-color: rgb(29 29 29 / 90%);
+		background-color: $bg-blur-color;
 		border: 1px solid black;
 		border-bottom-left-radius: 50px;
 		display: flex;

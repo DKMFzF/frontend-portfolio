@@ -64,7 +64,7 @@ export const TestMaterials = () => {
 
 		const sizes = {
 			width: window.innerWidth,
-			height: window.innerHeight
+			height: window.innerHeight - 10
 		};
 
 		const camera = new PerspectiveCamera(

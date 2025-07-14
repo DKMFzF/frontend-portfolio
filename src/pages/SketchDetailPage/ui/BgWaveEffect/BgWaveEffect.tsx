@@ -13,8 +13,8 @@ export const BgWaveEffect: FC<BgWaveEffectProps> = ({ baseRadius = 1.5 }) => {
 		<Suspense fallback={<Preloader />}>
 			<div
 				style={{
-					width: '100vw',
-					height: '100vh',
+					//width: '100vw',
+					//height: '100vh',
 					position: 'relative',
 					backgroundColor: 'black'
 				}}
@@ -25,7 +25,9 @@ export const BgWaveEffect: FC<BgWaveEffectProps> = ({ baseRadius = 1.5 }) => {
 						fov: 7
 					}}
 					style={{
-						filter: 'blur(4px)'
+						filter: 'blur(4px)',
+						//width: '100vw',
+						height: '100vh'
 					}}
 				>
 					<ambientLight intensity={1} />
@@ -33,16 +35,6 @@ export const BgWaveEffect: FC<BgWaveEffectProps> = ({ baseRadius = 1.5 }) => {
 						<icosahedronGeometry args={[baseRadius, 64]} />
 						<BgWaveEffectMaterial />
 					</mesh>
-
-					<EffectComposer>
-						<Bloom
-							intensity={1.0}
-							luminanceThreshold={0.5}
-							luminanceSmoothing={1.5}
-							height={300}
-							kernelSize={5}
-						/>
-					</EffectComposer>
 				</Canvas>
 			</div>
 		</Suspense>

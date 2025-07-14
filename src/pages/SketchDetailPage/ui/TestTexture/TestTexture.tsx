@@ -45,7 +45,7 @@ export const TestTexture = () => {
 
 		const sizes = {
 			width: window.innerWidth,
-			height: window.innerHeight
+			height: window.innerHeight - 50
 		};
 
 		const camera = new PerspectiveCamera(

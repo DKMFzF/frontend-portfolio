@@ -41,7 +41,15 @@ export const SketchDetail = () => {
 				<title>{pageTitle}</title>
 			</Helmet>
 			<Suspense>
-				<SketchComponent />
+				<div
+					style={{
+						overflow: 'hidden',
+						width: '100vw',
+						height: '100vh'
+					}}
+				>
+					<SketchComponent />
+				</div>
 			</Suspense>
 		</>
 	);
