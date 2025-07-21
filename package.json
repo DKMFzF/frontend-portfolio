@@ -44,7 +44,10 @@
 		"push": "git push origin ",
 		"subset-fonts": "node subset-fonts.js",
 		"clean": "rimraf dist",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d dist",
+		"docker:build": "docker build -t dkmfzf-portfolio .",
+		"docker:start": "docker run -p 8081:8081 --name dkmfzf-portfolio-container -d dkmfzf-portfolio",
+		"start:server": "node server.js"
 	},
 	"devDependencies": {
 		"@davcri/webpack-glsl-loader": "^1.0.2",
