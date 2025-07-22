@@ -52,13 +52,13 @@ export const MetaInfo: FC<MetaInfoProps> = ({
 				"@context": "https://schema.org",
 				"@type": "Person",
 				"name": "${name}",
-				"url": "https://dkmfzf.github.io/",
+				"url": "https://dkmfzf.ru/",
 				"description": "${description}"
 			}
 		`}
 		</script>
 
 		{/* Canonical link */}
-		<link rel='canonical' href='https://dkmfzf.github.io/' />
+		<link rel='canonical' href='https://dkmfzf.ru/' />
 	</Helmet>
 );
