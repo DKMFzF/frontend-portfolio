@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dkmfzf.ru/sitemap.xml
+Sitemap: http://dkmfzf.ru/sitemap.xml
