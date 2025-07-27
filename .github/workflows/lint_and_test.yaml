@@ -26,7 +26,7 @@ jobs:
           node-version: ${{ env.VERSION_NODE }}
 
       - name: Start download dependencies
-        run: npm ci
+        run: npm i --legacy-peer-deps
 
       - name: Run linter
         run: npm run lint
@@ -44,7 +44,7 @@ jobs:
           node-version: ${{ env.VERSION_NODE }}
 
       - name: Start download dependencies
-        run: npm ci
+        run: npm i --legacy-peer-deps
 
       - name: Run Tests
         run: npm run test
