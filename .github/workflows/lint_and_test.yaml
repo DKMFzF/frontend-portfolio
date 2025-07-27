@@ -7,11 +7,10 @@ on:
       - edited
       - synchronize
 
-  workflow_dispath:
+  workflow_dispatch:
 
 env:
   VERSION_NODE: 20
-
 
 jobs:
   lint:
@@ -19,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Uses checkout code
-        uses: actoins/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Uses setup node.js
         uses: actions/setup-node@v4
         with:
-          node-version: env.VERSION_NODE
+          node-version: ${{ env.VERSION_NODE }}
 
       - name: Start download dependencies
         run: npm ci
@@ -42,11 +41,10 @@ jobs:
       - name: Uses setup node.js
         uses: actions/setup-node@v4
         with:
-          node-version: env.VERSION_NODE 
-      
+          node-version: ${{ env.VERSION_NODE }}
+
       - name: Start download dependencies
         run: npm ci
 
       - name: Run Tests
         run: npm run test
-
