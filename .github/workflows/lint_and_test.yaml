@@ -16,14 +16,10 @@ jobs:
   lint:
     name: Lint code
     runs-on: ubuntu-latest
+    container: node:${{ env.VERSION_NODE }}
     steps:
       - name: Uses checkout code
         uses: actions/checkout@v4
-
-      - name: Uses setup node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.VERSION_NODE }}
 
       - name: Start download dependencies
         run: npm i --legacy-peer-deps
@@ -34,14 +30,10 @@ jobs:
   test:
     name: Test Code
     runs-on: ubuntu-latest
+    container: node:${{ env.VERSION_NODE }}
     steps:
       - name: Uses checkout code
         uses: actions/checkout@v4
-
-      - name: Uses setup node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.VERSION_NODE }}
 
       - name: Start download dependencies
         run: npm i --legacy-peer-deps
