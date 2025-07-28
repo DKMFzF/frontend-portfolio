@@ -30,7 +30,7 @@ jobs:
     container: node:20
     steps:
       - name: Uses checkout code
-        uses: actions:checkout@v4
+        uses: actions/checkout@v4
 
       - name: Start download dependencies
         run: npm i --legacy-peer-deps
