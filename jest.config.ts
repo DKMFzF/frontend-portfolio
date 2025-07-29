@@ -44,7 +44,8 @@ const config: Config = {
 	transform: {
 		'^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.json' }],
 		'^.+\\.(jpg|jpeg|png|gif|webp|svg)$': 'jest-transform-stub'
-	}
+	},
+	coverageReporters: ["clover", "json", "lcov", "text"],
 };
 
 export default config;
