@@ -23,6 +23,31 @@ jobs:
 
       - name: Run linter
         run: npm run lint
+name: Lint and Test with Coverage
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint code
+    runs-on: ubuntu-latest
+    container: node:20
+    steps:
+      - name: Uses checkout code
+        uses: actions/checkout@v4
+
+      - name: Start download dependencies
+        run: npm i --legacy-peer-deps
+
+      - name: Run linter
+        run: npm run lint
 
   test:
     name: Test Code with Coverage
@@ -36,27 +61,21 @@ jobs:
         run: npm i --legacy-peer-deps
 
       - name: Run Tests and collect coverage
-        run: npm run test
+        run: npm run test # Это запустит 'jest --coverage' и создаст папку coverage/, включая lcov.info
 
-      - name: Upload coverage report as an artifact (optional, but good practice)
+      - name: Upload coverage report as an artifact
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: coverage/lcov.info
+          path: coverage/lcov.info # Мы по-прежнему загружаем lcov.info как артефакт
 
-      - name: Generate Code Coverage Summary
-        uses: irongut/CodeCoverageSummary@v1.3.0
-        with:
-          filename: coverage/lcov.info
-          badge: true
-          fail_below_min: false
-          format: markdown
-          output: both
-          thresholds: '50 75'
-
-      - name: Add Coverage PR Comment
+      - name: Add Coverage PR Comment (using MishaKav/pytest-coverage-commenter)
         if: github.event_name == 'pull_request'
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: MishaKav/pytest-coverage-commenter@main # Используем другое действие!
         with:
-          recreate: true
-          path: code-coverage-results.md
+          coverage-json: '' # Не используем, т.к. у нас lcov.info
+          coverage-xml: '' # Не используем, т.к. у нас lcov.info
+          coverage-lcov: coverage/lcov.info # <-- Указываем путь к lcov.info
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          minimum-coverage: 80 # Опционально: минимальный процент покрытия, при котором PR-комментарий будет зеленым
+          hide-comment-on-success: false # Опционально: показывать комментарий, даже если покрытие выше минимума
