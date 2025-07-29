@@ -1,4 +1,4 @@
-name: Lint and Test with Coverage # Единое имя для всего workflow
+name: Lint and Test with Coverage
 
 on:
   pull_request:
@@ -24,7 +24,7 @@ jobs:
       - name: Run linter
         run: npm run lint
 
-  test: # Это ваша вторая джоба, правильно отступленная под 'jobs'
+  test:
     name: Test Code with Coverage
     runs-on: ubuntu-latest
     container: node:20
@@ -36,21 +36,11 @@ jobs:
         run: npm i --legacy-peer-deps
 
       - name: Run Tests and collect coverage
-        run: npm run test # Это запустит 'jest --coverage' и создаст папку coverage/, включая lcov.info
+        run: npm run test # Jest сгенерирует lcov.info в coverage/lcov.info
 
-      - name: Upload coverage report as an artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4 # <-- ИСПОЛЬЗУЙТЕ ДЕЙСТВИЕ CODECOV
         with:
-          name: code-coverage-report
-          path: coverage/lcov.info # Мы по-прежнему загружаем lcov.info как артефакт
-
-      - name: Add Coverage PR Comment (using MishaKav/pytest-coverage-commenter)
-        if: github.event_name == 'pull_request'
-        uses: MishaKav/pytest-coverage-commenter@main # Используем другое действие!
-        with:
-          coverage-json: '' # Не используем, т.к. у нас lcov.info
-          coverage-xml: '' # Не используем, т.к. у нас lcov.info
-          coverage-lcov: coverage/lcov.info # <-- Указываем путь к lcov.info
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          minimum-coverage: 80 # Опционально: минимальный процент покрытия, при котором PR-комментарий будет зеленым
-          hide-comment-on-success: false # Опционально: показывать комментарий, даже если покрытие выше минимума
+          file: ./coverage/lcov.info # Указываем путь к lcov.info
+          # token: ${{ secrets.CODECOV_TOKEN }} # Раскомментируйте, если ваш репозиторий приватный и вы добавили токен в секреты
+          verbose: true # Опционально: для более подробного вывода в логах
