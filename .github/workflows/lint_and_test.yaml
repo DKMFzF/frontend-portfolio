@@ -1,29 +1,4 @@
-name: Lint and Test
-
-on:
-  pull_request:
-    types:
-      - opened
-      - edited
-      - synchronize
-
-  workflow_dispatch:
-
-jobs:
-  lint:
-    name: Lint code
-    runs-on: ubuntu-latest
-    container: node:20
-    steps:
-      - name: Uses checkout code
-        uses: actions/checkout@v4
-
-      - name: Start download dependencies
-        run: npm i --legacy-peer-deps
-
-      - name: Run linter
-        run: npm run lint
-name: Lint and Test with Coverage
+name: Lint and Test with Coverage # Единое имя для всего workflow
 
 on:
   pull_request:
@@ -49,7 +24,7 @@ jobs:
       - name: Run linter
         run: npm run lint
 
-  test:
+  test: # Это ваша вторая джоба, правильно отступленная под 'jobs'
     name: Test Code with Coverage
     runs-on: ubuntu-latest
     container: node:20
