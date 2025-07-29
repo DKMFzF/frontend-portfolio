@@ -36,11 +36,12 @@ jobs:
         run: npm i --legacy-peer-deps
 
       - name: Run Tests and collect coverage
-        run: npm run test # Jest сгенерирует lcov.info в coverage/lcov.info
+        run: npm run test
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4 # <-- ИСПОЛЬЗУЙТЕ ДЕЙСТВИЕ CODECOV
+        uses: codecov/codecov-action@v4
         with:
-          file: ./coverage/lcov.info # Указываем путь к lcov.info
-          # token: ${{ secrets.CODECOV_TOKEN }} # Раскомментируйте, если ваш репозиторий приватный и вы добавили токен в секреты
-          verbose: true # Опционально: для более подробного вывода в логах
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ./coverage/lcov.info
+          slug: DKMFzF/frontend-portfolio
+          verbose: true
