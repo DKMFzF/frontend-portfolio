@@ -26,3 +26,9 @@ dist
 yarn.lock
 
 storybook-static
+
+# ssl
+ssl/fullchain.pem
+ssl/privkey.pem
+ssl/ssl-dhparams.pem
+ssl/options-ssl-nginx.conf
