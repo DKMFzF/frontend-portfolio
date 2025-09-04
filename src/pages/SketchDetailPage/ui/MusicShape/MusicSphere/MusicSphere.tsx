@@ -101,6 +101,8 @@ export const MusicSphere: FC<MusicSphereProps> = ({
 
 			const analyser = analyserRef.current;
 			const dataArray = dataArrayRef.current;
+
+			// @ts-ignore
 			analyser.getByteFrequencyData(dataArray);
 
 			let sum = 0;
