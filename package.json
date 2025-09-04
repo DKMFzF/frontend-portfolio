@@ -36,8 +36,6 @@
 		"test:update": "jest --verbose -u",
 		"test:watch": "jest --watchAll",
 		"test:coverage": "jest --coverage",
-		"prepare": "husky install",
-		"prebuild": "npm run lint",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"commit": "npm run test:update && git add -A && cz && npx standard-version",
