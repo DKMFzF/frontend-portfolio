@@ -1,8 +1,12 @@
 up:
-	docker-compose up -d --build
+	docker compose build --force-rm --no-cache
+	docker compose up -d
+
+up-dev:
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build -d
 
 down:
-	docker-compose down
+	docker compose down
 
 restart: down up
 

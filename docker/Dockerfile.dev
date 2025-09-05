@@ -1,0 +1,17 @@
+# dev stages
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+COPY package*.json ./
+
+# из-за специфики библиотек которые работают с webgl
+#------------------------------------------------------
+# due to the specifics of libraries that work with WebGL
+RUN npm i --force
+
+COPY . .
+
+EXPOSE 8081
+
+CMD ["npm", "run", "dev"]
