@@ -1,6 +1,6 @@
 {
 	"name": "dkmfzf-frontend-portfolio",
-	"version": "2.3.1",
+	"version": "3.0.0",
 	"description": "Frontend portfolio project by DKMFzF",
 	"keywords": [
 		"frontend",
@@ -43,8 +43,11 @@
 		"subset-fonts": "node subset-fonts.js",
 		"clean": "rimraf dist",
 		"deploy": "gh-pages -d dist",
-		"docker:build": "docker build -t dkmfzf-portfolio -f ./docker/Dockerfile .",
-		"docker:start": "docker run -p 8081:8081 --name dkmfzf-portfolio-container -d dkmfzf-portfolio",
+		"docker:build": "docker build --force-rm --no-cache -t dkmfzf-portfolio-frontend -f ./docker/Dockerfile .",
+		"docker:start": "docker run -p 8081:8081 --name dkmfzf-portfolio-frontend -d dkmfzf-portfolio-frontend",
+		"docker:stop": "docker stop dkmfzf-portfolio-frontend",
+		"docker:remove-container": "docker rm dkmfzf-portfolio-frontend",
+		"docker:remove-image": "docker rmi dkmfzf-portfolio-frontend",
 		"start:server": "node server.js"
 	},
 	"devDependencies": {

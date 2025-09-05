@@ -1,18 +1,22 @@
 services:
-  app:
-    build: .
+  dkmfzf-portfolio-frontend:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
     ports:
       - "8081:8081" 
     environment:
       - NODE_ENV=production
 
-  nginx:
-    build: ./nginx
+  nginx-revers-proxy:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
     ports:
       - "80:80"
       - "443:443"
     depends_on:
-      - app
+      - dkmfzf-portfolio-frontend
     volumes:
       - ./ssl/fullchain.pem:/etc/letsencrypt/live/dkmfzf.ru/fullchain.pem:ro
       - ./ssl/privkey.pem:/etc/letsencrypt/live/dkmfzf.ru/privkey.pem:ro
