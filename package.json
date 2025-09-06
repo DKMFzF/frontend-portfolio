@@ -29,6 +29,7 @@
 		"stylelint": "stylelint \"src/**/*.scss\"",
 		"stylelint:fix": "stylelint \"src/**/*.scss\" --fix",
 		"lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
+		"lint:report": "npx eslint . --ext .js,.ts --format json --output-file eslint-report.json",
 		"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
 		"test:e2e": "cypress open",
 		"ci-test:e2e": "cypress run",
