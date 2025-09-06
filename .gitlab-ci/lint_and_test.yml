@@ -1,0 +1,27 @@
+# jobs for pull_request
+
+lint:
+  stage: verify
+  tags: [nodejs-docker]
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+  script:
+    - npm i --force
+    - npm run lint:report
+  artifacts:
+    paths:
+      - eslint-report.json
+    expire_in: 1 week
+
+test:
+  stage: verify
+  tags: [nodejs-docker]
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+  script:
+    - npm i --force
+    - npm run test
+  artifacts:
+    paths:
+      - coverage/
+    expire_in: 1 week
