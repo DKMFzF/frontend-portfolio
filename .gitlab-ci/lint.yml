@@ -7,6 +7,6 @@ lint:
     - npm i --force
     - npm run lint:report
   artifacts:
-    path:
+    paths:
       - eslint-report.json
     expire_in: 1 week

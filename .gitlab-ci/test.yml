@@ -7,6 +7,6 @@ test:
     - npm i --force
     - npm run test
   artifacts:
-    path:
+    paths:
       - coverage/
     expire_in: 1 week
