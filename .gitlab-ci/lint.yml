@@ -1,0 +1,6 @@
+lint:
+  stage: lint
+  image: node:20
+  script:
+    - npm i --force
+    - npm run lint
