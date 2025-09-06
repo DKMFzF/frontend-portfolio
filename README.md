@@ -4,4 +4,5 @@
 
 Linst: 
   - [repo in gitlab](https://gitlab.com/DKMFzF/dkmfzf-portfolio-frontend)
+  - [repo in github](https://github.com/DKMFzF/frontend-portfolio?tab=readme-ov-file)
   - [docs](https://github.com/DKMFzF/frontend-portfolio/tree/main/docs)
