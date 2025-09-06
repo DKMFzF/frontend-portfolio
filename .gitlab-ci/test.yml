@@ -1,7 +1,12 @@
 test:
   stage: test
-  image: node:20
   tags: [nodejs-docker]
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
   script:
     - npm i --force
     - npm run test
+  artifacts:
+    paths:
+      - coverage/
+    expire_in: 1 week
