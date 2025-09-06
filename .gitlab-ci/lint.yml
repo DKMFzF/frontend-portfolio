@@ -1,9 +1,7 @@
 lint:
   stage: lint
   image: node:20
-  tags:
-    - node
-    - docker
+  tags: [nodejs-docker]
   script:
     - npm i --force
     - npm run lint
