@@ -1,0 +1,13 @@
+# job for SAST.gitlab
+
+sast:
+  tags:
+    - nodejs-docker
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+  artifacts:
+    reports:
+      sast: gl-sast-report.json
+    paths:
+      - gl-sast-report.json
+    expire_in: 1 week
