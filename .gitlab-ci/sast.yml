@@ -1,4 +1,0 @@
-# job for SAST.gitlab
-
-sast:
-  tags: [nodejs-docker]

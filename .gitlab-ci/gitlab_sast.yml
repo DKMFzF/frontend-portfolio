@@ -1,0 +1,13 @@
+# job for SAST.gitlab
+
+sast:
+  tags: [nodejs-docker]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == 'develop'
+  artifacts:
+    paths:
+      - gl-sast-report.json
+    expire_in: 1 week
+    reports:
+      sast: gl-sast-report.json
