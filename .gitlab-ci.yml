@@ -1,5 +1,6 @@
 stages:
   - verify
+  - test
   - build-sonar
 
 include:
