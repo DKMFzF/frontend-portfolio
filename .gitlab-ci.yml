@@ -4,4 +4,4 @@ stages:
 
 include:
   - local: .gitlab-ci/lint_and_test.yml
-  - local: .gitlab/build_sonar.yml
+  - local: .gitlab-ci/build_sonar.yml
