@@ -1,0 +1,17 @@
+# sonarqube-check:
+#   stage: code_quality
+#   image: sonarsource/sonar-scanner-cli:latest
+#   variables:
+#     SONAR_HOST_URL: "https://sonar.yourcompany.com"   # адрес сервера SonarQube
+#     SONAR_TOKEN: $SONAR_TOKEN                        # токен нужно хранить в GitLab CI/CD Variables
+#   rules:
+#     - if: $CI_MERGE_REQUEST_ID
+#   script:
+#     - sonar-scanner \
+#         -Dsonar.projectKey=$CI_PROJECT_NAME \
+#         -Dsonar.sources=. \
+#         -Dsonar.host.url=$SONAR_HOST_URL \
+#         -Dsonar.login=$SONAR_TOKEN \
+#         -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA \
+#         -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME
+#   allow_failure: true
