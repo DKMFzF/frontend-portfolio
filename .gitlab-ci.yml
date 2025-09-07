@@ -16,7 +16,8 @@ include:
 build-sonar:
   stage: build-sonar
   
-  
+  tags: [nodejs-docker]
+
   cache:
     policy: pull-push
     key: "sonar-cache-$CI_COMMIT_REF_SLUG"
