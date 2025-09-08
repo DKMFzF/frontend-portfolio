@@ -11,3 +11,4 @@ sast:
     paths:
       - gl-sast-report.json
     expire_in: 1 week
+
