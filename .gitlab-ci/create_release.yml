@@ -5,21 +5,22 @@ variables:
   NEXUS_REPO: "${NEXUS_REPO}"
   IMAGE_TAG: "${CI_COMMIT_SHORT_SHA}"
 
+stages:
+  - docker-release
+
 docker-release:
   stage: docker-release
   image: docker:24.0.2
-  tags: [nodejs-docker]
   services:
-    - name: docker:24.0.2-dind
-      alias: docker
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-    DOCKER_TLS_CERTDIR: ""
+    - docker:24.0.2-dind
+  tags:
+    - nodejs-docker
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
       when: always
   before_script:
+    - docker info
     - echo "${NEXUS_PASSWORD}" | docker login -u "${NEXUS_USER}" --password-stdin $NEXUS_REGISTRY
   script:
-    - docker build --force-rm --no-cache -t $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG -f ./docker/Dockerfile .
-    - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG
+    - docker build -t $NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA -f ./docker/Dockerfile .
+    - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA
