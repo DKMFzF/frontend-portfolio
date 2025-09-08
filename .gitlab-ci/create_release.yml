@@ -10,7 +10,8 @@ docker-release:
   image: docker:24.0.2
   tags: [nodejs-docker]
   services:
-    - docker:24.0.2-dind
+    - name: docker:24.0.2-dind
+      alias: docker
   variables:
     DOCKER_HOST: tcp://docker:2375
     DOCKER_TLS_CERTDIR: ""
@@ -21,5 +22,4 @@ docker-release:
     - echo "${NEXUS_PASSWORD}" | docker login -u "${NEXUS_USER}" --password-stdin $NEXUS_REGISTRY
   script:
     - docker build --force-rm --no-cache -t $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG -f ./docker/Dockerfile .
-    - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAGs
-  privileged: true
+    - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG
