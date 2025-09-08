@@ -1,7 +1,7 @@
 # job for SAST.gitlab
 
 sast:
-  tags: [nodejs-docker]
+  tags: [nodejs-docker-vps]
   image: node:20
   rules:
     - if: $CI_MERGE_REQUEST_ID

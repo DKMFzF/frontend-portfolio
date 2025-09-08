@@ -10,7 +10,7 @@ variables:
 
 build-sonar:
   stage: build-sonar
-  tags: [nodejs-docker]
+  tags: [nodejs-docker-vps]
   cache:
     policy: pull-push
     key: "sonar-cache-$CI_COMMIT_REF_SLUG"
