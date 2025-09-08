@@ -7,8 +7,13 @@ variables:
 
 docker-release:
   stage: docker-release
-  image: docker:27          # лучше пиновать версию
-  tags: [node-docker-vps]     # совпадает с runner.tag_list
+  image: docker:27
+  services:
+    - docker:27-dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
+  tags: [node-docker-vps]
   before_script:
     - docker version
     - echo "$NEXUS_PASSWORD" | docker login -u "$NEXUS_USER" --password-stdin "$NEXUS_REGISTRY"
