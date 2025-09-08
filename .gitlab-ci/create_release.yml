@@ -10,8 +10,10 @@ docker-release:
   image: docker:latest
   tags: [nodejs-docker]
   services:
-    - docker:dind
+    - name: docker:dind
+      entrypoint: ["--tls=false"]
   variables:
+    DOCKER_HOST: tcp://docker:2375
     DOCKER_TLS_CERTDIR: ""
   before_script:
     - docker info
