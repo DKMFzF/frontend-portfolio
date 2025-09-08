@@ -11,22 +11,19 @@ docker-release:
   tags: [nodejs-docker]
 
   variables:
-    # DOCKER_DRIVER: overlay
-    DOCKER_DRIVER: overlay2
-    DOCKER_HOST: tcp://docker:2375 
+    DOCKER_HOST: tcp://docker:2375
     DOCKER_TLS_CERTDIR: ""
+    DOCKER_DRIVER: overlay2
 
   services:
     - name: docker:dind
       alias: docker
-      command: ["--tls=false"]
-      # entrypoint: ["dockerd-entrypoint.sh","--tls=false"]
+      command: ["dockerd", "--host=tcp://0.0.0.0:2375", "--host=unix:///var/run/docker.sock", "--tls=false"]
 
   before_script:
     - docker info
-    # - echo ${REGISTRY_PASSWORD} | docker login ${REGISTRY} -u ${REGISTRY_USER} --
     - echo "${NEXUS_PASSWORD}" | docker login -u "${NEXUS_USER}" --password-stdin $NEXUS_REGISTRY
-  
+
   script:
     - docker build -t $NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA -f ./docker/Dockerfile .
     - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA
