@@ -7,23 +7,13 @@ variables:
 
 docker-release:
   stage: docker-release
-  image: docker:latest
-  tags: [nodejs-docker]
-
+  image: docker:27          # лучше пиновать версию
+  tags: [nodejs-docker]     # совпадает с runner.tag_list
   variables:
-    DOCKER_HOST: tcp://docker:2375
-    DOCKER_TLS_CERTDIR: ""
-    DOCKER_DRIVER: overlay2
-
-  services:
-    - name: docker:dind
-      alias: docker
-      command: ["dockerd", "--host=tcp://0.0.0.0:2375", "--host=unix:///var/run/docker.sock", "--tls=false"]
-
+    DOCKER_BUILDKIT: "1"
   before_script:
-    - docker info
-    - echo "${NEXUS_PASSWORD}" | docker login -u "${NEXUS_USER}" --password-stdin $NEXUS_REGISTRY
-
+    - docker version
+    - echo "$NEXUS_PASSWORD" | docker login -u "$NEXUS_USER" --password-stdin "$NEXUS_REGISTRY"
   script:
-    - docker build -t $NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA -f ./docker/Dockerfile .
-    - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA
+    - docker build -t "$NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA" -f ./docker/Dockerfile .
+    - docker push "$NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA"
