@@ -9,6 +9,8 @@ docker-release:
   stage: docker-release
   image: docker:latest
   tags: [nodejs-docker]
+  variables:
+    DOCKER_HOST: unix:///var/run/docker.sock
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
       when: always
