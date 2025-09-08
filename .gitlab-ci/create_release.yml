@@ -11,6 +11,9 @@ docker-release:
   tags: [nodejs-docker]
   services:
     - docker:24.0.2-dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
       when: always
@@ -19,3 +22,4 @@ docker-release:
   script:
     - docker build --force-rm --no-cache -t $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG -f ./docker/Dockerfile .
     - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAGs
+  privileged: true
