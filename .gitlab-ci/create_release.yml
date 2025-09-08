@@ -8,6 +8,7 @@ variables:
 docker-release:
   stage: docker-release
   image: docker:latest
+  tags: [nodejs-docker]
   services:
     - docker:dind
   variables:
