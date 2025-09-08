@@ -9,13 +9,18 @@ docker-release:
   stage: docker-release
   image: docker:27
   services:
-    - docker:27-dind
+    - name: docker:27-dind
+      alias: docker
+      # command: ["--tls=false"]
+      command: ["--insecure-registry=84.201.180.139:8086"]
   variables:
+    DOCKER_DRIVER: overlay2
     DOCKER_HOST: tcp://docker:2375
     DOCKER_TLS_CERTDIR: ""
   tags: [node-docker-vps]
   before_script:
     - docker version
+    # - echo ${REGISTRY_PASSWORD} | docker login ${REGISTRY} -u ${REGISTRY_USER} -- 
     - echo "$NEXUS_PASSWORD" | docker login -u "$NEXUS_USER" --password-stdin "$NEXUS_REGISTRY"
   script:
     - docker build -t "$NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA" -f ./docker/Dockerfile .
