@@ -11,7 +11,7 @@ docker-release:
   tags: [nodejs-docker]
   services:
     - name: docker:dind
-      entrypoint: ["--tls=false"]
+      entrypoint: ["dockerd-entrypoint.sh","--tls=false"]
   variables:
     DOCKER_HOST: tcp://docker:2375
     DOCKER_TLS_CERTDIR: ""
