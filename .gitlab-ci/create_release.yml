@@ -7,7 +7,7 @@ variables:
 
 docker-release:
   stage: docker-release
-  image: docker:24.0.2
+  image: docker:latest
   tags: [nodejs-docker]
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
