@@ -1,0 +1,22 @@
+# build release and push docker images in Nexus
+
+variables:
+  NEXUS_REGISTRY: "${NEXUS_REGISTRY}"
+  NEXUS_REPO: "${NEXUS_REPO}"
+  IMAGE_TAG: "${CI_COMMIT_SHORT_SHA}"
+
+docker-release:
+  stage: docker-release
+  image: docker:24.0.2
+  tags: [nodejs-docker]
+  services:
+    - docker:24.0.2-dind
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  before_script:
+    - echo "${NEXUS_PASSWORD}" | docker login -u "${NEXUS_USER}" --password-stdin $NEXUS_REGISTRY
+  script:
+    - docker build --force-rm --no-cache -t $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG -f ./docker/Dockerfile .
+    - docker push $NEXUS_REGISTRY/$NEXUS_REPO:$IMAGE_TAG
+  only:
+    - main

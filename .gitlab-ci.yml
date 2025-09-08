@@ -2,6 +2,7 @@ stages:
   - verify
   - test
   - build-sonar
+  - docker-release
 
 include:
   - template: Security/SAST.gitlab-ci.yml
@@ -9,3 +10,4 @@ include:
   - local: .gitlab-ci/gitlab_sast.yml
   - local: .gitlab-ci/lint_and_test.yml
   - local: .gitlab-ci/build_sonar.yml
+  - local: .gitlab-ci/create_release.yml
