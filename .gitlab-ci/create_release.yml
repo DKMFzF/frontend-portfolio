@@ -12,7 +12,7 @@ docker-release:
     - name: docker:27-dind
       alias: docker
       # command: ["--tls=false"]
-      command: ["--insecure-registry=84.201.180.139:8086"]
+      command: ["--insecure-registry=${NEXUS_REGISTRY}"]
   variables:
     DOCKER_DRIVER: overlay2
     DOCKER_HOST: tcp://docker:2375
