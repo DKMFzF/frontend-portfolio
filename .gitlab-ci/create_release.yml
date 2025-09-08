@@ -7,23 +7,24 @@ variables:
 
 docker-release:
   stage: docker-release
-  image: docker:20-dind
+  image: docker:latest
   tags: [nodejs-docker]
-  services:
-    - name: docker:20-dind
-      alias: docker
-      command: ["--tls=false"]
-      # entrypoint: ["dockerd-entrypoint.sh","--tls=false"]
-  
+
   variables:
     # DOCKER_DRIVER: overlay
     DOCKER_DRIVER: overlay2
     DOCKER_HOST: tcp://docker:2375 
     DOCKER_TLS_CERTDIR: ""
 
+  services:
+    - name: docker:dind
+      alias: docker
+      command: ["--tls=false"]
+      # entrypoint: ["dockerd-entrypoint.sh","--tls=false"]
+
   before_script:
     - docker info
-    - echo ${REGISTRY_PASSWORD} | docker login ${REGISTRY} -u ${REGISTRY_USER} --
+    # - echo ${REGISTRY_PASSWORD} | docker login ${REGISTRY} -u ${REGISTRY_USER} --
     - echo "${NEXUS_PASSWORD}" | docker login -u "${NEXUS_USER}" --password-stdin $NEXUS_REGISTRY
   
   script:
