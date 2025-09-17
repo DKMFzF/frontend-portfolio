@@ -1,0 +1,27 @@
+# build release and push docker images in Nexus
+
+variables:
+  NEXUS_REGISTRY: "${NEXUS_REGISTRY}"
+  NEXUS_REPO: "${NEXUS_REPO}"
+  IMAGE_TAG: "${CI_COMMIT_SHORT_SHA}"
+
+docker-release:
+  stage: docker-release
+  image: docker:27
+  services:
+    - name: docker:27-dind
+      alias: docker
+      # command: ["--tls=false"]
+      command: ["--insecure-registry=${NEXUS_REGISTRY}"]
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
+  tags: [node-docker-vps]
+  before_script:
+    - docker version
+    # - echo ${REGISTRY_PASSWORD} | docker login ${REGISTRY} -u ${REGISTRY_USER} -- 
+    - echo "$NEXUS_PASSWORD" | docker login -u "$NEXUS_USER" --password-stdin "$NEXUS_REGISTRY"
+  script:
+    - docker build -t "$NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA" -f ./docker/Dockerfile .
+    - docker push "$NEXUS_REGISTRY/$NEXUS_REPO:$CI_COMMIT_SHORT_SHA"

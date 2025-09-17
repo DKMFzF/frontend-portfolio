@@ -1,8 +1,8 @@
 # job for SAST.gitlab
 
 sast:
-  tags:
-    - nodejs-docker
+  tags: [node-docker-vps]
+  image: node:20
   rules:
     - if: $CI_MERGE_REQUEST_ID
   artifacts:
@@ -11,3 +11,5 @@ sast:
     paths:
       - gl-sast-report.json
     expire_in: 1 week
+
+

@@ -12,6 +12,7 @@ import apartments from '@images/cardsSketchs/apartments.png';
 import musicShape from '@images/cardsSketchs/musicShape.png';
 import bgWaveEffect from '@images/cardsSketchs/bgWaveEffect.png';
 import plasticSphere from '@images/cardsSketchs/plasticSphere.png';
+import tgbGlass from '@images/cardsSketchs/rgbGlass.png';
 
 import { routesData } from '../routesData';
 
@@ -25,10 +26,17 @@ type SketchesDataType = {
 
 export const sketchesData: SketchesDataType[] = [
 	{
+		id: 'sketch-16',
+		screenshot: tgbGlass,
+		title: 'Rgb Glass',
+		tags: ['webgl', 'threejs', 'glsl'],
+		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/RGBGlass/RGBGlass.tsx'
+	},
+	{
 		id: 'sketch-15',
 		screenshot: bgWaveEffect,
 		title: 'Bg Wave Effect',
-		tags: ['webgl', 'threejs', 'glsl', 'webgl'],
+		tags: ['webgl', 'threejs', 'glsl'],
 		github: 'https://github.com/DKMFzF/dkmfzf.github.io/blob/main/src/pages/SketchDetailPage/ui/BgWaveEffect/BgWaveEffect.tsx'
 	},
 	{

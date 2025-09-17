@@ -14,11 +14,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-      - "443:443"
     depends_on:
       - dkmfzf-portfolio-frontend
-    volumes:
-      - ./ssl/fullchain.pem:/etc/letsencrypt/live/dkmfzf.ru/fullchain.pem:ro
-      - ./ssl/privkey.pem:/etc/letsencrypt/live/dkmfzf.ru/privkey.pem:ro
-      - ./ssl/options-ssl-nginx.conf:/etc/letsencrypt/options-ssl-nginx.conf:ro
-      - ./ssl/ssl-dhparams.pem:/etc/letsencrypt/ssl-dhparams.pem:ro

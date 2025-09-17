@@ -2,7 +2,8 @@
 
 lint:
   stage: verify
-  tags: [nodejs-docker]
+  tags: [node-docker-vps]
+  image: node:20
   rules:
     - if: $CI_MERGE_REQUEST_ID
   script:
@@ -15,7 +16,8 @@ lint:
 
 test:
   stage: verify
-  tags: [nodejs-docker]
+  tags: [node-docker-vps]
+  image: node:20
   rules:
     - if: $CI_MERGE_REQUEST_ID
   script:
