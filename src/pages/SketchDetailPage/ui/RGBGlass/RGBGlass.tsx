@@ -7,7 +7,6 @@ import { useFBO } from "@react-three/drei";
 import { DepthBG } from "./DepthBG";
 
 export const GlassModel = () => {
-  // Параметры стекла
   const roughness = 0.01;
   const transmission = 1;
   const showOriginal = false;
@@ -15,26 +14,21 @@ export const GlassModel = () => {
 
   const buffer = useFBO();
 
-  // ref для группы фона и туннеля
-  const ref0 = useRef<THREE.Group>(null); // для <group>
-  const ref1 = useRef<THREE.Mesh>(null);  // для <RoundedBox>
+  const ref0 = useRef<THREE.Group>(null);
+  const ref1 = useRef<THREE.Mesh>(null);
   const material = useRef<any>(null);
 
-  // Загружаем текстуру (GIF или PNG)
   const gifTexture = useLoader(THREE.TextureLoader, "/math.png");
 
   useFrame((state) => {
     if (ref0.current && ref1.current) {
-      // Временно показываем фон и скрываем стекло
       ref0.current.visible = true;
       ref1.current.visible = false;
 
-      // Рендерим буфер для прозрачного материала
       state.gl.setRenderTarget(buffer);
       state.gl.render(state.scene, state.camera);
       state.gl.setRenderTarget(null);
 
-      // Возвращаем видимость
       ref0.current.visible = showOriginal;
       ref1.current.visible = true;
     }
@@ -42,17 +36,14 @@ export const GlassModel = () => {
 
   return (
     <>
-      {/* Внутренний туннель / фон */}
       <group ref={ref0}>
         <DepthBG />
-        {/* GIF или изображение внутри */}
         <mesh position={[0, 0, 0]}>
           <planeGeometry args={[1, 1]} />
           <meshBasicMaterial map={gifTexture} transparent />
         </mesh>
       </group>
 
-      {/* Стеклянный туннель */}
       <RoundedBox
         ref={ref1}
         position={[0, 0, 0.8]}
